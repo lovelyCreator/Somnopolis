@@ -60,7 +60,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Sensoreve.png",
       mark: "/img/product/Sensoreve_mark.png",
-      rate: 4.9
+      rate: 4.4
     },
     {
       description: "Meilleur hybride",
@@ -590,12 +590,12 @@ export default function Home() {
           </video>
           <div className="w-full flex items-center justify-center">
             
-            <span className="text-[50%] lg:text-[1.5vw] text-[#1A1D20]">4.9/5.0 </span>
+            <span className="text-[50%] lg:text-[1.5vw] text-[#1A1D20]">4.4/5.0 </span>
             <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>
             <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>
             <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>
             <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>
-            <span ><img src="/img/star_half.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>		
+            <span ><img src="/img/star_empty.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>		
           </div>
           <div className="w-full flex flex-col justify-start align-start">
             <div className="w-full flex justify-center align-center">
