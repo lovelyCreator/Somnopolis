@@ -46,7 +46,7 @@ export default function Navbar() {
             <MobileNav open={open} setOpen={setOpen}/>
             <div className="flex items-center text-[#69747F]">
                 <a className="text-3xl font-semibold text-pink-500 ml-1 lg:ml-24 text-center" href="/">
-                    <Image src='/img/logo_mark_black.png' alt="Logo" width={100} height={50}/>
+                    <img src='/img/logo_mark_black.png' alt="Logo" className='w-[100px] lg:w-[200px]'/>
                 </a>
             </div>
             <div className="flex items-center text-[#69747F]">
@@ -62,17 +62,17 @@ export default function Navbar() {
 
                 <div className="hidden md:flex">
                     <NavLink to="/bestMattress">
-                        Meilleur Matelas
+                        <span className="hover:text-[#1A1D20]">Meilleur Matelas</span>
                     </NavLink>
                     <NavLink to="/bestCheapMattress">
-                        Meilleur Matelas Pas Cher
+                        <span className="hover:text-[#1A1D20]">Meilleur Matelas Pas Cher</span>
                     </NavLink>
                     <NavLink to ="/reviews">
-                        Commentaires
+                        <span className="hover:text-[#1A1D20]">Commentaires</span>
                     </NavLink>
                 </div>
             </div>
-            <div className="md:flex rounded-[50px] border border-[#69747F] py-2 px-4 text-[#69747F] text-[12px] md:text-[16px]">
+            <div className="md:flex rounded-[50px] border border-[#69747F] py-2 px-4 text-[#69747F] text-[12px] md:text-[16px] hover:text-[#1A1D20] hover:border-[#1A1D20]">
                 <NavLink to="/bestMattress">
                     En savoir plus
                 </NavLink>
