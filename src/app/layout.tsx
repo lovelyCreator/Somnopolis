@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   title: "Somnopolis",
-  description: "top ranking site in France",
+  description: "Best Mattress Top Ranking in France",
 };
 
 export default function RootLayout({
