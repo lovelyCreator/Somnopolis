@@ -303,41 +303,48 @@ export default function Home() {
   ]);
   const [starState, setStarState] = useState<string>('flex');
   // const [handleState, setHandleState] = useState<string>(null);
-  const [topstate, setTopState] = useState<any>(700);
-  const [topstatepx, setTopStatePx] = useState<any>('700px');
-  const [bottomstate, setBottomState] = useState<any>(0);
+  // const [topstate, setTopState] = useState<any>(700);
+  // const [topstatepx, setTopStatePx] = useState<any>('700px');
+  // const [bottomstate, setBottomState] = useState<any>(0);
 
-  useEffect(() => {
+  // useEffect(() => {
     
-    const handleScroll = () => {
-      const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
-      if (scrollTop<700) {
-        setTopState(700-scrollTop);
-      }
-      else setTopState(60);
-      setTopStatePx(topstate+'px');
-      console.log('topstatepx', topstatepx);
-      console.log('Scroll Top:', scrollTop)
-      console.log('Scroll Height:', scrollHeight)
-      console.log('Client Height:', clientHeight)
-      const specialDiv = document.getElementById('bot');
-// Get the position and size of the special div relative to the viewport
-      const rect = specialDiv.getBoundingClientRect();
-      const bottom_position = rect.top+rect.height;
-      if (bottom_position < clientHeight) {
-        setBottomState(clientHeight-rect.top-rect.height)
-      }
-      else {setBottomState(0);}
+  //   const handleScroll = () => {
+  //     const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
+  //     if (scrollTop<700) {
+  //       setTopState(700-scrollTop);
+  //     }
+  //     else setTopState(60);
+  //     setTopStatePx(topstate+'px');
+  //     console.log('topstatepx', topstatepx);
+  //     console.log('Scroll Top:', scrollTop)
+  //     console.log('Scroll Height:', scrollHeight)
+  //     console.log('Client Height:', clientHeight)
+  //     const specialDiv = document.getElementById('bot');
+  //     // Get the position and size of the special div relative to the viewport
+  //     if (specialDiv) {
+  //       // Get the position and size of the special div relative to the viewport
+  //       const rect = specialDiv.getBoundingClientRect();
+  //       const bottom_position = rect.top + rect.height;
 
-      // Log the position and size information
-      console.log('Special div position (top, left):', rect.top, rect.left);
-      console.log('Special div width:', rect.width);
-      console.log('Special div height:', rect.height);
-      console.log(topstate, '<----------->', bottomstate)
-    };
+  //       if (bottom_position < clientHeight) {
+  //         setBottomState(clientHeight - rect.top - rect.height);
+  //       }
+  //       else setBottomState(0)
+  //     } else {
+  //       // Handle the case when the element with ID 'bot' is not found
+  //       console.error("Element with ID 'bot' not found");
+  //     }
 
-    window.addEventListener('scroll', handleScroll);
-  })
+  //     // Log the position and size information
+  //     console.log('Special div position (top, left):', rect.top, rect.left);
+  //     console.log('Special div width:', rect.width);
+  //     console.log('Special div height:', rect.height);
+  //     console.log(topstate, '<----------->', bottomstate)
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+  // })
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-start w-full">
