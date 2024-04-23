@@ -566,19 +566,13 @@ export default function Home() {
           </div>
         </div>
         <div id="sidePos" className="md:-webkit-sticky md:sticky w-[80%] lg:w-[32%] right-[2vw] lg:h-[90vh] top-[10vh] flex items-start flex-col lg:border-l pl-[2%] border-none lg:border-[#1A1D20] pb-[20px]  overflow-y-auto mt-[50px]">
-          <div className="w-full flex justify-center items-center">
+          <a href="https://senoreve.com" className="w-full flex justify-center items-center">
             <img
-              src="/img/product/Sensoreve_mark.png" // Replace with the path to your image file
+              src="/img/mark.png" // Replace with the path to your image file
               alt="Mark"
-              className="lg:w-[10vw] w-[40%]"
+              className="lg:w-[18vw] lg:h-[3vw] w-[10%]"
             />
-            <img
-              src="/img/Award.png" // Replace with the path to your image file
-              alt="Mark"
-              className="lg:w-[3vw] lg:h-[4vw] w-[10%]"
-            />
-            <p className={`${styles.manropeFont} text-[5vw] lg:text-[1.8vw] text-[#1A1D20] font-bold w-[30%]  text-left lg:text-center lg:pb-[0.5vw] pb-[1.5vw]`}>ELEKCTRA</p>
-          </div>
+          </a>
           <video
             className="w-[70%] rounded-lg border border-[#FFBF00] my-[10px] mx-[15%]"
             autoPlay
@@ -591,7 +585,7 @@ export default function Home() {
           </video>
           <div className="w-full flex items-center justify-center">
             
-            <span className={`${styles.robotoFont} text-[3vw] lg:text-[1.5vw] text-[#1A1D20]`}>4.4/5.0 </span>
+            <span className={`${styles.robotoFont} text-[3vw] lg:text-[1vw] text-[#1A1D20]`}>4.4/5.0 </span>
             <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[3vw] lg:w-[1.5vw] h-full"/></span>
             <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[3vw] lg:w-[1.5vw] h-full"/></span>
             <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[3vw] lg:w-[1.5vw] h-full"/></span>
@@ -601,7 +595,7 @@ export default function Home() {
           <div className="w-full flex flex-col justify-start align-start">
             <div className="w-full flex justify-center items-center">
               <span ><img src="/img/Reviewer.jpg" alt="évaluateur"  className="lg:w-[3.5vw] lg:h-[3.5vw] w-[10vw] rounded-[50px] border-[2px] border-[#F7E4D6]"/></span>
-              <p className={`${styles.robotoFont} text-[14px] md:text-[20px] ml-[5%] text-left`}>Écrit par<br></br>Logan Block, évaluateur de matelas</p>
+              <p className={`${styles.robotoFont} text-[14px] md:text-[18px] ml-[5%] text-left`}>Écrit par<br></br>Logan Block, évaluateur de matelas</p>
             </div>
             <div className="flex w-[90%] mx-[5%] justify-start align-start flex-col">
               <p className={`${styles.manropeFont} w-full text-center text-[16pt] lg:text-[18pt] font-bold mt-[10px]`}>Notre meilleur choix de matelas</p>
