@@ -3,6 +3,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Image from "next/image";
+import styles from './CustomText.module.css';
 
 const NavLink = ({to, children}: {to: string, children: React.ReactNode}) => {
     return <a href={to} className={`mx-4`}>
@@ -23,7 +24,7 @@ function MobileNav({open, setOpen}: {open: boolean, setOpen: React.Dispatch<Reac
                     />
                 </a>
             </div>
-            <div className="flex flex-col ml-4">
+            <div className={`${styles.rubikFont} flex flex-col ml-4`}>
                 <a className="text-xl font-medium my-4" href="/bestMattress" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
                     Meilleur Matelas
                 </a>
@@ -60,7 +61,7 @@ export default function Navbar() {
                     <span className={`h-1 w-full bg-black rounded-lg transform transition duration-300 ease-in-out ${open ? "-rotate-45 -translate-y-3.5" : ""}`} />
                 </div>
 
-                <div className="hidden md:flex">
+                <div className={`${styles.rubikFont} hidden md:flex`}>
                     <NavLink to="/bestMattress">
                         <span className="hover:text-[#1A1D20]">Meilleur Matelas</span>
                     </NavLink>
@@ -72,7 +73,7 @@ export default function Navbar() {
                     </NavLink>
                 </div>
             </div>
-            <div className="md:flex rounded-[50px] border border-[#69747F] py-2 px-4 text-[#69747F] text-[12px] md:text-[16px] hover:text-[#1A1D20] hover:border-[#1A1D20]">
+            <div className={`${styles.rubikFont} md:flex rounded-[50px] border border-[#69747F] py-2 px-4 text-[#69747F] text-[12px] md:text-[16px] hover:text-[#1A1D20] hover:border-[#1A1D20]`}>
                 <NavLink to="/bestMattress">
                     En savoir plus
                 </NavLink>

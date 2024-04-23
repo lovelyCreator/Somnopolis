@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import BottomBar from "./components/bottomBar";
+import styles from './components/CustomText.module.css';
 
 export default function Home() {
   const [bestMattress, setBestMattress] = useState<object[]>([
@@ -350,10 +351,10 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-start w-full">
       <div className="w-full h-[45vw] lg:h-[40vw] bg-[#F1F1F1] flex justify-center items-center">
         <div className="flex flex-col items-start justify-between font-marcellus pl-[5%]">
-          <p className="text-[#87806A] text-[3vw] md:text-[16px] font-bold text-left w-[100%] pt-[5%] text-wrap">QUEL EST LE MEILLEUR MATELAS</p>
-          <p className="text-[#1A1D20] text-[5vw] md:text-[3vw] xl:text-[67px] font-bold text-center text-wrap w-[90%] py-[10%] pl-[5%]">Matelas les mieux notés 2024</p>
-          <p className="text-[#69747F] text-[3vw] md:text-[16px] font-bold 
-          text-left text-wrap w-[100%]">Mis à jour en avril 2024</p>
+          <p className={`${styles.manropeFont} text-[#87806A] text-[3vw] md:text-[16px] font-bold text-left w-[100%] pt-[5%] text-wrap`}>QUEL EST LE MEILLEUR MATELAS</p>
+          <p className={`${styles.manropeFont} text-[#1A1D20] text-[5vw] md:text-[3vw] xl:text-[67px] font-bold text-center text-wrap w-[90%] py-[10%] pl-[5%]`}>Matelas les mieux notés 2024</p>
+          <p className={`${styles.robotoFont} text-[#69747F] text-[4vw] md:text-[16px] font-bold 
+          text-left text-wrap w-[100%]`}>Mis à jour en avril 2024</p>
         </div>
         <img
           src="/img/awesome_mattress.jpg"
@@ -410,16 +411,16 @@ export default function Home() {
       <div className="block text-center w-full mb-[20px] pl-[10%] lg:flex">
         <div className="w-full lg:w-[65%]">
           <div className="flex flex-col w-[90%] items-start justify-center bg-[#F7E4D6] rounded-[30px] py-[20px] px-[5%] mb-[50px]">
-            <p className="text-3xl font-bold w-full pb-[20px] text-left">&nbsp; Meilleur matelas en 2024 : &nbsp;</p>
+            <p className={`${styles.manropeFont} text-3xl font-bold w-full pb-[20px] text-left`}>&nbsp; Meilleur matelas en 2024 : &nbsp;</p>
             
             <div className="flex flex-col justify-between items-start text-[18px] text-left w-full pl-[3%]">
               {
                 bestMattress.map((item:any, index:any) =>
                   <div key={index} className="block lg:flex leading-10">
-                    <p className="font-bold text-[#151160]">
+                    <p className={`${styles.robotoFont} font-bold text-[#151160]`}>
                       - {item.company} :
                     </p>
-                    <p>
+                    <p className={`${styles.rubikFont} `}>
                       &nbsp; {item.description}
                     </p>
                   </div>
@@ -429,8 +430,8 @@ export default function Home() {
           </div>
           {
             mattressData.map((item:any, index:any) =>
-            <div key={index} className={`flex flex-col text-center my-[10px] border-[1px] ${index === 0 ? 'border-[#FFBF00]' : 'border-[#4F4F4F]'} justify-center items-center rounded-[10px]  w-[90%] mb-[50px]`} >
-              <div className={`flex flex-col w-full items-center justify-center ${index === 0 ? "bg-[#FFBF00]" : "bg-[#4F4F4F]"} rounded-t-[8px]`}>
+            <div key={index} className={`${styles.manropeFont} flex flex-col text-center my-[10px] border-[1px] ${index === 0 ? 'border-[#FFBF00]' : 'border-[#4F4F4F]'} justify-center items-center rounded-[10px]  w-[90%] mb-[50px]`} >
+              <div className={`${styles.manropeFont} flex flex-col w-full items-center justify-center ${index === 0 ? "bg-[#FFBF00]" : "bg-[#4F4F4F]"} rounded-t-[8px]`}>
                 <span className="text-3xl font-bold w-full text-center text-white flex flex-row justify-center mt-[5px]">&nbsp; {item.description} &nbsp;</span>
               </div>
               <div className="block md:flex justify-around items-start text-left w-full pl-[10px] pr-[10px] pt-[2%] bg-white pb-[20px] rounded-[10px]">
@@ -451,43 +452,43 @@ export default function Home() {
                   />
                 </div>
                 <div className="flex flex-col pl-[5%] pr-[5%] w-full md:w-[56%]">
-                  <p className="font-bold text-[#151160] text-[16px] md:text-[18px] pl-[10px]">
+                  <p className={`${styles.manropeFont} font-bold text-[#151160] text-[16px] md:text-[18px] pl-[10px]`}>
                     Descriptions
                   </p>
                   <div className="mt-2">
                     <table className="w-full divide-y divide-gray-200 border border-grey-200  bg-grey-100 text-[12px] md:text-[14px]">
                       <tbody className="divide-y divide-gray-200" >
                         <tr>
-                          <td className="px-6 py-2 whitespace-no-wrap w-[27%] border border-gray-200 ">Taille</td>
-                          <td className="px-6 py-2 whitespace-no-wrap w-[73%]">{item.size}</td>
+                          <td className={`${styles.robotoFont} px-6 py-2 whitespace-no-wrap w-[27%] border border-gray-200`}>Taille</td>
+                          <td className={`${styles.rubikFont} px-6 py-2 whitespace-no-wrap w-[73%]`}>{item.size}</td>
                         </tr>
                         <tr className="bg-[#F1F1F1]">
-                          <td className="px-6 py-2 whitespace-no-wrap border border-gray-200">Matériel</td>
-                          <td className="px-6 py-2 whitespace-no-wrap">{item.material}</td>
+                          <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Matériel</td>
+                          <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.material}</td>
                         </tr>
                         <tr>
-                          <td className="px-6 py-2 whitespace-no-wrap border border-gray-200">Fermeté</td>
-                          <td className="px-6 py-2 whitespace-no-wrap">{item.firmness}</td>
+                          <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Fermeté</td>
+                          <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.firmness}</td>
                         </tr>
                         <tr className="bg-[#F1F1F1]">
-                          <td className="px-6 py-2 whitespace-no-wrap border border-gray-200">Expédition</td>
-                          <td className="px-6 py-2 whitespace-no-wrap">{item.shipping}</td>
+                          <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Expédition</td>
+                          <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.shipping}</td>
                         </tr>
                         <tr>
-                          <td className="px-6 py-2 whitespace-no-wrap border border-gray-200">Période d'essai</td>
-                          <td className="px-6 py-2 whitespace-no-wrap">{item.trialperiod}</td>
+                          <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Période d'essai</td>
+                          <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.trialperiod}</td>
                         </tr>
                         <tr className="bg-[#F1F1F1]">
-                          <td className="px-6 py-2 whitespace-no-wrap border border-gray-200">Garantie</td>
-                          <td className="px-6 py-2 whitespace-no-wrap">{item.warranty}</td>
+                          <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Garantie</td>
+                          <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.warranty}</td>
                         </tr>
                         <tr>
-                          <td className="px-6 py-2 whitespace-no-wrap border border-gray-200">Meilleur pour</td>
-                          <td className="px-6 py-2 whitespace-no-wrap">{item.bestfor}</td>
+                          <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Meilleur pour</td>
+                          <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.bestfor}</td>
                         </tr>
                         <tr className="bg-[#F1F1F1]">
-                          <td className="px-6 py-2 whitespace-no-wrap border border-gray-200">Financement</td>
-                          <td className="px-6 py-2 whitespace-no-wrap">{item.financing}</td>
+                          <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Financement</td>
+                          <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.financing}</td>
                         </tr>
                       </tbody>
                     </table>
@@ -498,7 +499,7 @@ export default function Home() {
                     {/* {
                       index == handleState ?  */}
                       <div className="filter invert-85 sepia-22 saturate-857 hue-rotate-336 brightness-95 contrast-109 flex flex-row flex-nowrap items-center my-[10px] text-[#FDCC80]">
-                        <span className="text-[18pt] md:text-[1vw] text-[#1A1D20]">{item.rate}/5.0</span>
+                        <span className={`${styles.robotoFont} text-[18pt] md:text-[2vw] lg:text-[1vw] text-[#1A1D20]`}>{item.rate}/5.0</span>
                         <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[30px] h-full"/></span>
                         <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[30px] h-full"/></span>
                         <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[30px] h-full"/></span>
@@ -509,14 +510,14 @@ export default function Home() {
                       <></>
                     } */}
                   </div>
-                  <button className="bg-[#FFBF00] hover:bg-[#e2b222] text-blue font-bold px-4 rounded-[10px] w-full py-4 " onClick={() => {
+                  <button className={`${styles.manropeFont} bg-[#FFBF00] hover:bg-[#e2b222] text-blue font-bold px-4 rounded-[10px] w-full py-4`} onClick={() => {
                     setStarState('flex');
                     // setHandleState(index);
                   }
                   }>
                     Vérifier les avis
                   </button>
-                  <button className="bg-[#FFFFFF] hover:bg-[#F1F1F1] text-blue font-bold px-4 rounded-[10px] w-full py-4 mt-[20px] md:mt-[50px] border border-[#F7e4D6]">
+                  <button className={`${styles.manropeFont} bg-[#FFFFFF] hover:bg-[#F1F1F1] text-blue font-bold px-4 rounded-[10px] w-full py-4 mt-[20px] md:mt-[50px] border border-[#F7e4D6]`}>
                     Visit Site
                   </button>
                 </div>
@@ -526,18 +527,18 @@ export default function Home() {
           <div className="overflow-scroll overflow-y-scroll mt-2 w-[90%]">
             <table className="min-w-full divide-y divide-gray-200 border border-grey-200  bg-grey-100 mb-[20px]">
               <thead>
-                  <tr className="bg-white leading-3">
-                      <th className="px-6 py-3 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider text-center border border-gray-200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-                      <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Modèle</th>
-                      <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Fermeté</th>
-                      <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Matérielle</th>
-                      <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Refroidissement</th>
-                      <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Garantie</th>
-                      <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Période d'essai</th>
-                      <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Meilleur pour</th>
+                  <tr className={`${styles.manropeFont}bg-white leading-3`}>
+                    <th className="px-6 py-3 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider text-center border border-gray-200"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                    <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Modèle</th>
+                    <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Fermeté</th>
+                    <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Matérielle</th>
+                    <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Refroidissement</th>
+                    <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Garantie</th>
+                    <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Période d'essai</th>
+                    <th className="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider border border-gray-200">Meilleur pour</th>
                   </tr>
               </thead>
-              <tbody className="divide-y divide-gray-200" >
+              <tbody className={`${styles.rubikFont} divide-y divide-gray-200`} >
                 {
                   compareData.map((item:any, index:any) => 
                     <tr key={index} className="bg-white  leading-3 text-xs">
@@ -576,7 +577,7 @@ export default function Home() {
               alt="Mark"
               className="lg:w-[3vw] lg:h-[4vw] w-[10%]"
             />
-            <p className="text-[6vw] lg:text-[2vw] text-[#1A1D20] font-bold w-[30%]  text-left lg:text-center lg:pb-[1vw] pb-[2vw]">Elekctra</p>
+            <p className={`${styles.manropeFont} text-[5vw] lg:text-[2vw] text-[#1A1D20] font-bold w-[30%]  text-left lg:text-center lg:pb-[1vw] pb-[1.5vw]`}>ELEKCTRA</p>
           </div>
           <video
             className="w-[70%] rounded-lg border border-[#FFBF00] my-[10px] mx-[15%]"
@@ -590,24 +591,24 @@ export default function Home() {
           </video>
           <div className="w-full flex items-center justify-center">
             
-            <span className="text-[50%] lg:text-[1.5vw] text-[#1A1D20]">4.4/5.0 </span>
-            <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>
-            <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>
-            <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>
-            <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>
-            <span ><img src="/img/star_empty.svg" alt="My SVG Image"  className="w-[1.5vw] h-full"/></span>		
+            <span className={`${styles.robotoFont} text-[3vw] lg:text-[1.5vw] text-[#1A1D20]`}>4.4/5.0 </span>
+            <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[3vw] lg:w-[1.5vw] h-full"/></span>
+            <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[3vw] lg:w-[1.5vw] h-full"/></span>
+            <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[3vw] lg:w-[1.5vw] h-full"/></span>
+            <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[3vw] lg:w-[1.5vw] h-full"/></span>
+            <span ><img src="/img/star_empty.svg" alt="My SVG Image"  className="w-[3vw] lg:w-[1.5vw] h-full"/></span>		
           </div>
           <div className="w-full flex flex-col justify-start align-start">
-            <div className="w-full flex justify-center align-center">
+            <div className="w-full flex justify-center items-center">
               <span ><img src="/img/Reviewer.jpg" alt="évaluateur"  className="lg:w-[3.5vw] lg:h-[3.5vw] w-[10vw] rounded-[50px] border-[2px] border-[#F7E4D6]"/></span>
-              <p className="text-[14px] md:text-[20px] ml-[5%] text-left">Écrit par<br></br>Logan Block, évaluateur de matelas</p>
+              <p className={`${styles.robotoFont} text-[14px] md:text-[20px] ml-[5%] text-left`}>Écrit par<br></br>Logan Block, évaluateur de matelas</p>
             </div>
             <div className="flex w-[90%] mx-[5%] justify-start align-start flex-col">
-              <p className="w-full text-center text-[16pt] lg:text-[18pt] font-bold mt-[10px]">Notre meilleur choix de matelas</p>
-              <p className="w-full text-left text-[16px]">Le matelas <a href="https://sensoreve.com" className="text-blue-500">Sensoreve Elekctra</a> occupe la première place en raison de sa sensation moyennement ferme qui peut plaire à une variété de dormeurs différents, quelle que soit la position de sommeil ou le type de corps. De plus, la couche de support composée de ressorts emballés individuellement fournit un soulèvement qui peut soulager la pression sur vos épaules et le bas du dos.</p>
+              <p className={`${styles.manropeFont} w-full text-center text-[16pt] lg:text-[18pt] font-bold mt-[10px]`}>Notre meilleur choix de matelas</p>
+              <p className={`${styles.rubikFont} w-full text-left text-[16px]`}>Le matelas <a href="https://sensoreve.com" className="text-blue-500">Sensoreve Elekctra</a> occupe la première place en raison de sa sensation moyennement ferme qui peut plaire à une variété de dormeurs différents, quelle que soit la position de sommeil ou le type de corps. De plus, la couche de support composée de ressorts emballés individuellement fournit un soulèvement qui peut soulager la pression sur vos épaules et le bas du dos.</p>
             </div>
             <a href="https://sensoreve.com">
-              <button className="bg-[#FFBF00] hover:bg-[#F7E4D6] text-blue font-bold px-4 rounded-[10px] w-[80%] mx-[10%] py-4 mt-[20px] border border-[#F7e4D6]">Visit Site
+              <button className={`${styles.manropeFont} bg-[#FFBF00] hover:bg-[#F7E4D6] text-blue font-bold px-4 rounded-[10px] w-[80%] mx-[10%] py-4 mt-[20px] border border-[#F7e4D6]`}>Visit Site
               </button>
             </a>
           </div>
