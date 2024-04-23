@@ -577,7 +577,7 @@ export default function Home() {
               alt="Mark"
               className="lg:w-[3vw] lg:h-[4vw] w-[10%]"
             />
-            <p className={`${styles.manropeFont} text-[5vw] lg:text-[2vw] text-[#1A1D20] font-bold w-[30%]  text-left lg:text-center lg:pb-[1vw] pb-[1.5vw]`}>ELEKCTRA</p>
+            <p className={`${styles.manropeFont} text-[5vw] lg:text-[1.8vw] text-[#1A1D20] font-bold w-[30%]  text-left lg:text-center lg:pb-[0.5vw] pb-[1.5vw]`}>ELEKCTRA</p>
           </div>
           <video
             className="w-[70%] rounded-lg border border-[#FFBF00] my-[10px] mx-[15%]"
