@@ -75,7 +75,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Helix.png",
       mark: "/img/product/Helix_mark.png",
-      rate: 4.5
+      rate: 4.3
     },
     {
       description: "Meilleure valeur",
@@ -89,7 +89,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Nectar.png",
       mark: "/img/product/Nectar_mark.png",
-      rate: 4.7
+      rate: 4.4
     },
     {
       description: "Meilleur soutien",
@@ -103,7 +103,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/DreamCloud.png",
       mark: "/img/product/DreamCloud_mark.png",
-      rate: 4.6
+      rate: 4.3
     },
     {
       description: "Meilleure entreprise",
@@ -117,7 +117,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Plank.png",
       mark: "/img/product/Plank_mark.png",
-      rate: 4.8
+      rate: 4.4
     },
     {
       description: "Meilleurs dormeurs sur le dos",
@@ -131,7 +131,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Nolah.png",
       mark: "/img/product/Nolah_mark.png",
-      rate: 4.8
+      rate: 4.4
     },
     {
       description: "Meilleurs dormeurs sur le côté",
@@ -145,7 +145,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Premier.png",
       mark: "/img/product/Premier_mark.png",
-      rate: 4.4
+      rate: 4.2
     },
     {
       description: "Meilleurs couples",
@@ -159,7 +159,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Bear.png",
       mark: "/img/product/Bear_mark.png",
-      rate: 4.5
+      rate: 4.3
     },
     {
       description: "Meilleur soulagement de la pression",
@@ -173,7 +173,7 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/BrooklynBedding.png",
       mark: "/img/product/BrooklynBedding_mark.png",
-      rate: 4.7
+      rate: 4.4
     },
     {
       description: "Meilleur refroidissement",
@@ -187,7 +187,7 @@ export default function Home() {
       financing: "Aussi bas que 0 % de TAEG",
       img: "/img/product/EmmaHybrid.png",
       mark: "/img/product/EmmaHybrid_mark.png",
-      rate: 4.6
+      rate: 4.3
     }
   ]);
   const [compareData, setCompareData] = useState<any[]>([
@@ -351,9 +351,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-start w-full">
       <div className="w-full h-[45vw] lg:h-[40vw] bg-[#F1F1F1] flex justify-center items-center">
         <div className="flex flex-col items-start justify-between font-marcellus pl-[5%]">
-          <p className={`${styles.manropeFont} text-[#87806A] text-[3vw] md:text-[16px] font-bold text-left w-[100%] pt-[5%] text-wrap`}>QUEL EST LE MEILLEUR MATELAS</p>
+          <p className={`${styles.manropeFont} text-[#87806A] text-[2.5vw] md:text-[16px] font-bold text-left w-[100%] pt-[5%] text-wrap`}>QUEL EST LE MEILLEUR MATELAS</p>
           <p className={`${styles.manropeFont} text-[#1A1D20] text-[5vw] md:text-[3vw] xl:text-[67px] font-bold text-center text-wrap w-[90%] py-[10%] pl-[5%]`}>Matelas les mieux notés 2024</p>
-          <p className={`${styles.robotoFont} text-[#69747F] text-[4vw] md:text-[16px] font-bold 
+          <p className={`${styles.robotoFont} text-[#69747F] text-[3vw] md:text-[16px] font-bold 
           text-left text-wrap w-[100%]`}>Mis à jour en avril 2024</p>
         </div>
         <img
@@ -570,7 +570,7 @@ export default function Home() {
             <img
               src="/img/mark.png" // Replace with the path to your image file
               alt="Mark"
-              className="lg:w-[18vw] lg:h-[3vw] w-[10%]"
+              className="lg:w-[18vw] lg:h-[3vw] w-[60%]"
             />
           </a>
           <video

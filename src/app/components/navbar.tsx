@@ -4,6 +4,7 @@ import React from 'react';
 import { useState } from 'react';
 import Image from "next/image";
 import styles from './CustomText.module.css';
+import Link from 'next/link';
 
 const NavLink = ({to, children}: {to: string, children: React.ReactNode}) => {
     return <a href={to} className={`mx-4`}>
