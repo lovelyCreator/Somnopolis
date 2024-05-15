@@ -1233,7 +1233,9 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <p className={`${styles.manropeFont} text-3xl font-bold pb-2 mb-10 text-left border-b-2 border-[#324983] w-[90%]`}>&nbsp; Comparez les meilleurs matelas en 2024 : &nbsp;</p>
+                        <p className={`${styles.manropeFont} text-3xl font-bold pb-2 mb-10 text-left border-b-2 border-[#324983] w-[90%]`}>
+                            &nbsp; Comparez les meilleurs matelas en 2024 : &nbsp;
+                        </p>
                         <div className="overflow-scroll overflow-y-scroll mt-2 w-[90%] mb-20">
                             <table className="min-w-full divide-y divide-gray-200 border border-grey-200  bg-grey-100 mb-[20px]">
                             <thead>
