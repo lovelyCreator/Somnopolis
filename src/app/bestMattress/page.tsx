@@ -207,10 +207,8 @@ export default function Home() {
             review: "",
             site: "https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm",
             productState: false,
-            trial_period: "100 nuits",
-            warranty: "Garantie 10 ans",
-            shipping: "Livraison gratuite",
             recommendationState: false,
+            overviewState: false,
             recommendation: [
                 {
                     img:"/img/best/couple.svg",
@@ -232,22 +230,32 @@ export default function Home() {
                 {
                     img:"/img/best/material.svg",
                     title: "Matériel",
-                    content: "Il s’agit d’un matelas hybride, ce qui signifie qu’il combine des mousses souples et des ressorts robustes pour un équilibre entre confort et soutien."
+                    content: "Hybride"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "100 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
                 },
                 {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Nous avons attribué au Sensoreve Elekctra une note de 6 sur 10 sur l’échelle de fermeté, où 1 est le plus doux et 10 le plus ferme. Cela signifie qu’il est légèrement plus doux que la norme de l’industrie (6,5 sur 10)."
+                    content: "Moyennement ferme : 6.5/10"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie 10 ans"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "539,99 € - 749,99 € (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king."
+                    content: "$$$$$"
                 },
             ],
             expert_opinion: "Sensorve propose une vaste sélection de matelas, et l'Elekctra se situe en plein milieu en termes de fermeté. Il a une sensation moyenne qui plaira à un large éventail de dormeurs, c'est pourquoi nous l'avons choisi comme notre meilleur choix global. L’un des domaines dans lesquels Sensoreve Elekctra excelle est sa réduction de pression. En vous allongeant dessus, vous obtiendrez un soulagement immédiat au niveau du bas du dos et des épaules, tout en bénéficiant d'un léger soulèvement grâce à la couche de support composée de ressorts emballés individuellement. \n\n Nous le savons parce que nous avons soumis le Sensoreve Elekctra à notre test de cartographie de pression, qui consiste à poser un tapis sur le matelas et à l'utiliser pour suivre les zones où la pression s'accumule le plus. Alors que nous étions allongés sur le tapis, notre carte indiquait principalement du bleu et du vert, indiquant une accumulation de basse pression. Il y avait un peu de jaune au niveau de la hanche, ce qui montre que le Sensoreve Elekctra n’est peut-être pas idéal pour les dormeurs latéraux souffrant de douleurs à la hanche. Mais comme la carte ne montre ni orange ni rouge, la plupart des dormeurs sur le dos et sur le côté devraient être à l’aise sur ce lit.",
@@ -279,10 +287,9 @@ export default function Home() {
             review: "",
             site: "",
             productState: false,
-            trial_period: "100 nuits",
-            warranty: "Garantie 10 ans",
-            shipping: "Livraison gratuite",
             recommendationState: false,
+            overviewState: false,
+            expert_opinionState: false,
             recommendation: [
                 {
                     img:"/img/best/couple.svg",
@@ -304,22 +311,32 @@ export default function Home() {
                 {
                     img:"/img/best/material.svg",
                     title: "Matériel",
-                    content: "Il s’agit d’un matelas hybride, ce qui signifie qu’il combine des mousses souples et des ressorts robustes pour un équilibre entre confort et soutien."
+                    content: "Hybride"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "100 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
                 },
                 {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Nous avons attribué au Helix Midnight une note de 6 sur 10 sur l’échelle de fermeté, où 1 est le plus doux et 10 le plus ferme. Cela signifie qu’il est légèrement plus doux que la norme de l’industrie (6,5 sur 10)."
+                    content: "Moyennement ferme : 6.5/10"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie 10 ans"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "937 $ à 1 749 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king."
+                    content: "$$$$$"
                 },
             ],
             expert_opinion: "Helix propose une vaste sélection de matelas, et l'Midnight se situe en plein milieu en termes de fermeté. Il a une sensation moyenne qui plaira à un large éventail de dormeurs, c'est pourquoi nous l'avons choisi comme notre meilleur choix global. L’un des domaines dans lesquels Helix Midnight excelle est sa réduction de pression. En vous allongeant dessus, vous obtiendrez un soulagement immédiat au niveau du bas du dos et des épaules, tout en bénéficiant d'un léger soulèvement grâce à la couche de support composée de ressorts emballés individuellement. \n\n Nous le savons parce que nous avons soumis le Helix Midnight à notre test de cartographie de pression, qui consiste à poser un tapis sur le matelas et à l'utiliser pour suivre les zones où la pression s'accumule le plus. Alors que nous étions allongés sur le tapis, notre carte indiquait principalement du bleu et du vert, indiquant une accumulation de basse pression. Il y avait un peu de jaune au niveau de la hanche, ce qui montre que le Helix Midnight n’est peut-être pas idéal pour les dormeurs latéraux souffrant de douleurs à la hanche. Mais comme la carte ne montre ni orange ni rouge, la plupart des dormeurs sur le dos et sur le côté devraient être à l’aise sur ce lit.",
@@ -351,9 +368,7 @@ export default function Home() {
             review: "",
             site: "",
             productState: false,
-            trial_period: "365 nuits",
-            warranty: "Garantie à vie",
-            shipping: "Livraison gratuite",
+            overviewState: false,
             recommendationState: false,
             recommendation: [
                 {
@@ -381,22 +396,32 @@ export default function Home() {
                 {
                     img:"/img/best/material.svg",
                     title: "Matériel",
-                    content: "Mousse, pour une sensation douce, soulageant la pression et beaucoup d'enfoncement."
+                    content: "Mousse"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "365 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
                 },
                 {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Celui-ci a obtenu une note de 6 sur 10 sur notre échelle, nous le classerions donc comme moyennement doux."
+                    content: "Moyennement ferme : 6/10"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie à vie"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "1 049 $ à 2 398 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king, California king, split king"
+                    content: "$$$$$"
                 },
             ],
             expert_opinion: "Tout au long de la nuit, dormir sur le côté exerce une forte pression sur deux zones, l’épaule et la hanche. Si votre matelas est trop ferme, cela peut entraîner un inconfort supplémentaire et même des douleurs inutiles dans ces zones. Pour éviter cela, vous avez besoin d’un matelas anti-pression comme le Nectar Original. \n\n En fait, le Nectar est tellement amorti qu’il a été parfaitement testé pour les douleurs aux épaules et aux hanches. Au cours de ces tests, nous avons également déterminé que ce matelas devait supporter les dormeurs latéraux de moins de 250 livres. Ces résultats ont tous été déterminés par notre carte de pression, qui montrait une pression très faible (uniquement bleue et verte) pendant le sommeil sur le dos et sur le côté.",
@@ -428,9 +453,7 @@ export default function Home() {
             review: "",
             site: "",
             productState: false,
-            trial_period: "365 nuits",
-            warranty: "Garantie à vie",
-            shipping: "Livraison gratuite",
+            overviewState: false,
             recommendationState: false,
             recommendation: [
                 {
@@ -461,35 +484,44 @@ export default function Home() {
                     content: "Hybride"
                 },
                 {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "365 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
+                },
+                {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Celui-ci a obtenu une note de 6 sur 10 sur notre échelle, nous le classerions donc comme moyennement doux."
+                    content: "Ferme : 7/10"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie à vie"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "1 049 $ à 2 398 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king, California king, split king"
+                    content: "$$$$$"
                 },
             ],
-            expert_opinion: "Tout au long de la nuit, dormir sur le côté exerce une forte pression sur deux zones, l’épaule et la hanche. Si votre matelas est trop ferme, cela peut entraîner un inconfort supplémentaire et même des douleurs inutiles dans ces zones. Pour éviter cela, vous avez besoin d’un matelas anti-pression comme le Nectar Original. \n\n En fait, le Nectar est tellement amorti qu’il a été parfaitement testé pour les douleurs aux épaules et aux hanches. Au cours de ces tests, nous avons également déterminé que ce matelas devait supporter les dormeurs latéraux de moins de 250 livres. Ces résultats ont tous été déterminés par notre carte de pression, qui montrait une pression très faible (uniquement bleue et verte) pendant le sommeil sur le dos et sur le côté.",
+            expert_opinion: `Les dormeurs mixtes changent de position tout au long de la nuit, ils ont donc besoin d'un matelas réactif qui leur permette de se déplacer facilement. Un matelas trop enfoncé rend difficile le passage du couchage sur le ventre au couchage sur le côté et ainsi de suite. \n\n Dans notre laboratoire de matelas, le DreamCloud Original a obtenu des résultats exceptionnels. Nous l'avons trouvé très réactif, avec une sensation de rebond et d'être " sur le dessus ". Lorsque nous étions allongés sur le matelas, nous avons pu passer d'une position à l'autre sans nous sentir coincés dans le matériau. Nous attribuons cela à la construction hybride du DreamCloud, qui comprend une couche élastique de ressorts enveloppés individuellement.`,
             testersay: [
                 "Ce que dit notre testeur :",
-                "Ce que je préfère à propos du Nectar Premier, c’est son excellent soulagement de la pression. Ce matelas mi-doux convient parfaitement aux dormeurs latéraux à la recherche d’un confort moelleux. Cela pourrait également convenir aux dormeurs souffrant de douleurs à l’épaule. Si vous dormez sur le dos et recherchez un nouveau matelas pour remplacer votre ancien Nectar Lush (dont la production a été abandonnée), j’envisagerais également le Premier.",
-                "– Bridget Chapman, ancienne rédactrice produit senior"
+                "Grâce à son soutien et à sa réactivité, je pense que le DreamCloud est un choix solide pour les dormeurs combinés, ainsi que pour les dormeurs sur le dos qui ont besoin d'un alignement neutre de la colonne vertébrale.",
+                "– Bridget Chapman, ancienne rédactrice en chef des produits"
             ],
-            customersay: "Dans les commentaires, il y a quelques catégories de personnes qui semblent avoir le plus de succès avec le Nectar : les dormeurs sur le dos, les dormeurs sur le côté et les couples. Nous pensons que cela est probablement dû à la sensation équilibrée du Nectar, à son excellent soulagement de la pression et à ses bons résultats de transfert de mouvement.",
+            customersay: `Le site de l'entreprise DreamCloud compte environ 8 700 avis, et un certain nombre d'acheteurs vérifiés parlent de la réactivité du matelas et du confort qu'il offre lorsqu'il s'agit de changer de position de sommeil. Dans un contexte différent, le mot "réactif" est également utilisé lorsqu'il s'agit de faire l'éloge de l'excellent service clientèle de DreamCloud.`,
             pros: [
-                "Nous avons constaté que la sensation moyenne du Nectar (6 sur 10 sur notre échelle de fermeté) devrait offrir une sensation équilibrée aux dormeurs sur le dos pesant moins de 250 livres.",
-                "C’est l’un de nos matelas préférés sur le marché aujourd’hui. Vous pouvez actuellement trouver une reine pour moins de 700 $ après réductions.",
-                "La société propose un essai généreux de 365 nuits et une garantie à vie pour protéger les achats de ses clients."
+                "Les politiques offertes par DreamCloud sont difficiles à battre, avec un essai extrêmement généreux de 365 nuits, ainsi qu'une garantie à vie.",
+                "Grâce aux infusions de gel rafraîchissant dans la mousse et au grand nombre de spires dans sa construction, le DreamCloud offre beaucoup de place pour la circulation de l'air, de sorte qu'il dort bien et au frais."
             ],
-            cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
-            reviewName: "Examen du matelas Nectar"
+            cons: "Sa grande hauteur lui confère une durabilité accrue, mais elle en fait également un lit en boîte plus lourd. Nous vous recommandons de vous faire aider par un ami pour le déballage et le déménagement.",
+            reviewName: "Examen du matelas DreamCloud"
         },
         {
             model: "WinkBed Matelas",
@@ -499,26 +531,24 @@ export default function Home() {
             rate: 4,
             cooling: '✓',
             sleep_position: "Combinaison",
-            title: "Nectar",
-            sort: "Meilleur matelas pour dormeurs latéraux",
-            content: "Le matelas Nectar original est un lit qui soulage la pression tout en offrant un bon soutien. Il est composé d’une épaisse couche de mousse à mémoire de forme gel, qui permet au dormeur de vraiment s’enfoncer dans sa surface.",
+            title: "WinkBed",
+            sort: "Meilleur matelas pour le mal de dos",
+            content: "Le WinkBed est un matelas hybride qui se décline en trois niveaux de fermeté, de sorte que la plupart des dormeurs devraient trouver un modèle adapté à leurs besoins. Il pourrait également convenir aux couples, grâce à un soutien renforcé des bords.",
             review: "",
             site: "",
             productState: false,
-            trial_period: "365 nuits",
-            warranty: "Garantie à vie",
-            shipping: "Livraison gratuite",
             recommendationState: false,
+            overviewState: false,
             recommendation: [
                 {
-                    img:"/img/best/joint.svg",
-                    title: "Douleur articulaire",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs articulaires."
+                    img:"/img/best/hotsleeping.svg",
+                    title: "Les dormeurs chauds",
+                    content: "Si vous avez souvent trop chaud pendant votre sommeil, ce matelas devrait vous aider à rester au frais."
                 },
                 {
-                    img:"/img/best/hip.svg",
-                    title: "Douleur à la hanche",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs à la hanche."
+                    img:"/img/best/back.svg",
+                    title: "Mal de dos",
+                    content: "Ce lit est idéal pour les personnes souffrant de douleurs dorsales."
                 },
                 {
                     img:"/img/best/backsleeping.svg",
@@ -530,43 +560,58 @@ export default function Home() {
                     title: "Couchage sur le côté",
                     content: "Idéal pour les dormeurs latéraux légers et de poids moyen."
                 },
+                {
+                    img:"/img/best/stomachsleeping.svg",
+                    title: "Sommeil de l'estomac",
+                    content: "Idéal pour les personnes de poids moyen qui dorment sur le ventre."
+                },
             ],
             overview: [
                 {
                     img:"/img/best/material.svg",
                     title: "Matériel",
-                    content: "Mousse, pour une sensation douce, soulageant la pression et beaucoup d'enfoncement."
+                    content: "Hybride"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "120 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
                 },
                 {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Celui-ci a obtenu une note de 6 sur 10 sur notre échelle, nous le classerions donc comme moyennement doux."
+                    content: "Plusieurs options de fermeté"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie à vie"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "1 049 $ à 2 398 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king, California king, split king"
+                    content: "$$$$$"
                 },
             ],
-            expert_opinion: "Tout au long de la nuit, dormir sur le côté exerce une forte pression sur deux zones, l’épaule et la hanche. Si votre matelas est trop ferme, cela peut entraîner un inconfort supplémentaire et même des douleurs inutiles dans ces zones. Pour éviter cela, vous avez besoin d’un matelas anti-pression comme le Nectar Original. \n\n En fait, le Nectar est tellement amorti qu’il a été parfaitement testé pour les douleurs aux épaules et aux hanches. Au cours de ces tests, nous avons également déterminé que ce matelas devait supporter les dormeurs latéraux de moins de 250 livres. Ces résultats ont tous été déterminés par notre carte de pression, qui montrait une pression très faible (uniquement bleue et verte) pendant le sommeil sur le dos et sur le côté.",
+            expert_opinion: `Le meilleur matelas pour le mal de dos est quelque peu subjectif, car les différents types de corps et de positions de sommeil trouveront un soulagement de différentes manières. Mais un aspect des meilleurs matelas pour le mal de dos que nos experts considèrent comme standard est le besoin d'un équilibre suffisant entre le confort et le soutien. Par exemple, les personnes qui dorment sur le côté ont besoin d'une sensation plus moelleuse pour amortir les épaules, mais elles ont également besoin d'une base de soutien pour soulever les hanches dans un alignement sain. \n\n Nous pensons que le WinkBed est idéal pour offrir une sensation équilibrée, quelle que soit la personne. Sa construction hybride permet une sensation plus douce sur le dessus et des tonnes de soutien de la colonne vertébrale au niveau de la base. Nous apprécions également le fait qu'il existe trois options de fermeté (Softer, Luxury Firm, Firmer), ainsi qu'un modèle légèrement plus cher appelé Plus, conçu pour les dormeurs plus lourds. \n\n Pour nous assurer que nous donnons aux acheteurs la meilleure recommandation possible pour leur mal de dos, nous avons soumis le WinkBed (comme nous le faisons pour des centaines d'autres matelas) à notre test de carte de pression. Sur le modèle Luxury Firm, l'option moyenne du WinkBed, nous avons vu tous les bleus et les verts (faible pression) en position de couchage sur le dos. Les mousses de confort souples devraient remplir la région lombaire et soulager ou prévenir les maux de dos de ces personnes.`,
             testersay: [
                 "Ce que dit notre testeur :",
-                "Ce que je préfère à propos du Nectar Premier, c’est son excellent soulagement de la pression. Ce matelas mi-doux convient parfaitement aux dormeurs latéraux à la recherche d’un confort moelleux. Cela pourrait également convenir aux dormeurs souffrant de douleurs à l’épaule. Si vous dormez sur le dos et recherchez un nouveau matelas pour remplacer votre ancien Nectar Lush (dont la production a été abandonnée), j’envisagerais également le Premier.",
-                "– Bridget Chapman, ancienne rédactrice produit senior"
+                "Je suis fan de la sensation de rebond et de soutien du WinkBed Plus, qui convient particulièrement aux dormeurs mixtes et aux dormeurs sur le dos. Je recommanderais également le Plus aux couples, car il offre une bonne isolation des mouvements.",
+                "– Bridget Chapman, ancienne rédactrice en chef des produits"
             ],
-            customersay: "Dans les commentaires, il y a quelques catégories de personnes qui semblent avoir le plus de succès avec le Nectar : les dormeurs sur le dos, les dormeurs sur le côté et les couples. Nous pensons que cela est probablement dû à la sensation équilibrée du Nectar, à son excellent soulagement de la pression et à ses bons résultats de transfert de mouvement.",
+            customersay: "Le WinkBed est commercialisé comme une option idéale pour les maux de dos, et de nombreux commentaires de clients le confirment, quelle que soit la fermeté choisie.",
             pros: [
-                "Nous avons constaté que la sensation moyenne du Nectar (6 sur 10 sur notre échelle de fermeté) devrait offrir une sensation équilibrée aux dormeurs sur le dos pesant moins de 250 livres.",
-                "C’est l’un de nos matelas préférés sur le marché aujourd’hui. Vous pouvez actuellement trouver une reine pour moins de 700 $ après réductions.",
-                "La société propose un essai généreux de 365 nuits et une garantie à vie pour protéger les achats de ses clients."
+                "La plupart des personnes qui dorment sur le côté devraient trouver dans le modèle Softer un soulagement suffisant de la pression au niveau des hanches et des épaules, sans avoir à sacrifier un soutien adéquat.",
+                "Grâce à ses grands ressorts, le WinkBed offre une sensation traditionnelle de ressort : rebondissement, réactivité et soutien.",
+                "Les matelas hybrides et les matelas à ressorts conviennent souvent aux personnes qui ont le sommeil chaud, car les ressorts laissent beaucoup d'espace pour circuler dans le lit. Le WinkBed n'est pas différent."
             ],
-            cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
-            reviewName: "Examen du matelas Nectar"
+            cons: "Il s'agit d'un matelas de luxe abordable, mais qui n'est pas encore tout à fait une option budgétaire.",
+            reviewName: "Examen du matelas WinkBed"
         },
         {
             model: "Saatva Matelas",
@@ -576,26 +621,24 @@ export default function Home() {
             rate: 4,
             cooling: '✓',
             sleep_position: "Dos et ventre",
-            title: "Nectar",
-            sort: "Meilleur matelas pour dormeurs latéraux",
-            content: "Le matelas Nectar original est un lit qui soulage la pression tout en offrant un bon soutien. Il est composé d’une épaisse couche de mousse à mémoire de forme gel, qui permet au dormeur de vraiment s’enfoncer dans sa surface.",
+            title: "Saatva Classic",
+            sort: "Meilleur matelas de luxe abordable",
+            content: `La construction à ressorts sur ressorts du Saatva offre une sensation de ressort classique. Il s'agit d'une bonne option pour les dormeurs combinés, qui veulent se sentir libres de changer de position et éviter de se sentir "coincés" dans le matelas. Il est disponible en trois niveaux de fermeté, de sorte que vous devriez pouvoir en trouver un qui corresponde à vos besoins.`,
             review: "",
             site: "",
             productState: false,
-            trial_period: "365 nuits",
-            warranty: "Garantie à vie",
-            shipping: "Livraison gratuite",
             recommendationState: false,
+            overviewState: false,
             recommendation: [
                 {
-                    img:"/img/best/joint.svg",
-                    title: "Douleur articulaire",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs articulaires."
+                    img:"/img/best/hotsleeping.svg",
+                    title: "Les dormeurs chauds",
+                    content: "Si vous avez souvent trop chaud pendant votre sommeil, ce matelas devrait vous aider à rester au frais."
                 },
                 {
-                    img:"/img/best/hip.svg",
-                    title: "Douleur à la hanche",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs à la hanche."
+                    img:"/img/best/back.svg",
+                    title: "Mal de dos",
+                    content: "Ce lit est idéal pour les personnes souffrant de douleurs dorsales."
                 },
                 {
                     img:"/img/best/backsleeping.svg",
@@ -603,47 +646,57 @@ export default function Home() {
                     content: "Idéal pour les dormeurs sur le dos légers et de poids moyen."
                 },
                 {
-                    img:"/img/best/sidesleeping.svg",
-                    title: "Couchage sur le côté",
-                    content: "Idéal pour les dormeurs latéraux légers et de poids moyen."
+                    img:"/img/best/stomachsleeping.svg",
+                    title: "Sommeil de l'estomac",
+                    content: "Idéal pour les personnes de poids moyen qui dorment sur le ventre."
                 },
             ],
             overview: [
                 {
                     img:"/img/best/material.svg",
                     title: "Matériel",
-                    content: "Mousse, pour une sensation douce, soulageant la pression et beaucoup d'enfoncement."
+                    content: "Ressort"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "365 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite en gants blancs",
                 },
                 {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Celui-ci a obtenu une note de 6 sur 10 sur notre échelle, nous le classerions donc comme moyennement doux."
+                    content: "Plusieurs options de fermeté"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie à vie"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "1 049 $ à 2 398 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king, California king, split king"
+                    content: "$$$$$"
                 },
             ],
-            expert_opinion: "Tout au long de la nuit, dormir sur le côté exerce une forte pression sur deux zones, l’épaule et la hanche. Si votre matelas est trop ferme, cela peut entraîner un inconfort supplémentaire et même des douleurs inutiles dans ces zones. Pour éviter cela, vous avez besoin d’un matelas anti-pression comme le Nectar Original. \n\n En fait, le Nectar est tellement amorti qu’il a été parfaitement testé pour les douleurs aux épaules et aux hanches. Au cours de ces tests, nous avons également déterminé que ce matelas devait supporter les dormeurs latéraux de moins de 250 livres. Ces résultats ont tous été déterminés par notre carte de pression, qui montrait une pression très faible (uniquement bleue et verte) pendant le sommeil sur le dos et sur le côté.",
+            expert_opinion: `Lorsque vous testez autant de lits que nous le faisons, il est difficile de choisir un favori. Mais le Saatva Classic est un matelas robuste et de haute qualité qui offre une sensation de luxe à un prix plus abordable. Il ne faisait donc aucun doute qu'il devait prendre la place de meilleur matelas de luxe à prix abordable. En termes de sensation, il s'agit d'un matelas à ressorts qui se décline en trois options de fermeté : Plush Soft, Luxury Firm et Firm. En testant le Luxury Firm, nous avons trouvé qu'il était rebondissant, réactif et qu'il offrait un bon soutien. Nous effectuons notre test de transfert de mouvement principalement pour les couples ; un faible transfert de mouvement montre qu'ils ne seront pas dérangés par les mouvements de l'autre pendant leur sommeil. Nous avons laissé tomber une bille d'acier de 10 livres sur la surface du matelas à des hauteurs de 4, 8 et 12 pouces. Nous avons obtenu des résultats élevés en matière de transfert de mouvement sur le Saatva, ce qui montre que même s'il n'est pas le meilleur pour les couples, il s'agit d'une option très réactive. Nous attribuons cela à sa construction bobine sur bobine, c'est-à-dire deux couches distinctes de ressorts. Cela indique que le Saatva est une option fantastique pour les dormeurs mixtes et pour le sexe, car le changement de position et l'activité sexuelle nécessitent tous deux de pouvoir bouger facilement.`,
             testersay: [
                 "Ce que dit notre testeur :",
-                "Ce que je préfère à propos du Nectar Premier, c’est son excellent soulagement de la pression. Ce matelas mi-doux convient parfaitement aux dormeurs latéraux à la recherche d’un confort moelleux. Cela pourrait également convenir aux dormeurs souffrant de douleurs à l’épaule. Si vous dormez sur le dos et recherchez un nouveau matelas pour remplacer votre ancien Nectar Lush (dont la production a été abandonnée), j’envisagerais également le Premier.",
-                "– Bridget Chapman, ancienne rédactrice produit senior"
+                "Le Saatva classic est un matelas rebondissant, de haute qualité, durable et doté d'un excellent soutien des bords. Je pense que c'est une bonne option pour les dormeurs sur le dos et les dormeurs mixtes. J'apprécie le fait que le Saatva Classic soit disponible en trois niveaux de fermeté et deux hauteurs différentes, afin que les dormeurs puissent choisir le modèle qui répond le mieux à leurs besoins.",
+                "– Bridget Chapman, ancienne rédactrice en chef des produits"
             ],
-            customersay: "Dans les commentaires, il y a quelques catégories de personnes qui semblent avoir le plus de succès avec le Nectar : les dormeurs sur le dos, les dormeurs sur le côté et les couples. Nous pensons que cela est probablement dû à la sensation équilibrée du Nectar, à son excellent soulagement de la pression et à ses bons résultats de transfert de mouvement.",
+            customersay: "Il n'est pas surprenant que de nombreux commentaires de clients soulignent la livraison et le service à la clientèle de Saatva. Saatva est l'une des rares entreprises de matelas à offrir la livraison et l'installation gratuites des matelas. Ils enlèveront même votre ancien matelas et s'en débarrasseront.",
             pros: [
-                "Nous avons constaté que la sensation moyenne du Nectar (6 sur 10 sur notre échelle de fermeté) devrait offrir une sensation équilibrée aux dormeurs sur le dos pesant moins de 250 livres.",
-                "C’est l’un de nos matelas préférés sur le marché aujourd’hui. Vous pouvez actuellement trouver une reine pour moins de 700 $ après réductions.",
-                "La société propose un essai généreux de 365 nuits et une garantie à vie pour protéger les achats de ses clients."
+                "Parce qu'il est disponible en trois niveaux de fermeté très différents, le Saatva a un modèle pour les dormeurs sur le côté (Plush Soft), les dormeurs sur le dos (Luxury Firm) et les dormeurs sur le ventre (Firm). Les dormeurs mixtes devraient pouvoir changer facilement de position sur l'un ou l'autre de ces lits.",
+                "Avec autant de serpentins dans sa construction, il y a beaucoup d'espace pour la circulation de l'air dans le Saatva, de sorte qu'il dort bien et au frais.",
+                "Saatva offre un service de livraison en gants blancs gratuit avec chaque matelas. Cela signifie qu'une équipe de livraison apportera le lit (non compressé) dans la pièce de votre choix, l'installera et enlèvera votre ancien matelas sans frais supplémentaires."
             ],
-            cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
-            reviewName: "Examen du matelas Nectar"
+            cons: "En raison de son caractère rebondissant, le Saatva a un transfert de mouvement assez élevé. Ce n'est probablement pas un problème pour la plupart des couples, mais si vous ou votre partenaire avez le sommeil léger, vous risquez de vous réveiller l'un l'autre avec vos mouvements. La plupart des meilleurs matelas à mémoire de forme offrent une meilleure isolation des mouvements.",
+            reviewName: "Examen du matelas Saatva"
         },
         {
             model: "Brooklyn Bedding Aurora Luxe Matelas",
@@ -653,31 +706,24 @@ export default function Home() {
             rate: 4,
             cooling: '✓',
             sleep_position: "Dos et côté",
-            title: "Nectar",
-            sort: "Meilleur matelas pour dormeurs latéraux",
-            content: "Le matelas Nectar original est un lit qui soulage la pression tout en offrant un bon soutien. Il est composé d’une épaisse couche de mousse à mémoire de forme gel, qui permet au dormeur de vraiment s’enfoncer dans sa surface.",
+            title: "Brooklyn Bedding Aurora Luxe",
+            sort: "Meilleur matelas rafraîchissant",
+            content: `Le matelas Aurora Luxe de Brooklyn Bedding est un matelas hybride de type "bed-in-a-box". Il est disponible en trois niveaux de fermeté et avec un Cloud Pillow Top en option, ce qui permet aux dormeurs de choisir le modèle le mieux adapté à leurs besoins. Il est également doté d'une technologie de refroidissement dans presque toutes les couches, ce qui signifie qu'il permet de dormir au frais !`,
             review: "",
             site: "",
             productState: false,
-            trial_period: "365 nuits",
-            warranty: "Garantie à vie",
-            shipping: "Livraison gratuite",
             recommendationState: false,
+            overviewState: false,
             recommendation: [
                 {
-                    img:"/img/best/joint.svg",
-                    title: "Douleur articulaire",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs articulaires."
+                    img:"/img/best/hotsleeping.svg",
+                    title: "Les dormeurs chauds",
+                    content: "Si vous avez souvent trop chaud pendant votre sommeil, ce matelas devrait vous aider à rester au frais."
                 },
                 {
-                    img:"/img/best/hip.svg",
-                    title: "Douleur à la hanche",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs à la hanche."
-                },
-                {
-                    img:"/img/best/backsleeping.svg",
-                    title: "Dos Dormir",
-                    content: "Idéal pour les dormeurs sur le dos légers et de poids moyen."
+                    img:"/img/best/back.svg",
+                    title: "Mal de dos",
+                    content: "Ce lit est idéal pour les personnes souffrant de douleurs dorsales."
                 },
                 {
                     img:"/img/best/sidesleeping.svg",
@@ -689,38 +735,48 @@ export default function Home() {
                 {
                     img:"/img/best/material.svg",
                     title: "Matériel",
-                    content: "Mousse, pour une sensation douce, soulageant la pression et beaucoup d'enfoncement."
+                    content: "Hybride"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "120 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
                 },
                 {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Celui-ci a obtenu une note de 6 sur 10 sur notre échelle, nous le classerions donc comme moyennement doux."
+                    content: "Plusieurs options de fermeté"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie de 10 ans"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "1 049 $ à 2 398 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king, California king, split king"
+                    content: "$$$$$"
                 },
             ],
-            expert_opinion: "Tout au long de la nuit, dormir sur le côté exerce une forte pression sur deux zones, l’épaule et la hanche. Si votre matelas est trop ferme, cela peut entraîner un inconfort supplémentaire et même des douleurs inutiles dans ces zones. Pour éviter cela, vous avez besoin d’un matelas anti-pression comme le Nectar Original. \n\n En fait, le Nectar est tellement amorti qu’il a été parfaitement testé pour les douleurs aux épaules et aux hanches. Au cours de ces tests, nous avons également déterminé que ce matelas devait supporter les dormeurs latéraux de moins de 250 livres. Ces résultats ont tous été déterminés par notre carte de pression, qui montrait une pression très faible (uniquement bleue et verte) pendant le sommeil sur le dos et sur le côté.",
+            expert_opinion: `Lorsque nous posons la main sur le matelas Brooklyn Bedding Aurora Luxe, sa housse est littéralement fraîche au toucher. Mais les capacités de refroidissement du matelas ne s'arrêtent pas là. Lorsque nous nous allongeons, nous n'avons pas du tout l'impression que nous allons surchauffer. L'air circule abondamment entre les ressorts de la couche de soutien, et les mousses du lit contiennent des infusions de gel et de cuivre, qui absorbent la chaleur corporelle et la libèrent, au lieu de l'emprisonner dans les couches. Les personnes qui ont le sommeil chaud devraient être particulièrement à l'aise sur ce matelas.`,
             testersay: [
                 "Ce que dit notre testeur :",
-                "Ce que je préfère à propos du Nectar Premier, c’est son excellent soulagement de la pression. Ce matelas mi-doux convient parfaitement aux dormeurs latéraux à la recherche d’un confort moelleux. Cela pourrait également convenir aux dormeurs souffrant de douleurs à l’épaule. Si vous dormez sur le dos et recherchez un nouveau matelas pour remplacer votre ancien Nectar Lush (dont la production a été abandonnée), j’envisagerais également le Premier.",
+                "Ce que je préfère dans ce lit, c'est son caractère rafraîchissant. Les dormeurs qui ont chaud et qui apprécient une sensation de douceur devraient apprécier le matériau à changement de phase et les ressorts ensachés respirants. J'apprécie également la douceur de ce lit. Il ressemble à beaucoup d'hybrides de luxe sur le marché actuellement, mais il est un peu moins cher que ces lits.",
                 "– Bridget Chapman, ancienne rédactrice produit senior"
             ],
-            customersay: "Dans les commentaires, il y a quelques catégories de personnes qui semblent avoir le plus de succès avec le Nectar : les dormeurs sur le dos, les dormeurs sur le côté et les couples. Nous pensons que cela est probablement dû à la sensation équilibrée du Nectar, à son excellent soulagement de la pression et à ses bons résultats de transfert de mouvement.",
+            customersay: "De nombreux couples font remarquer à quel point l'Aurora Luxe est rafraîchissant, malgré la chaleur corporelle supplémentaire dégagée par les deux personnes qui dorment ensemble. De nombreux commentaires recommandent aux acheteurs d'opter pour l'oreiller Cloud Pillow Top, qui offre un rembourrage et un rafraîchissement supplémentaires.",
             pros: [
-                "Nous avons constaté que la sensation moyenne du Nectar (6 sur 10 sur notre échelle de fermeté) devrait offrir une sensation équilibrée aux dormeurs sur le dos pesant moins de 250 livres.",
-                "C’est l’un de nos matelas préférés sur le marché aujourd’hui. Vous pouvez actuellement trouver une reine pour moins de 700 $ après réductions.",
-                "La société propose un essai généreux de 365 nuits et une garantie à vie pour protéger les achats de ses clients."
+                "Bien que l'Aurora Luxe soit un matelas hybride de luxe, Brooklyn Bedding possède sa propre usine, de sorte que vous pouvez souvent trouver ce lit à un prix avantageux.",
+                "L'Aurora Luxe est disponible en différentes fermetés, de sorte que la plupart des dormeurs devraient trouver une version adaptée à leurs besoins. Nous avons testé le modèle Medium et nous l'avons préféré pour les dormeurs sur le dos et sur le côté, car ses couches de confort offrent un bon amorti et soulagent les douleurs articulaires.",
+                "Les couches de confort isolent bien les mouvements, mais le matelas reste suffisamment réactif pour les rapports sexuels. Il convient toutefois de noter que le soutien des bords de l'Aurora Luxe n'est pas des plus solides."
             ],
-            cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
-            reviewName: "Examen du matelas Nectar"
+            cons: "Les personnes plus corpulentes qui pèsent plus de 250 livres ont tout intérêt à consulter notre liste des meilleurs matelas pour personnes corpulentes.",
+            reviewName: "Examen du matelas Brooklyn Bedding Aurora Luxe"
         },
         {
             model: "Bear Elite Hybrid Matelas",
@@ -730,26 +786,19 @@ export default function Home() {
             rate: 4,
             cooling: '✓',
             sleep_position: "Dos et ventre",
-            title: "Nectar",
-            sort: "Meilleur matelas pour dormeurs latéraux",
-            content: "Le matelas Nectar original est un lit qui soulage la pression tout en offrant un bon soutien. Il est composé d’une épaisse couche de mousse à mémoire de forme gel, qui permet au dormeur de vraiment s’enfoncer dans sa surface.",
+            title: "Bear Elite Hybrid",
+            sort: "Meilleur matelas pour l'allègement de la pression",
+            content: "The Bear Elite Hybrid is Bear's “ultra-luxurious” model with a traditional mattress feel, plus advanced cooling and support technology. It comes in three different firmness levels: Soft, Medium, and Firm.",
             review: "",
             site: "",
             productState: false,
-            trial_period: "365 nuits",
-            warranty: "Garantie à vie",
-            shipping: "Livraison gratuite",
             recommendationState: false,
+            overviewState: false,
             recommendation: [
                 {
-                    img:"/img/best/joint.svg",
-                    title: "Douleur articulaire",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs articulaires."
-                },
-                {
-                    img:"/img/best/hip.svg",
-                    title: "Douleur à la hanche",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs à la hanche."
+                    img:"/img/best/hotsleeping.svg",
+                    title: "Les dormeurs chauds",
+                    content: "Si vous avez souvent trop chaud pendant votre sommeil, ce matelas devrait vous aider à rester au frais."
                 },
                 {
                     img:"/img/best/backsleeping.svg",
@@ -757,284 +806,290 @@ export default function Home() {
                     content: "Idéal pour les dormeurs sur le dos légers et de poids moyen."
                 },
                 {
-                    img:"/img/best/sidesleeping.svg",
-                    title: "Couchage sur le côté",
-                    content: "Idéal pour les dormeurs latéraux légers et de poids moyen."
+                    img:"/img/best/stomachsleeping.svg",
+                    title: "Sommeil de l'estomac",
+                    content: "Idéal pour les personnes de poids moyen qui dorment sur le ventre."
                 },
             ],
             overview: [
                 {
                     img:"/img/best/material.svg",
                     title: "Matériel",
-                    content: "Mousse, pour une sensation douce, soulageant la pression et beaucoup d'enfoncement."
+                    content: "Hybride"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "120 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
                 },
                 {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Celui-ci a obtenu une note de 6 sur 10 sur notre échelle, nous le classerions donc comme moyennement doux."
+                    content: "Plusieurs options de fermeté"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie à vie"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "1 049 $ à 2 398 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king, California king, split king"
+                    content: "$$$$$"
                 },
             ],
-            expert_opinion: "Tout au long de la nuit, dormir sur le côté exerce une forte pression sur deux zones, l’épaule et la hanche. Si votre matelas est trop ferme, cela peut entraîner un inconfort supplémentaire et même des douleurs inutiles dans ces zones. Pour éviter cela, vous avez besoin d’un matelas anti-pression comme le Nectar Original. \n\n En fait, le Nectar est tellement amorti qu’il a été parfaitement testé pour les douleurs aux épaules et aux hanches. Au cours de ces tests, nous avons également déterminé que ce matelas devait supporter les dormeurs latéraux de moins de 250 livres. Ces résultats ont tous été déterminés par notre carte de pression, qui montrait une pression très faible (uniquement bleue et verte) pendant le sommeil sur le dos et sur le côté.",
+            expert_opinion: `Les matelas anti-escarres sont des options fantastiques pour les personnes souffrant de douleurs articulaires ou souhaitant un amortissement maximal. Nous leur recommandons d'opter pour des matelas plus souples, dotés de couches de confort plus épaisses et plus efficaces, qui soulagent la pression sur les zones sensibles. De nombreux dormeurs latéraux se tournent également vers les matelas souples, car les couches de confort plus épaisses réduisent l'accumulation de pression et allègent le poids exercé sur les hanches et les épaules. Le Bear Elite Hybrid offre trois options de fermeté différentes, mais le modèle Soft est notre matelas préféré pour le soulagement de la pression sur le marché. \n\nLors de notre test d'allègement de la pression, nous avons constaté que les couches de mousse à mémoire de forme nous aidaient à rester amortis, mais que les deux couches de ressorts nous apportaient le soutien nécessaire pour un alignement neutre de la colonne vertébrale. Lors de notre test de pression, le Bear Elite Hybrid s'est avéré être une option solide pour les douleurs au dos, aux épaules et aux hanches ; nous n'avons pas vu d'indications d'accumulation de pression dans ces zones.`,
             testersay: [
                 "Ce que dit notre testeur :",
-                "Ce que je préfère à propos du Nectar Premier, c’est son excellent soulagement de la pression. Ce matelas mi-doux convient parfaitement aux dormeurs latéraux à la recherche d’un confort moelleux. Cela pourrait également convenir aux dormeurs souffrant de douleurs à l’épaule. Si vous dormez sur le dos et recherchez un nouveau matelas pour remplacer votre ancien Nectar Lush (dont la production a été abandonnée), j’envisagerais également le Premier.",
-                "– Bridget Chapman, ancienne rédactrice produit senior"
+                "Je recommanderais le Bear Elite Hybrid à la plupart des personnes qui dorment sur le côté. Je pense qu'ils obtiendront l'allègement de la pression et les contours nécessaires au niveau des épaules et des hanches sur ce lit. Mais s'ils veulent encore plus de rembourrage, j'opterais pour le modèle Soft.",
+                "– Bridget Chapman, ancienne rédactrice en chef des produits"
             ],
-            customersay: "Dans les commentaires, il y a quelques catégories de personnes qui semblent avoir le plus de succès avec le Nectar : les dormeurs sur le dos, les dormeurs sur le côté et les couples. Nous pensons que cela est probablement dû à la sensation équilibrée du Nectar, à son excellent soulagement de la pression et à ses bons résultats de transfert de mouvement.",
+            customersay: "De nombreux clients soulignent la capacité du Bear Elite Hybrid à être moelleux tout en offrant un bon soutien, ce qui en fait une excellente option pour les douleurs articulaires et dorsales.",
             pros: [
-                "Nous avons constaté que la sensation moyenne du Nectar (6 sur 10 sur notre échelle de fermeté) devrait offrir une sensation équilibrée aux dormeurs sur le dos pesant moins de 250 livres.",
-                "C’est l’un de nos matelas préférés sur le marché aujourd’hui. Vous pouvez actuellement trouver une reine pour moins de 700 $ après réductions.",
-                "La société propose un essai généreux de 365 nuits et une garantie à vie pour protéger les achats de ses clients."
+                "Le Bear Elite Hybrid a une housse en Celliant, un matériau rafraîchissant qui peut favoriser la circulation sanguine et la récupération (les études à ce sujet sont encore peu nombreuses, mais prometteuses). Bien que nous n'ayons pas vérifié cela nous-mêmes (sauf pour le refroidissement), ces facteurs font du Bear un choix populaire parmi ceux qui ont un style de vie actif.",
+                "Those with joint pain should feel cradled by the Soft model’s two memory foam layers.",
+                "Le Bear Elite Hybrid isole bien les mouvements, mais reste suffisamment réactif pour les rapports sexuels. Il offre un sommeil plutôt agréable et obtient même un score décent en matière de soutien des bords. Cela signifie qu'il s'agit d'une option solide pour de nombreux couples, qui devraient être en mesure de s'étendre et d'utiliser toute la surface du matelas."
             ],
-            cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
-            reviewName: "Examen du matelas Nectar"
+            cons: "Even though the Bear Elite Hybrid has support from its coils, we still recommend the Firm model and not the Soft model for stomach sleepers.",
+            reviewName: "Examen du matelas Bear Elite Hybrid"
         },
         {
-            model: "Loom & Leaf Matelas",
-            material: "Mousse",
+            model: "DreamCloud Premier Mattress",
+            material: "Hybride",
             firmness: "Plusieurs options de fermeté",
-            mark: "/img/best/loom_best.jpg",
+            mark: "/img/best/dreamCloud.jpg",
             rate: 4,
             cooling: '- -',
             sleep_position: "Dos et côté",
-            title: "Nectar",
-            sort: "Meilleur matelas pour dormeurs latéraux",
-            content: "Le matelas Nectar original est un lit qui soulage la pression tout en offrant un bon soutien. Il est composé d’une épaisse couche de mousse à mémoire de forme gel, qui permet au dormeur de vraiment s’enfoncer dans sa surface.",
+            title: "DreamCloud Premier",
+            sort: "Meilleur matelas pour les dormeurs sur le dos",
+            content: `Le DreamCloud Premier est un matelas hybride de type "bed-in-a-box", très luxueux au toucher, qui offre un soutien ferme et un soulagement souple de la pression. C'est un excellent choix pour les dormeurs sur le dos et les dormeurs mixtes, qui devraient apprécier sa réactivité.`,
             review: "",
             site: "",
             productState: false,
-            trial_period: "365 nuits",
-            warranty: "Garantie à vie",
-            shipping: "Livraison gratuite",
             recommendationState: false,
+            overviewState: false,
             recommendation: [
                 {
-                    img:"/img/best/joint.svg",
-                    title: "Douleur articulaire",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs articulaires."
-                },
-                {
-                    img:"/img/best/hip.svg",
-                    title: "Douleur à la hanche",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs à la hanche."
+                    img:"/img/best/hotsleeping.svg",
+                    title: "Les dormeurs chauds",
+                    content: "Si vous avez souvent trop chaud pendant votre sommeil, ce matelas devrait vous aider à rester au frais."
                 },
                 {
                     img:"/img/best/backsleeping.svg",
                     title: "Dos Dormir",
                     content: "Idéal pour les dormeurs sur le dos légers et de poids moyen."
                 },
-                {
-                    img:"/img/best/sidesleeping.svg",
-                    title: "Couchage sur le côté",
-                    content: "Idéal pour les dormeurs latéraux légers et de poids moyen."
-                },
             ],
             overview: [
                 {
                     img:"/img/best/material.svg",
                     title: "Matériel",
-                    content: "Mousse, pour une sensation douce, soulageant la pression et beaucoup d'enfoncement."
+                    content: "Hybride"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "365 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
                 },
                 {
                     img:"/img/best/firmness.svg",
                     title: "Fermeté",
-                    content: "Celui-ci a obtenu une note de 6 sur 10 sur notre échelle, nous le classerions donc comme moyennement doux."
+                    content: "Ferme : 7/10"
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie à vie"
                 },
                 {
                     img:"/img/best/price.svg",
                     title: "Prix",
-                    content: "1 049 $ à 2 398 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king, California king, split king"
+                    content: "$$$$$"
                 },
             ],
-            expert_opinion: "Tout au long de la nuit, dormir sur le côté exerce une forte pression sur deux zones, l’épaule et la hanche. Si votre matelas est trop ferme, cela peut entraîner un inconfort supplémentaire et même des douleurs inutiles dans ces zones. Pour éviter cela, vous avez besoin d’un matelas anti-pression comme le Nectar Original. \n\n En fait, le Nectar est tellement amorti qu’il a été parfaitement testé pour les douleurs aux épaules et aux hanches. Au cours de ces tests, nous avons également déterminé que ce matelas devait supporter les dormeurs latéraux de moins de 250 livres. Ces résultats ont tous été déterminés par notre carte de pression, qui montrait une pression très faible (uniquement bleue et verte) pendant le sommeil sur le dos et sur le côté.",
+            expert_opinion: `Lorsqu'il s'agit de trouver un bon matelas pour le sommeil dorsal, nous pensons que la chose la plus importante à retenir est qu'il doit y avoir une sensation d'équilibre. Le matelas doit être suffisamment amortissant pour soulager la tension au niveau des hanches, mais il doit également offrir le soutien nécessaire pour maintenir les hanches soulevées et correctement alignées avec le reste de la colonne vertébrale. \n\n Le DreamCloud Premier excelle dans cet équilibre, et c'est pourquoi il est notre matelas préféré pour les dormeurs sur le dos. Lors de nos tests, nous avons constaté qu'il fonctionnait particulièrement bien pour les dormeurs sur le dos pesant moins de 250 livres. Pour ces personnes, il devrait avoir une sensation légèrement plus ferme que la moyenne (environ 7 sur 10 sur notre échelle de fermeté). Notre test de pression a également révélé une faible pression au niveau des hanches pour les personnes dormant sur le dos, ce qui nous indique que le DreamCloud Premier est un bon choix pour les personnes souffrant de maux de dos.`,
             testersay: [
                 "Ce que dit notre testeur :",
                 "Ce que je préfère à propos du Nectar Premier, c’est son excellent soulagement de la pression. Ce matelas mi-doux convient parfaitement aux dormeurs latéraux à la recherche d’un confort moelleux. Cela pourrait également convenir aux dormeurs souffrant de douleurs à l’épaule. Si vous dormez sur le dos et recherchez un nouveau matelas pour remplacer votre ancien Nectar Lush (dont la production a été abandonnée), j’envisagerais également le Premier.",
                 "– Bridget Chapman, ancienne rédactrice produit senior"
             ],
-            customersay: "Dans les commentaires, il y a quelques catégories de personnes qui semblent avoir le plus de succès avec le Nectar : les dormeurs sur le dos, les dormeurs sur le côté et les couples. Nous pensons que cela est probablement dû à la sensation équilibrée du Nectar, à son excellent soulagement de la pression et à ses bons résultats de transfert de mouvement.",
+            customersay: "Sur le site web de DreamCloud, le Premier a plus de 5 500 avis et une note moyenne de 4,5 étoiles sur 5.",
             pros: [
-                "Nous avons constaté que la sensation moyenne du Nectar (6 sur 10 sur notre échelle de fermeté) devrait offrir une sensation équilibrée aux dormeurs sur le dos pesant moins de 250 livres.",
-                "C’est l’un de nos matelas préférés sur le marché aujourd’hui. Vous pouvez actuellement trouver une reine pour moins de 700 $ après réductions.",
-                "La société propose un essai généreux de 365 nuits et une garantie à vie pour protéger les achats de ses clients."
+                "Le DreamCloud Premier a une structure hybride composée de mousse dans sa partie supérieure et de ressorts robustes dans sa partie inférieure. Cela permet au matelas de dormir au frais, car les ressorts laissent beaucoup d'espace pour la circulation de l'air.",
+                "Le Premier, l'un des modèles les plus luxueux de DreamCloud, présente plusieurs caractéristiques haut de gamme, dont une housse en doux mélange de cachemire.",
+                "Les personnes de poids moyen qui dorment sur le ventre devraient bénéficier du soutien dont elles ont besoin pour garder leurs hanches soulevées et alignées avec leurs épaules, ce qui est essentiel pour prévenir les maux de dos."
             ],
-            cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
-            reviewName: "Examen du matelas Nectar"
+            cons: "Lors de nos tests, nous avons constaté que ce lit n'offrait pas un soutien adéquat pour les personnes pesant plus de 250 livres. Pour des lits super-durables qui peuvent supporter un poids supplémentaire, jetez un coup d'œil à notre tour d'horizon des meilleurs matelas pour les personnes corpulentes.",
+            reviewName: "Examen du matelas DreamCloud Premier"
         },
-        {
-            model: "Helix Dawn Matelas",
-            material: "Hybride",
-            firmness: "Ferme : 7.5/10",
-            mark: "/img/best/helix_down_best.jpg",
-            rate: 3,
-            cooling: '- -',
-            sleep_position: "Dos et ventre",
-            title: "Nectar",
-            sort: "Meilleur matelas pour dormeurs latéraux",
-            content: "Le matelas Nectar original est un lit qui soulage la pression tout en offrant un bon soutien. Il est composé d’une épaisse couche de mousse à mémoire de forme gel, qui permet au dormeur de vraiment s’enfoncer dans sa surface.",
-            review: "",
-            site: "",
-            productState: false,
-            trial_period: "365 nuits",
-            warranty: "Garantie à vie",
-            shipping: "Livraison gratuite",
-            recommendationState: false,
-            recommendation: [
-                {
-                    img:"/img/best/joint.svg",
-                    title: "Douleur articulaire",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs articulaires."
-                },
-                {
-                    img:"/img/best/hip.svg",
-                    title: "Douleur à la hanche",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs à la hanche."
-                },
-                {
-                    img:"/img/best/backsleeping.svg",
-                    title: "Dos Dormir",
-                    content: "Idéal pour les dormeurs sur le dos légers et de poids moyen."
-                },
-                {
-                    img:"/img/best/sidesleeping.svg",
-                    title: "Couchage sur le côté",
-                    content: "Idéal pour les dormeurs latéraux légers et de poids moyen."
-                },
-            ],
-            overview: [
-                {
-                    img:"/img/best/material.svg",
-                    title: "Matériel",
-                    content: "Mousse, pour une sensation douce, soulageant la pression et beaucoup d'enfoncement."
-                },
-                {
-                    img:"/img/best/firmness.svg",
-                    title: "Fermeté",
-                    content: "Celui-ci a obtenu une note de 6 sur 10 sur notre échelle, nous le classerions donc comme moyennement doux."
-                },
-                {
-                    img:"/img/best/price.svg",
-                    title: "Prix",
-                    content: "1 049 $ à 2 398 $ (avant toute remise)"
-                },
-                {
-                    img:"/img/best/size.svg",
-                    title: "Taille",
-                    content: "Twin, twin XL, full, queen, king, California king, split king"
-                },
-            ],
-            expert_opinion: "Tout au long de la nuit, dormir sur le côté exerce une forte pression sur deux zones, l’épaule et la hanche. Si votre matelas est trop ferme, cela peut entraîner un inconfort supplémentaire et même des douleurs inutiles dans ces zones. Pour éviter cela, vous avez besoin d’un matelas anti-pression comme le Nectar Original. \n\n En fait, le Nectar est tellement amorti qu’il a été parfaitement testé pour les douleurs aux épaules et aux hanches. Au cours de ces tests, nous avons également déterminé que ce matelas devait supporter les dormeurs latéraux de moins de 250 livres. Ces résultats ont tous été déterminés par notre carte de pression, qui montrait une pression très faible (uniquement bleue et verte) pendant le sommeil sur le dos et sur le côté.",
-            testersay: [
-                "Ce que dit notre testeur :",
-                "Ce que je préfère à propos du Nectar Premier, c’est son excellent soulagement de la pression. Ce matelas mi-doux convient parfaitement aux dormeurs latéraux à la recherche d’un confort moelleux. Cela pourrait également convenir aux dormeurs souffrant de douleurs à l’épaule. Si vous dormez sur le dos et recherchez un nouveau matelas pour remplacer votre ancien Nectar Lush (dont la production a été abandonnée), j’envisagerais également le Premier.",
-                "– Bridget Chapman, ancienne rédactrice produit senior"
-            ],
-            customersay: "Dans les commentaires, il y a quelques catégories de personnes qui semblent avoir le plus de succès avec le Nectar : les dormeurs sur le dos, les dormeurs sur le côté et les couples. Nous pensons que cela est probablement dû à la sensation équilibrée du Nectar, à son excellent soulagement de la pression et à ses bons résultats de transfert de mouvement.",
-            pros: [
-                "Nous avons constaté que la sensation moyenne du Nectar (6 sur 10 sur notre échelle de fermeté) devrait offrir une sensation équilibrée aux dormeurs sur le dos pesant moins de 250 livres.",
-                "C’est l’un de nos matelas préférés sur le marché aujourd’hui. Vous pouvez actuellement trouver une reine pour moins de 700 $ après réductions.",
-                "La société propose un essai généreux de 365 nuits et une garantie à vie pour protéger les achats de ses clients."
-            ],
-            cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
-            reviewName: "Examen du matelas Nectar"
-        },
-
-
         {
             model: "Nolah Evolution Hybrid Matelas",
             material: "Hybride",
-            firmness: "Plusieurs options de fermeté",
-            mark: "/img/best/nolah_best.jpg",
-            rate: 4,
-            cooling: '- -',
-            sleep_position: "Dos et côté"
-        },
-        {
-            model: "Titan Plus",
-            material: "Hybride",
             firmness: "Ferme : 7.5/10",
-            mark: "/img/best/titan_best.jpg",
-            rate: 4,
+            mark: "/img/best/nolah_best.jpg",
+            rate: 3,
             cooling: '- -',
-            sleep_position: "Dos et ventre"
+            sleep_position: "Dos et ventre",
+            title: "Nolah Evolution",
+            sort: "Meilleur matelas hybride",
+            content: "Le Nolah Evolution offre un bon soulagement de la pression et un bon modelage du corps. C'est un excellent choix pour les dormeurs sur le côté, et les dormeurs sur le dos qui aiment un matelas plus doux l'apprécieront également. Le dessus d'oreiller moelleux est également un atout pour les douleurs d'épaules ou de hanches.",
+            review: "",
+            site: "",
+            productState: false,
+            recommendationState: false,
+            overviewState: false,
+            recommendation: [
+                {
+                    img:"/img/best/backsleeping.svg",
+                    title: "Dos Dormir",
+                    content: "Idéal pour les dormeurs sur le dos légers et de poids moyen."
+                },
+                {
+                    img:"/img/best/sidesleeping.svg",
+                    title: "Couchage sur le côté",
+                    content: "Idéal pour les dormeurs latéraux légers et de poids moyen."
+                },
+            ],
+            overview: [
+                {
+                    img:"/img/best/material.svg",
+                    title: "Matériel",
+                    content: "Hybride"
+                },
+                {
+                    img:"/img/best/period.svg",
+                    title: "Période d'essai",
+                    content: "120 nuits",
+                },
+                {
+                    img:"/img/best/shipping.svg",
+                    title: "shipping",
+                    content: "Livraison gratuite",
+                },
+                {
+                    img:"/img/best/firmness.svg",
+                    title: "Fermeté",
+                    content: "Plusieurs options de fermeté",
+                },
+                {
+                    img:"/img/best/warranty.svg",
+                    title: "warranty",
+                    content: "Garantie à vie"
+                },
+                {
+                    img:"/img/best/price.svg",
+                    title: "Prix",
+                    content: "$$$$$"
+                },
+            ],
+            expert_opinion: "En tant que matelas hybride, le Nolah Evolution combine différentes mousses avec une couche inférieure de ressorts pour un mélange de confort et de soutien. Il est disponible en trois niveaux de fermeté différents : Plush, Luxury Firm et Firm. Nous avons testé le Luxury Firm et l'avons trouvé un peu plus doux, avec une note de 6 sur 10 sur notre échelle de fermeté (à titre indicatif, la fermeté moyenne est de 6,5 sur 10). Nous pensons qu'il pourrait convenir à une grande variété de dormeurs. Et comme tout bon hybride, il dispose de plusieurs fonctions de refroidissement.",
+            testersay: [
+                "Ce que dit notre testeur :",
+                "Ce que je préfère à propos du Nectar Premier, c’est son excellent soulagement de la pression. Ce matelas mi-doux convient parfaitement aux dormeurs latéraux à la recherche d’un confort moelleux. Cela pourrait également convenir aux dormeurs souffrant de douleurs à l’épaule. Si vous dormez sur le dos et recherchez un nouveau matelas pour remplacer votre ancien Nectar Lush (dont la production a été abandonnée), j’envisagerais également le Premier.",
+                "– Bridget Chapman, ancienne rédactrice en chef des produits"
+            ],
+            customersay: "Customers praise the customer service at Nolah, saying that the company representatives were patient and accommodating. Many folks had good experiences with returns and refunds as well.",
+            pros: [
+                "Comme il existe trois fermetés différentes, nous pensons qu'il y en a pour tous les goûts. Les personnes qui dorment sur le côté et sur le dos seront probablement plus à l'aise sur le modèle Plush ou Luxury Firm, en fonction de leurs préférences en matière de fermeté, et le modèle Firm peut convenir aux personnes qui dorment sur le ventre.",
+                "The mattress’s proprietary foams are designed to be a cooler alternative to memory foam, and the coils allow lots of air to flow through the bed’s construction. This means the Nolah Evolution should be a good choice for most hot sleepers.",
+                "During testing, we found that the Nolah Evolution had decent motion isolation, which muffles smaller movements. Also, couples can stretch out because of the bed’s exceptional edge support. At eight inches tall, the Nolah Evolution’s springs are wrapped in Edge-Tech support foam, which holds up the sides of the bed, as well as the middle."
+            ],
+            cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
+            reviewName: "Examen du matelas Nolah Evolution"
         },
-        {
-            model: "Leesa Original Matelas",
-            material: "Mousse",
-            firmness: "Doux : 5.5/10",
-            mark: "/img/best/lessa_best.jpg",
-            rate: 4,
-            cooling: '- -',
-            sleep_position: "Combinaison"
-        },
-        {
-            model: "Briiklyn Bedding Plank Firm Matelas",
-            material: "Mousse",
-            firmness: "Plusieurs options de fermeté",
-            mark: "/img/best/brooklyn_plank_best.jpg",
-            rate: 4,
-            cooling: '✓',
-            sleep_position: "Dos et ventre"
-        },
-        {
-            model: "Saatva Matelas",
-            material: "Hybride",
-            firmness: "Mi-ferme : 7/10",
-            mark: "/img/best/birch_best.jpg",
-            rate: 4,
-            cooling: '✓',
-            sleep_position: "Dos et ventre"
-        }
+
+
+        // {
+        //     model: "Helix Dawn Matelas",
+        //     material: "Hybride",
+        //     firmness: "Plusieurs options de fermeté",
+        //     mark: "/img/best/nolah_best.jpg",
+        //     rate: 4,
+        //     cooling: '- -',
+        //     sleep_position: "Dos et côté"
+        // },
+        // {
+        //     model: "Titan Plus",
+        //     material: "Hybride",
+        //     firmness: "Ferme : 7.5/10",
+        //     mark: "/img/best/titan_best.jpg",
+        //     rate: 4,
+        //     cooling: '- -',
+        //     sleep_position: "Dos et ventre"
+        // },
+        // {
+        //     model: "Leesa Original Matelas",
+        //     material: "Mousse",
+        //     firmness: "Doux : 5.5/10",
+        //     mark: "/img/best/lessa_best.jpg",
+        //     rate: 4,
+        //     cooling: '- -',
+        //     sleep_position: "Combinaison"
+        // },
+        // {
+        //     model: "Briiklyn Bedding Plank Firm Matelas",
+        //     material: "Mousse",
+        //     firmness: "Plusieurs options de fermeté",
+        //     mark: "/img/best/brooklyn_plank_best.jpg",
+        //     rate: 4,
+        //     cooling: '✓',
+        //     sleep_position: "Dos et ventre"
+        // },
+        // {
+        //     model: "Saatva Matelas",
+        //     material: "Hybride",
+        //     firmness: "Mi-ferme : 7/10",
+        //     mark: "/img/best/birch_best.jpg",
+        //     rate: 4,
+        //     cooling: '✓',
+        //     sleep_position: "Dos et ventre"
+        // }
     ]);
     const [starState, setStarState] = useState<string>('flex');
 
     return (
         <div>
             <div className="flex min-h-screen flex-col items-center justify-start w-full">
-                <div className="w-full h-[80vh] lg:h-[40vw] bg-[#F1F1F1] flex justify-center items-start mb-20">
+                <div className="w-full h-[80vh] 2xl:h-[40vw] xl:h-[45vw] lg:h-[55vw] bg-[#F1F1F1] flex justify-center items-start mb-20">
                     <div className="flex flex-col items-start justify-between font-marcellus pl-[5%] w-full">
-                        <Link href='/' className={`${styles.manropeFont} text-[#87806A] text-[3vw] md:text-[16px] font-bold text-left w-[100%] pt-[5%] text-wrap`}>
+                        <Link href='/' className={`${styles.manropeFont} text-[#87806A] text-[14px] 2xl:text-[20px] xl:text-[18px] md:text-[16px] font-bold text-left w-[100%] pt-[5%] text-wrap`}>
                             Accueil et meilleur matelas
                         </Link>
                         <div className="w-[90%] flex flex-col justify-start items-start pb-[5%]">
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[5vw] md:text-[3vw] xl:text-[44px] font-bold text-wrap w-[90%] py-[2%] pl-[5%]`}>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] 2xl:text-[48px] xl:text-[44px] md:text-[20px] text-[16px] font-bold text-wrap w-[90%] py-[2%] pl-[5%]`}>
                                 Matelas les mieux notés 2024
-                                <p className={`${styles.manropeFont} text-[#69747F] text-[3vw] md:text-[16px] font-bold 
+                                <p className={`${styles.manropeFont} text-[#69747F] 2xl:text-[18px] text-[20px] md:text-[16px] font-bold 
                                 text-left text-wrap w-[100%]`}>
                                     de Logan Block | Mis à jour en 5/4
                                 </p>
                             </div>
                             <div className="w-full flex justify-start items-start pl-[5%]">
                                 <span >
-                                    <img src="/img/Reviewer.jpg" alt="évaluateur"  className="lg:w-[3.5vw] lg:h-[3.5vw] w-[10vw] rounded-[50px] border-[2px] border-[#F7E4D6]"/>
+                                    <img src="/img/Reviewer.jpg" alt="évaluateur"  className="lg:w-[4vw] lg:h-[4vw] w-[10vw] rounded-[50px] border-[2px] border-[#F7E4D6]"/>
                                 </span>
-                                <p className={`${styles.robotoFont} text-[14px] md:text-[18px] ml-[5%] text-left`}>Écrit par<br></br>
+                                <p className={`${styles.robotoFont} 2xl:text-[20px] text-[14px] md:text-[18px] ml-[3%] text-left`}>Écrit par<br></br>
                                     Logan Block, évaluateur de matelas
                                 </p>
                             </div>
                             <div className="w-full flex justify-start items-start pt-[1%] pl-[5%] gap-[3%]">
                                 <div className="flex justify-start items-start w-[50%]">
                                     <span >
-                                        <img src="/img/method.png" alt="évaluateur"  className="lg:w-[40px] lg:h-[40px] w-[6vw] mt-[5px]"/>
+                                        <img src="/img/method.png" alt="évaluateur"  className="lg:w-[48px] lg:h-[48px] w-[6vw] mt-[5px]"/>
                                     </span>
-                                    <div className={`${styles.manropeFont} text-[#1A1D20] text-[3vw] lg:text-[33px] font-bold text-wrap w-[90%] pl-[5%]`}>
+                                    <div className={`${styles.manropeFont} text-[#1A1D20] 2xl:text-[36px] text-[20px] lg:text-[33px] font-bold text-wrap w-[90%] pl-[5%]`}>
                                         Notre méthodologie
-                                        <p className={`${styles.manropeFont} text-[#69747F] text-[2vw] lg:text-[16px] font-bold 
+                                        <p className={`${styles.manropeFont} text-[#69747F] 2xl:text-[18px] text-[2vw] lg:text-[16px] font-bold 
                                         text-left text-wrap w-[100%]`}>
                                             Nos coachs certifiés en sciences du sommeil ont examiné plus de 300 matelas dans notre laboratoire, testant chacun d'eux sur ses matériaux, son confort, son refroidissement, son soutien et d'autres catégories.
                                         </p>
@@ -1045,9 +1100,9 @@ export default function Home() {
                                     <span >
                                         <img src="/img/check.png" alt="évaluateur"  className="lg:w-[40px] lg:h-[40px] w-[6vw] mt-[5px]"/>
                                     </span>
-                                    <div className={`${styles.manropeFont} text-[#1A1D20] text-[3vw] lg:text-[33px] font-bold text-wrap w-[90%] pl-[5%]`}>
+                                    <div className={`${styles.manropeFont} text-[#1A1D20] 2xl:text-[36px] text-[20px] lg:text-[33px] font-bold text-wrap w-[90%] pl-[5%]`}>
                                         Je viens de mettre à jour
-                                        <p className={`${styles.manropeFont} text-[#69747F] text-[2vw] lg:text-[16px] font-bold 
+                                        <p className={`${styles.manropeFont} text-[#69747F] 2xl:text-[18px] text-[2vw] lg:text-[16px] font-bold 
                                         text-left text-wrap w-[100%]`}>
                                             Nous avons récemment réexaminé nos choix pour les meilleurs matelas de l’année et ajouté des informations supplémentaires de nos testeurs en laboratoire. Si un lit figure sur cette liste, vous pouvez être sûr que nous l’avons personnellement testé et lui avons obtenu une note de 4 sur 5 ou plus.
                                         </p>
@@ -2073,7 +2128,7 @@ export default function Home() {
                     </div>
                 </div>
                 <BottomBar/>
-                </div>
+            </div>
 
         </div>
     );
