@@ -313,7 +313,7 @@ export default function Home() {
             expert_opinion: "Sensorve propose une vaste sélection de matelas, et l'Elekctra se situe en plein milieu en termes de fermeté. Il a une sensation moyenne qui plaira à un large éventail de dormeurs, c'est pourquoi nous l'avons choisi comme notre meilleur choix global. L’un des domaines dans lesquels Sensoreve Elekctra excelle est sa réduction de pression. En vous allongeant dessus, vous obtiendrez un soulagement immédiat au niveau du bas du dos et des épaules, tout en bénéficiant d'un léger soulèvement grâce à la couche de support composée de ressorts emballés individuellement. \n\n Nous le savons parce que nous avons soumis le Sensoreve Elekctra à notre test de cartographie de pression, qui consiste à poser un tapis sur le matelas et à l'utiliser pour suivre les zones où la pression s'accumule le plus. Alors que nous étions allongés sur le tapis, notre carte indiquait principalement du bleu et du vert, indiquant une accumulation de basse pression. Il y avait un peu de jaune au niveau de la hanche, ce qui montre que le Sensoreve Elekctra n’est peut-être pas idéal pour les dormeurs latéraux souffrant de douleurs à la hanche. Mais comme la carte ne montre ni orange ni rouge, la plupart des dormeurs sur le dos et sur le côté devraient être à l’aise sur ce lit.",
             testersay: [
                 "Ce que dit notre testeur :",
-                "I love that the Sensoreve Elekctra offers solid edge support — you can use the whole bed! It also has great motion isolation, which makes it a nice option for couples. I also really like this bed for combination sleepers. The mattress is bouncy, making it easy for you to roll over or switch positions at night without worrying that you’ll get ‘stuck’ in the bed.",
+                "J’aime le fait que le Sensoreve Elekctra offre un support de bord solide – vous pouvez utiliser tout le lit ! Il offre également une excellente isolation des mouvements, ce qui en fait une option intéressante pour les couples. J’aime aussi beaucoup ce lit pour les dormeurs mixtes. Le matelas est gonflable, ce qui vous permet de vous retourner ou de changer de position facilement la nuit sans craindre de rester « coincé » dans le lit.",
                 "– Bridget Chapman, ancienne rédactrice produit senior"
             ],
             customersay: "De nombreuses critiques mentionnent le Helix Sleep Quiz, qui dure 30 secondes et aide les acheteurs à trouver le meilleur modèle Helix pour leurs besoins. De nombreux acheteurs ont acheté le Sensoreve Elekctra à cause du quiz sur le sommeil, et beaucoup d’entre eux ont des critiques positives.",
@@ -330,7 +330,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Mi-ferme : 6.5/10",
             mark: "/img/best/helix_best.jpg",
-            rate: 4,
+            rate: 4.1,
             cooling: '- -',
             sleep_position: "Dos et côté",
             title: "Helix Midnight",
@@ -411,7 +411,7 @@ export default function Home() {
             material: "Mousse",
             firmness: "Doux : 6/10",
             mark: "/img/best/nectar_best.jpg",
-            rate: 4,
+            rate: 4.3,
             cooling: '- -',
             sleep_position: "Dos et côté",
             title: "Nectar",
@@ -496,7 +496,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Mi-ferme : 7/10",
             mark: "/img/best/dreamCloud_best.jpg",
-            rate: 4,
+            rate: 4.4,
             cooling: '✓',
             sleep_position: "Dos",
             title: "DreamCloud",
@@ -580,7 +580,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Plusieurs options de fermeté",
             mark: "/img/best/winkBed_best.jpg",
-            rate: 4,
+            rate: 4.7,
             cooling: '✓',
             sleep_position: "Combinaison",
             title: "WinkBed",
@@ -670,7 +670,7 @@ export default function Home() {
             material: "Ressort intérieur",
             firmness: "Plusieurs options de fermeté",
             mark: "/img/best/saatva_best.jpg",
-            rate: 4,
+            rate: 4.8,
             cooling: '✓',
             sleep_position: "Dos et ventre",
             title: "Saatva Classic",
@@ -755,7 +755,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Plusieurs options de fermeté",
             mark: "/img/best/brooklyn_best.jpg",
-            rate: 4,
+            rate: 4.7,
             cooling: '✓',
             sleep_position: "Dos et côté",
             title: "Brooklyn Bedding Aurora Luxe",
@@ -835,12 +835,12 @@ export default function Home() {
             material: "Hybride",
             firmness: "Plusieurs options de fermeté",
             mark: "/img/best/bear_best.jpg",
-            rate: 4,
+            rate: 4.6,
             cooling: '✓',
             sleep_position: "Dos et ventre",
             title: "Bear Elite Hybrid",
             sort: "Meilleur matelas pour l'allègement de la pression",
-            content: "The Bear Elite Hybrid is Bear's “ultra-luxurious” model with a traditional mattress feel, plus advanced cooling and support technology. It comes in three different firmness levels: Soft, Medium, and Firm.",
+            content: "Le Bear Elite Hybrid est le modèle « ultra-luxueux » de Bear avec une sensation de matelas traditionnelle, ainsi qu'une technologie avancée de refroidissement et de soutien. Il est disponible en trois niveaux de fermeté différents : Doux, Moyen et Ferme.",
             review: "",
             site: "",
             productState: false,
@@ -904,18 +904,18 @@ export default function Home() {
             customersay: "De nombreux clients soulignent la capacité du Bear Elite Hybrid à être moelleux tout en offrant un bon soutien, ce qui en fait une excellente option pour les douleurs articulaires et dorsales.",
             pros: [
                 "Le Bear Elite Hybrid a une housse en Celliant, un matériau rafraîchissant qui peut favoriser la circulation sanguine et la récupération (les études à ce sujet sont encore peu nombreuses, mais prometteuses). Bien que nous n'ayons pas vérifié cela nous-mêmes (sauf pour le refroidissement), ces facteurs font du Bear un choix populaire parmi ceux qui ont un style de vie actif.",
-                "Those with joint pain should feel cradled by the Soft model’s two memory foam layers.",
+                "Les personnes souffrant de douleurs articulaires devraient se sentir bercées par les deux couches de mousse à mémoire de forme du modèle Soft.",
                 "Le Bear Elite Hybrid isole bien les mouvements, mais reste suffisamment réactif pour les rapports sexuels. Il offre un sommeil plutôt agréable et obtient même un score décent en matière de soutien des bords. Cela signifie qu'il s'agit d'une option solide pour de nombreux couples, qui devraient être en mesure de s'étendre et d'utiliser toute la surface du matelas."
             ],
-            cons: "Even though the Bear Elite Hybrid has support from its coils, we still recommend the Firm model and not the Soft model for stomach sleepers.",
+            cons: "Même si le Bear Elite Hybrid bénéficie du soutien de ses ressorts, nous recommandons toujours le modèle Firm plutôt que le modèle Soft pour les dormeurs sur le ventre.",
             reviewName: "Examen du matelas Bear Elite Hybrid"
         },
         {
-            model: "DreamCloud Premier Mattress",
+            model: "DreamCloud Premier Matelas",
             material: "Hybride",
             firmness: "Plusieurs options de fermeté",
             mark: "/img/best/dreamCloud.jpg",
-            rate: 4,
+            rate: 4.6,
             cooling: '- -',
             sleep_position: "Dos et côté",
             title: "DreamCloud Premier",
@@ -990,7 +990,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Ferme : 7.5/10",
             mark: "/img/best/nolah_best.jpg",
-            rate: 3,
+            rate: 4.4,
             cooling: '- -',
             sleep_position: "Dos et ventre",
             title: "Nolah Evolution",
@@ -1054,7 +1054,7 @@ export default function Home() {
             customersay: "Customers praise the customer service at Nolah, saying that the company representatives were patient and accommodating. Many folks had good experiences with returns and refunds as well.",
             pros: [
                 "Comme il existe trois fermetés différentes, nous pensons qu'il y en a pour tous les goûts. Les personnes qui dorment sur le côté et sur le dos seront probablement plus à l'aise sur le modèle Plush ou Luxury Firm, en fonction de leurs préférences en matière de fermeté, et le modèle Firm peut convenir aux personnes qui dorment sur le ventre.",
-                "The mattress’s proprietary foams are designed to be a cooler alternative to memory foam, and the coils allow lots of air to flow through the bed’s construction. This means the Nolah Evolution should be a good choice for most hot sleepers.",
+                "Les mousses exclusives du matelas sont conçues pour être une alternative plus fraîche à la mousse à mémoire de forme, et les ressorts permettent à beaucoup d’air de circuler à travers la construction du lit. Cela signifie que le Nolah Evolution devrait être un bon choix pour la plupart des dormeurs sexy.",
                 "During testing, we found that the Nolah Evolution had decent motion isolation, which muffles smaller movements. Also, couples can stretch out because of the bed’s exceptional edge support. At eight inches tall, the Nolah Evolution’s springs are wrapped in Edge-Tech support foam, which holds up the sides of the bed, as well as the middle."
             ],
             cons: "Les dormeurs sur le ventre trouveront que le Nectar est beaucoup trop mou pour soutenir correctement leur position de sommeil tout au long de la nuit.",
@@ -2157,7 +2157,7 @@ export default function Home() {
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-8 rounded-lg`}>
                                 <p className="font-bold">Achat de matelas en magasin ou en ligne</p>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] my-3 mb-5`}>
-                                    Here at Sleepopolis, we prefer to buy our mattresses online. Here are a few reasons why:
+                                    Chez Sleepopolis, nous préférons acheter nos matelas en ligne. Voici quelques raisons pour lesquelles :
                                 </p>
                                 <div className="flex flex-row w-full items-start justify-left">
                                     <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
