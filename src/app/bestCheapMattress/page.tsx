@@ -13,53 +13,56 @@ export default function Home() {
         title: string;
         content: JSX.Element;
     }
-    const [lookBestState, setLookBestState] = useState<LookBestItem[]>([
+
+    const [faq, setFAQ] = useState<LookBestItem[]>([
         {
-            state: false,
-            title: "Notre méthodologie",
+            state: true,
+            title: "Quel est le prix d'un matelas ?",
             content: <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                Le "meilleur matelas" ultime n’aura pas le même aspect pour tout le monde, mais il y a quelques facteurs qui devraient rester absolument excellents quelle que soit la marque, les matériaux, la valeur et le soutien.
-                <br></br><br></br>
-                Un matelas fabriqué avec des matériaux de qualité garantit la durée de vie d'un matelas et crée un environnement de sommeil plus sûr, sans émissions toxiques.
-                <br></br><br></br>
-                Les matelas ayant une juste valeur ne sont pas nécessairement les moins chers, mais ils sont proposés à un prix raisonnable compte tenu de leur construction globale, de la qualité des matériaux et de leurs caractéristiques particulières.
-                <br></br><br></br>
-                Lorsqu’un matelas offre un soutien solide, cela ne signifie pas qu’il est ferme. Un lit de soutien est capable de soulever le corps dans un alignement neutre de la colonne vertébrale, évitant ainsi les douleurs.
+                Il n'y a pas de "coût unique". Le coût d'un matelas dépend de nombreux facteurs, dont la taille, les matériaux, le type de matelas, etc. Le prix moyen d'un matelas queen-size de marques en ligne bien connues est d'environ 1 500 $, mais il est possible de trouver de bonnes options à des prix inférieurs.
             </p>
         },
         {
             state: false,
-            title: "Fermeté et position de sommeil",
+            title: "Quelle est la meilleure période de l'année pour acheter un matelas ?",
             content: 
             <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                <span className="font-bold">L'échelle de fermeté de l'industrie du matelas mesure les matelas sur une échelle de 1 à 10,</span> où 1 est le matelas le plus doux possible et 10 le plus ferme. Un 6,5 sur 10 est considéré comme un véritable matelas mi-ferme, offrant une sensation équilibrée de confort et de soutien. Lorsque vous décidez quelle fermeté vous convient le mieux, vous devrez tenir compte de votre position de sommeil préférée.
-                <br></br><br></br>
-                Les <span className="font-bold">dormeurs latéraux stricts,</span> ou ceux qui dorment principalement uniquement sur le côté, voudront un matelas plus doux entre 5 et 6,5 sur l’échelle de fermeté. Ils ont besoin d’une surface plus moelleuse pour épouser les hanches et les épaules, les zones sur lesquelles ces personnes exercent le plus de pression lorsqu’elles dorment dans cette position.
-                <br></br><br></br>
-                Les <span className="font-bold">dormeurs stricts sur le ventre</span> ne fonctionnent pas bien avec un matelas moelleux, car cela provoque un désalignement des hanches. Nous recommandons donc un matelas plus ferme, entre 7 et 10 sur l’échelle de fermeté. De cette façon, leurs hanches seront plus susceptibles de rester soulevées et alignées avec le reste de la colonne vertébrale tout au long de la nuit.
-                <br></br><br></br>
-                Les <span className="font-bold">dormeurs stricts sur le dos nécessitent</span> un équilibre entre confort et soutien, de sorte que les mousses souples remplissent la région lombaire et que la couche de service maintient les hanches soulevées. Pour cette raison, nous recommandons à ces acheteurs d’acquérir un matelas d’une fermeté moyenne, soit 6,5 sur 10 sur l’échelle de fermeté.
-                <br></br><br></br>
-                Les <span className="font-bold">dormeurs mixtes</span>, ou ceux qui changent de position de sommeil tout au long de la nuit, devront aborder les choses un peu différemment. Avant tout, ils voudront envisager un matelas réactif, ou un matelas qui les maintient soulevés et facilite le passage du sommeil sur le dos au sommeil sur le côté au sommeil sur le ventre. En ce qui concerne la fermeté, ils voudront trouver quelque chose qui s’adapte à leurs deux ou à la totalité de leurs positions de sommeil préférées.
+                Les week-ends suivants sont généralement ceux où les ventes sont les plus importantes : Presidents Day, Memorial Day, Independence Day, Labor Day et Black Friday. Cela dit, de nombreuses entreprises proposent des offres en permanence, alors consultez la page des coupons sur Sleepopolis pour trouver des réductions exclusives.
             </p>
         },
         {
             state: false,
-            title: "Types de matelas les plus courants",
+            title: "Quelle est la durée de vie d'un matelas bon marché ?",
             content: 
             <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                Bien qu'il existe des centaines et des centaines de matelas différents sur le marché, notre équipe de Sleepopolis aime les regrouper en quatre types.
-                <br></br><br></br>
-                Les <span className="font-bold">matelas à ressorts</span> mettent l’accent sur le service et utilisent des ressorts pour obtenir une sensation de soutien et de rebond. Les couches de confort sont plus fines sur les modèles à ressorts, ce sont donc généralement des lits plus fermes, idéaux pour dormir sur le ventre ou pour dormir ensemble.
-                <br></br><br></br>
-                Les <span className="font-bold">matelas en mousse à mémoire de forme</span> n’utilisent pas de ressorts pour le soutien, ils utilisent des mousses haute densité. Vous pouvez trouver des lits en mousse à mémoire de forme de toutes sortes de fermetés, mais généralement, leurs propriétés de contour et de soulagement de la pression sont plus utiles pour les dormeurs latéraux et ceux souffrant de douleurs articulaires.
-                <br></br><br></br>
-                Les <span className="font-bold">matelas hybrides</span> sont le meilleur des deux mondes et adoptent les caractéristiques des lits à ressorts et en mousse à mémoire de forme. À la base, il y a des ressorts pour le soutien, mais le dessus du lit est recouvert d'une mousse de confort plus moelleuse. La fermeté de ces matelas varie également selon le modèle, et leurs sensations varient considérablement.
-                <br></br><br></br>
-                Les <span className="font-bold">matelas en latex</span> utilisent de la mousse de latex Dunlop ou Talalay pour créer une surface de couchage naturellement rafraîchissante et réactive. De nombreux dormeurs sexy et acheteurs soucieux de l’environnement ont tendance à se tourner vers ce type.
+                De nombreux matelas de qualité sont construits pour durer aussi longtemps que des lits plus chers. En cas de doute, demandez à un représentant de l'entreprise de matelas et vérifiez la garantie. La durée et les conditions de la garantie peuvent vous donner une bonne idée de la fiabilité du matelas. Veillez à suivre les instructions d'entretien pour que votre matelas fonctionne comme prévu à long terme.
             </p>
-        }
+        },
+        {
+            state: false,
+            title: "Je n'ai pas un budget strict. Pourquoi devrais-je acheter un matelas moins cher ?",
+            content: 
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                Un matelas à bas prix peut être une excellente option dans certaines circonstances pour certains acheteurs, même ceux qui n'ont pas besoin de chasser les bonnes affaires. Vous pouvez acheter un matelas économique si vous devez meubler une chambre d'amis, si votre enfant a besoin d'un nouveau lit, si vous envoyez un enfant à l'université ou si vous avez besoin d'un matelas supplémentaire.
+            </p>
+        },
+        {
+            state: false,
+            title: "Quel est le type de matelas le moins cher ?",
+            content: <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                Un lit à ressorts de base ou un matelas en mousse à mémoire de forme sont deux options moins coûteuses. Vous pourrez peut-être opter pour un matelas de meilleure qualité, qui durera plus longtemps et offrira du confort pendant des années.
+            </p>
+        },
+        {
+            state: false,
+            title: "Comment rendre un matelas bon marché plus confortable ?",
+            content: 
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                Le moyen le plus simple de rendre un matelas bon marché plus confortable est d'acheter un sur-matelas. Vous pouvez même trouver des surmatelas de qualité pour moins de 100 $. Ces accessoires sont conçus pour modifier la fermeté de votre matelas, qu'il soit plus doux ou plus ferme. Cela vous permet de créer un niveau de fermeté qui est confortable pour vous et pour vos besoins de sommeil individuels.
+            </p>
+        },
     ]);
+
     const [bestBudgetMattress, setBestBudgetMattress] = useState<object[]>([
         {
             company: 'Nectar',
@@ -94,6 +97,7 @@ export default function Home() {
             description: 'Meilleur matelas rafraîchissant à petit prix',
         },
     ]);
+
     const [mattressData, setMattressData] = useState<any[]>([
         {
         description: "Meilleur dans l'ensemble",
@@ -236,6 +240,7 @@ export default function Home() {
         rate: 4.3
         }
     ]);
+
     const [compareData, setCompareData] = useState<any[]>([
         {
             model: "Nectar Matelas",
@@ -879,11 +884,25 @@ export default function Home() {
             reviewName: "Examen du matelas Silk & Snow Hybrid"
         },
     ]);
+
     const [starState, setStarState] = useState<string>('flex');
     interface ComponentProps {
         index: number;
         setLookBestState: React.Dispatch<React.SetStateAction<LookBestItem[]>>;
     }
+
+    const [pros, setPros] = useState<string []>([
+        "Il est évident que des matelas moins chers vous permettent d'économiser cet argent supplémentaire pour d'autres choses importantes. Vous pouvez même utiliser l'argent économisé pour acheter des accessoires pour matelas, tels que les meilleurs surmatelas ou les meilleurs oreillers.",
+        "La plupart des marques de matelas proposent au moins une option économique, il est donc probable que votre entreprise préférée propose un lit qui tient compte de votre porte-monnaie",
+        "Il existe un certain nombre de matelas bon marché qui permettent néanmoins un sommeil réparateur, une surface confortable et une posture saine."
+    ]);
+
+    const [cons, setCons] = useState<string []>([
+        "Peut ne pas offrir les matériaux et le soutien de haute qualité pour les personnes de forte corpulence.",
+        "Peut ne pas inclure le soulagement de la pression nécessaire pour des conditions spécifiques telles que les douleurs articulaires.",
+        "Les matelas bon marché ne durent pas aussi longtemps qu'un matelas fabriqué avec des matériaux de meilleure qualité et dont le prix est par conséquent plus élevé."
+    ]);
+
     return (
         <div>
             <div className="flex min-h-screen flex-col items-center justify-start w-full">
@@ -946,7 +965,7 @@ export default function Home() {
                 </div>
                 <div className="block text-center w-full mb-[20px] pl-[10%] lg:flex">
                     <div className="w-full lg:w-[65%]">
-                        <div className="flex flex-col w-[90%] items-start justify-center bg-[#cae2f5] rounded-[30px] py-[20px] px-[5%] mb-20">
+                        <div className="flex flex-col w-[90%] items-start justify-center bg-[#d2e1eb] rounded-[30px] py-[20px] px-[5%] mb-20">
                             <p className={`${styles.manropeFont} text-center md:text-left text-3xl font-bold w-full pb-[20px]`}>&nbsp; Les meilleurs matelas économiques de 2024: &nbsp;</p>
                             
                             <div className="flex flex-col justify-between items-start text-[18px] text-left w-full pl-[3%]">
@@ -1393,417 +1412,157 @@ export default function Home() {
                                 </div>
                             )
                         }
-                        {/* <div className="w-[90%]">
-                            <div className="border-2 border-[#E9E9EA] pt-[50px] border-b-1 px-[3%]">
-                                <p className={`${styles.manropeFont} text-2xl font-bold w-full pb-[20px] text-left`}>&nbsp; Matelas Sensoreve Elekctra &nbsp;
+
+                        <div className="w-[90%]">
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left pt-[5%] mb-5`}>
+                                <p className="border-b-2 border-[#324983] pb-2 font-bold">
+                                    Avantages des matelas bon marché
                                 </p>
-                                <div className="block md:flex justify-around items-start text-left w-full pl-[10px] pr-[10px] pt-[2%] bg-white pb-[20px] rounded-[10px]">
-                                    <div className="w-2/9 flex flex-col justify-start items-center">
-                                        <Image
-                                            src={mattressData[0].img} // Replace with the path to your image file
-                                            alt="Sample"
-                                            width={200} // Set the width of the image
-                                            height={50} // Set the height of the image
-                                            className="hidden md:block rounded-[10px] w-[80%] md:w-full mb-5"
-                                        />
-                                    </div>
-                                    <div className="flex flex-col pl-[5%] pr-[5%] w-full md:w-[56%]">
-                                        <p className={`${styles.manropeFont} font-medium text-[#151160] text-[12px] md:text-[18px] pl-[10px]`}>
-                                            L’Helix Midnight a un niveau de soutien et un rebond moyens qui séduiront un large éventail de préférences de sommeil. Le Midnight fait également un travail exceptionnel en isolant les mouvements, ce qui en fait un excellent choix pour les couples qui se déplacent la nuit.
+                            </div>
+                            {
+                                pros.map((item:any, index:any) => 
+                                    <div key={index} className="flex flex-row w-full items-start justify-left">
+                                        <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                        text-left px-5`}>
+                                            • &nbsp;
                                         </p>
-                                        <p className={`${styles.manropeFont} font-medium text-[#a19dfb] text-[12px] md:text-[18px] pl-[10px] underline pt-2`}>
-                                            Vérifier les avis
+                                        <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                        text-left text-wrap`}>
+                                            {item}
                                         </p>
                                     </div>
-                                    <div className = "flex flex-col justify-center items-center w-2/9 mr-[10px]">
-                                        <div className={starState}>
-                                            <div className="filter invert-85 sepia-22 saturate-857 hue-rotate-336 brightness-95 contrast-109 flex flex-row flex-nowrap items-center mb-[10px] text-[#FDCC80]">
-                                                <span className={`${styles.robotoFont} text-[18pt] md:text-[2vw] lg:text-[1vw] text-[#1A1D20]`}>{mattressData[0].rate}/5.0</span>
-                                                <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[30px] h-full"/></span>
-                                                <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[30px] h-full"/></span>
-                                                <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[30px] h-full"/></span>
-                                                <span ><img src="/img/star.svg" alt="My SVG Image"  className="w-[30px] h-full"/></span>
-                                                <span ><img src={`${mattressData[0].rate>4.7 ? "/img/star_half.svg" : "/img/star_empty.svg"}`} alt="My SVG Image"  className="w-[30px] h-full"/></span>						
-                                            </div>
-                                        </div>
-                                        <button className={`${styles.manropeFont} bg-[#FFFFFF] hover:bg-[#F1F1F1] text-blue font-bold px-4 rounded-[10px] w-full py-4 mt-[20px] md:mt-5 border border-[#F7e4D6]`}>
-                                            Visit Site
-                                        </button>
-                                    </div>
-                                </div>
+                                )
+                            }
+                        </div>
+                        
+                        <div className="w-[90%]">
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left pt-[5%] mb-5`}>
+                                <p className="border-b-2 border-[#324983] pb-2 font-bold">
+                                    Les inconvénients des matelas bon marché
+                                </p>
                             </div>
-                            <div className="border-2 border-[#E9E9EA] border-t-0">
-                                <div className={`${styles.manropeFont} text-xl font-bold w-full py-[10px] text-center bg-[#f7fafc] border-b-4 border-[#84c6f2] hover:text-[#FDCC80]`}>Aperçu du matelas</div>
-                                <div className="block md:flex justify-center items-start text-center ml-[12.5%] gap-[5%] pl-[10px] pr-[10px] pt-[2%] bg-white pb-[20px] rounded-[10px] w-[70%]">
-                                    <div className="flex flex-row justify-start items-start w-[50%]">
-                                        <Image
-                                            src="/img/material.png" // Replace with the path to your image file
-                                            alt="Sample"
-                                            width={100} // Set the width of the image
-                                            height={100} // Set the height of the image
-                                            className="w-[65px]"
-                                        />
-                                        <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[16px] font-bold text-wrap pl-[5%] text-left`}>
-                                            Matériel
-                                            <p className={`${styles.rubikFont} text-[#69747F] text-[2vw] lg:text-[14px] font-bold 
-                                            text-left text-wrap w-[100%]`}>
-                                                Il s’agit d’un matelas hybride, ce qui signifie qu’il combine des mousses souples et des ressorts robustes pour un équilibre entre confort et soutien.
-                                            </p>
-                                        </div>
+                            {
+                                cons.map((item:any, index:any) => 
+                                    <div key={index} className="flex flex-row w-full items-start justify-left">
+                                        <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                        text-left px-5`}>
+                                            • &nbsp;
+                                        </p>
+                                        <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                        text-left text-wrap`}>
+                                            {item}
+                                        </p>
                                     </div>
-                                    <div className="flex flex-row justify-start items-start w-[50%]">
-                                        <Image
-                                            src="/img/firmness.svg" // Replace with the path to your image file
-                                            alt="Sample"
-                                            width={100} // Set the width of the image
-                                            height={100} // Set the height of the image
-                                            className="w-[65px]"
-                                        />
-                                        <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[16px] font-bold text-wrap pl-[5%] text-left`}>
-                                            Fermeté
-                                            <p className={`${styles.rubikFont} text-[#69747F] text-[2vw] lg:text-[14px] font-bold 
-                                            text-left text-wrap w-[100%]`}>
-                                                Nous avons attribué au Sensoreve Elekctra une note de 6 sur 10 sur l’échelle de fermeté, où 1 est le plus doux et 10 le plus ferme. Cela signifie qu’il est légèrement plus doux que la norme de l’industrie (6,5 sur 10).
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="block md:flex justify-center items-start text-center ml-[12.5%] gap-[5%] pl-[10px] pr-[10px] pt-[2%] bg-white pb-[20px] rounded-[10px] w-[70%]">
-                                    <div className="flex flex-row justify-start items-start w-[50%]">
-                                        <Image
-                                            src="/img/price.svg" // Replace with the path to your image file
-                                            alt="Sample"
-                                            width={100} // Set the width of the image
-                                            height={100} // Set the height of the image
-                                            className="w-[65px]"
-                                        />
-                                        <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[16px] font-bold text-wrap pl-[5%] text-left`}>
-                                            Prix
-                                            <p className={`${styles.rubikFont} text-[#69747F] text-[2vw] lg:text-[14px] font-bold 
-                                            text-left text-wrap w-[100%]`}>
-                                                539,99 € - 749,99 € (avant toute remise)
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="flex flex-row justify-start items-start w-[50%]">
-                                        <Image
-                                            src="/img/size.png" // Replace with the path to your image file
-                                            alt="Sample"
-                                            width={100} // Set the width of the image
-                                            height={100} // Set the height of the image
-                                            className="w-[65px]"
-                                        />
-                                        <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[16px] font-bold text-wrap pl-[5%] text-left`}>
-                                            Taille
-                                            <p className={`${styles.rubikFont} text-[#69747F] text-[2vw] lg:text-[14px] font-bold 
-                                            text-left text-wrap w-[100%]`}>
-                                                Twin, twin XL, full, queen, king.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                )
+                            }
+                        </div>
+                        
+                        <div className="w-[90%]">
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left pt-[5%] mb-5`}>
+                                <p className="border-b-2 border-[#324983] pb-2 font-bold">
+                                    Comment savoir si vous achetez un matelas de qualité ?
+                                </p>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Opinion d'expert</p>
-                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                            <div className="flex flex-row w-full items-start justify-left">
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%]`}>
-                                    Sensorve propose une vaste sélection de matelas, et l'Elekctra se situe en plein milieu en termes de fermeté. Il a une sensation moyenne qui plaira à un large éventail de dormeurs, c'est pourquoi nous l'avons choisi comme notre meilleur choix global. L’un des domaines dans lesquels Sensoreve Elekctra excelle est sa réduction de pression. En vous allongeant dessus, vous obtiendrez un soulagement immédiat au niveau du bas du dos et des épaules, tout en bénéficiant d'un léger soulèvement grâce à la couche de support composée de ressorts emballés individuellement.
+                                text-left text-wrap`}>
+                                    L'équilibre le plus important à trouver lors de la recherche d'un matelas économique de qualité est, bien sûr, entre le prix et la durabilité. Vous souhaitez un matelas durable et bon pour l'alignement de votre colonne vertébrale, sans que votre portefeuille n'en pâtisse trop.
                                     <br></br><br></br>
-                                    Nous le savons parce que nous avons soumis le Sensoreve Elekctra à notre test de cartographie de pression, qui consiste à poser un tapis sur le matelas et à l'utiliser pour suivre les zones où la pression s'accumule le plus. Alors que nous étions allongés sur le tapis, notre carte indiquait principalement du bleu et du vert, indiquant une accumulation de basse pression. Il y avait un peu de jaune au niveau de la hanche, ce qui montre que le Sensoreve Elekctra n’est peut-être pas idéal pour les dormeurs latéraux souffrant de douleurs à la hanche. Mais comme la carte ne montre ni orange ni rouge, la plupart des dormeurs sur le dos et sur le côté devraient être à l’aise sur ce lit.
+                                    Il est donc recommandé de rechercher des mousses de meilleure qualité (si possible de la mousse à mémoire de forme plutôt que de la mousse poly). Une couche de soutien solide, comprenant une mousse de base haute densité ou des ressorts, voire les deux, est également un élément à prendre en compte.
+                                    <br></br><br></br>
+                                    Heureusement, tous les matelas présentés dans ce tour d'horizon sont des options de haute qualité qui ne coûtent pas les yeux de la tête. Mais nous vous donnons également quelques conseils dans notre section Soldes et Coupons, afin que vous puissiez trouver les meilleures affaires sur vos marques préférées.
                                 </p>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-8 rounded-lg`}>
-                                <span className="font-bold">Ce que dit notre testeur :</span> 
-                                <span className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%]`}>
-                                    &nbsp;“I love that the Sensoreve Elekctra offers solid edge support — you can use the whole bed! It also has great motion isolation, which makes it a nice option for couples. I also really like this bed for combination sleepers. The mattress is bouncy, making it easy for you to roll over or switch positions at night without worrying that you’ll get ‘stuck’ in the bed.” –&nbsp;
-                                </span>
-                                <span className="font-bold">Bridget Chapman, former senior product editor</span>
-                            </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Ce que disent les clients</p>
-                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%]`}>
-                                    De nombreuses critiques mentionnent le Helix Sleep Quiz, qui dure 30 secondes et aide les acheteurs à trouver le meilleur modèle Helix pour leurs besoins. De nombreux acheteurs ont acheté le Sensoreve Elekctra à cause du quiz sur le sommeil, et beaucoup d’entre eux ont des critiques positives.
-                                </p>
-                            </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Points forts du matelas Sensoreve Elekctra</p>
-                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Le transfert de mouvement fait référence à la quantité de mouvement qui se répercute sur un matelas. Nous le déterminons en laissant tomber une bille d'acier sur le lit et en mesurant ses vibrations avec un sismomètre. Le Sensoreve Elekctra a un faible transfert de mouvement, ce qui signifie que les partenaires ne se sentiront probablement pas bouger la nuit.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les dormeurs sur le dos devraient apprécier l’équilibre entre confort et soutien du Sensoreve Elekctra. Ils bénéficieront d’un certain rembourrage dans la région lombaire et les ressorts aideront à maintenir leur colonne vertébrale alignée de manière neutre.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les dormeurs latéraux nécessitent également un mélange de confort et de soutien. Ils devraient bénéficier d’un certain soulagement de la pression et d’un contour au niveau de leurs épaules et de leurs hanches. Ce sont les zones sur lesquelles ils exercent le plus de pression pendant leur sommeil. Pour un soulagement supplémentaire de la pression, nous recommandons le Sensoreve Elekctra.
-                                    </p>
-                                </div>
-                            </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Ce qu’il faut garder à l’esprit à propos du matelas Sensoreve Elekctra</p>
-                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        De toutes les positions de sommeil, les dormeurs sur le ventre ont besoin de plus de soutien, et ils ne l’obtiendront probablement pas sur le Sensoreve Elekctra.
-                                    </p>
-                                </div>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap pt-5`}>
-                                    Learn more in our full <a className="text-blue-900 underline">Sensoreve Elekctra mattress review</a> or click here for our best deal.  Find additional options in our roundup of the <a className="text-blue-900 underline">best online mattresses</a>.
-                                </p>
-                            </div>
-                        </div> */}
+                        </div>
 
                         <div className="w-[90%]">
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left pt-[5%]`}>
                                 <p className="border-b-2 border-[#324983] pb-2 font-bold">
-                                    Comment trouver le meilleur matelas pour vous
+                                    Les éléments à prendre en compte lors de l'achat d'un matelas bon marché
                                 </p>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
                                 text-left text-wrap w-[100%] pt-5`}>
-                                    Si vous n’avez pas trouvé le matelas que vous souhaitiez ci-dessus, vous pourriez bénéficier de l’un de nos guides de matelas plus spécifiques. Vous trouverez ci-dessous quelques-unes de nos recommandations basées sur le type de corps, l’âge, la position de sommeil, la gestion de la douleur, etc. Vous pouvez également consulter notre guide sur la façon de <a className="text-blue-900 underline">choisir un matelas</a> qui répond à vos besoins, et si vous vous sentez toujours dépassé, pensez à répondre à notre <a className="text-blue-900 underline">quiz sur le matelas</a> pour une recommandation personnalisée.
+                                    Que faut-il prendre en compte à part le prix ? Lisez ci-dessous pour choisir un matelas pour des informations plus détaillées.
                                 </p>
                             </div>
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Position de sommeil</p>
+                                <p className="font-bold">Ventes et coupons</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les dormeurs latéraux réussissent mieux sur des matelas souples à moyennement fermes qui amortissent les points de pression au niveau de leurs hanches et de leurs épaules.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les dormeurs sur le dos ont besoin d’un équilibre approprié entre soulagement de la pression et soutien pour maintenir leur colonne vertébrale en ligne droite, et ils le trouveront généralement dans un matelas moyennement ferme.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les dormeurs sur le ventre ont besoin d’un lit ferme qui maintient leurs hanches alignées avec leurs épaules.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les dormeurs mixtes préfèrent généralement les matelas sur lesquels il est facile de se déplacer et de changer de position. Nous recommandons à ces dormeurs de s’en tenir à un matelas gonflable avec une sensation moyennement ferme.
-                                    </p>
-                                </div>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap`}>
+                                    Si vous êtes à la recherche d'un matelas bon marché, vous pouvez rechercher les soldes. N'oubliez pas de vérifier les soldes et les bons de réduction non seulement pour les marques de matelas bon marché, mais aussi pour toutes les marques qui vous intéressent. Pendant les week-ends de soldes, comme le Black Friday et le Memorial Day, vous pouvez obtenir un matelas plus cher à un prix avantageux.
+                                </p>
                             </div>
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Construction du matelas</p>
+                                <p className="font-bold">Frais d'expédition</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les matelas à ressorts reposent sur des systèmes de support à ressorts. Ils ont souvent une sensation ferme et rebondissante et fonctionnent bien pour les dormeurs sur le ventre, sur le dos et mixtes.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les matelas hybrides utilisent un mélange de mousse et de support à ressorts, et leurs sensations varient considérablement.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les matelas en mousse ne comprennent aucun support de ressorts. Ils utilisent des couches de mousse pour amortir et soutenir le dormeur. Les matelas en mousse à mémoire de forme sont un type populaire de matelas entièrement en mousse qui offre beaucoup de contour du corps et un soulagement de la pression.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les matelas en latex sont souvent fabriqués à partir de mousse de latex écologique Dunlop ou Talalay. Ces lits sont naturellement rafraîchissants et gonflables. Les dormeurs mixtes et les personnes lourdes aiment souvent ces lits.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les matelas pneumatiques utilisent l’air pour soutenir le dormeur pendant la nuit.
-                                    </p>
-                                </div>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap`}>
+                                    N'oubliez pas de consulter les frais d'expédition calculés. Vous devrez peut-être payer des frais d'expédition. Un lit moins cher sans livraison gratuite peut finir par être plus cher qu'un matelas plus cher avec livraison gratuite. C'est une bonne idée de vérifier le prix final avant de finaliser votre achat.
+                                </p>
                             </div>
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Points forts du matelas bouleau naturel</p>
+                                <p className="font-bold">Période d'essai et garantie</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
                                 text-left text-wrap w-[100%]`}>
-                                    Choisir une surface de sommeil qui aide à atténuer la douleur est particulièrement important pour les dormeurs qui souffrent de douleur chronique. Nous avons sélectionné des options de matelas qui pourraient soulager plusieurs types de douleur différents.
+                                    La période d'essai et la durée de la garantie sont des facteurs importants à prendre en compte, en particulier lors du choix d'un matelas économique. Choisissez un lit offrant une période d'essai de 100 nuits ou plus. Si votre nouveau lit n'est pas confortable, vous voudrez avoir la possibilité de le retourner.
+                                    <br></br><br></br>
+                                    De même, les matelas bon marché assortis d'une garantie de 10 ans (ou plus) sont des investissements plus sûrs que les lits bon marché sans garantie. Un matelas abordable assorti d'une garantie généreuse est généralement bien fabriqué et pourra être remplacé s'il commence à s'affaisser rapidement. Étant donné que l'affaissement prématuré est un risque lors de l'achat d'un matelas bon marché, une bonne politique de garantie est une bonne mesure d'assurance qualité.
                                 </p>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-8 rounded-lg`}>
-                                <p className="font-bold">Comment votre matelas peut-il soulager la douleur ?</p>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap mt-[5%] text-left`}>
+                                <p className="font-bold">Type de carrosserie</p>
+                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                                <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left bg-[#eef5f9] rounded-lg px-4 py-8 mb-4`}>
+                                    <p className="pb-2 font-bold">
+                                        Note sur le type de corps
+                                    </p>
+                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                    text-left text-wrap w-[100%] pt-5`}>
+                                        Nous reconnaissons que les gens sont de toutes les formes et de toutes les tailles, et que les gens de toutes les tailles méritent un matelas qui convient à leur type de corps. Nous utilisons les catégories de poids léger, moyen et lourd pour classer plus facilement les dormeurs en fonction de la performance des matelas pour leur type de corps, car la plupart des matelas sont conçus pour le groupe que nous appelons "moyen" (130 à 250 livres).
+                                    </p>
+                                </div>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%]`}>
-                                    Un matelas offrant un soulagement et un soutien importants de la pression est essentiel pour soulager la douleur. Sans soulagement de la pression, vous pouvez vous réveiller raide et endolori – ce que nous savons que vous ne voulez pas. En plus du soulagement autour de vos points de pression, votre corps a besoin de soutien pour parvenir à l’alignement de la colonne vertébrale.
-                                    <br></br><br></br>
-                                    Voici les zones qui ont le plus besoin de soutien en fonction de votre position de sommeil préférée :
+                                    Avant d'acheter un matelas, tenez compte de votre morphologie. Les matelas économiques sont souvent plus efficaces et durent plus longtemps pour les dormeurs de moins de 130 livres, car ils ont besoin de moins de soutien. Les personnes plus lourdes (plus de 250 livres) doivent être prudentes lors de l'achat d'un matelas bon marché ; ces dormeurs devraient opter pour un matelas hybride ou à ressorts bon marché. Ces matelas dureront plus longtemps et offriront un meilleur soutien qu'un matelas en mousse moins cher. Vous ne voulez pas acheter un matelas bon marché pour le voir s'user rapidement, ce qui vous coûterait plus cher à long terme.
                                 </p>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap`}>
-                                        <span className="font-bold">Dormeurs sur le dos :</span>&nbsp;bas du dos et épaules
-                                    </div>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap`}>
-                                        <span className="font-bold">Dormeurs latéraux :</span>&nbsp;épaules et hanches
-                                    </div>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap`}>
-                                        <span className="font-bold">Dormeurs sur le ventre : </span>&nbsp;Hanches
-                                    </div>
-                                </div>
                             </div>
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Ce qu’il faut garder à l’esprit à propos du matelas naturel en bouleau</p>
+                                <p className="font-bold">Décharge de pression</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
                                 text-left text-wrap w-[100%]`}>
-                                    Si vous souhaitez un matelas durable et de qualité, consultez les meilleurs matelas bon marché.
+                                    Le soulagement de la pression est essentiel pour les personnes qui dorment sur le côté et celles qui souffrent de douleurs articulaires. Ces dormeurs ont souvent besoin d'un coussin supplémentaire pour soulager la douleur et la raideur nocturnes. En général, les matelas en mousse à mémoire de forme sont de bonnes options pour ces dormeurs. Les alternatives à la mousse à mémoire de forme peuvent vous offrir le soulagement de la pression que vous recherchez à un prix réduit.
+                                </p>
+                                <img src="/img/cheap/memory_foam.jpg" alt="Lucid Mattress" className="text-center w-[80%] my-5 ml-[10%]"/>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[10px] lg:text-[12px] 
+                                text-center text-wrap w-[100%] py-5`}>
+                                    La mousse à mémoire de forme peut permettre un enfoncement profond.
+                                </p>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap w-[100%]`}>
+                                    Chez Somnopolis, nous testons la performance d'un matelas en matière de soulagement de la pression à l'aide d'un appareil appelé carte de pression. Nous étalons la carte sur la surface du matelas et nous nous allongeons dessus. Un ordinateur utilise ensuite un code couleur d'imagerie thermique pour afficher la pression exercée sur notre corps lorsque nous sommes couchés sur le dos, sur le côté et sur le ventre. Nous pouvons ainsi recommander le matelas adapté aux différentes positions de sommeil. Par exemple, si la carte n'indique que peu ou pas de pression lorsque nous sommes allongés sur le côté, le matelas conviendra aux personnes qui dorment sur le côté.
+                                </p>
+                                <img src="/img/cheap/pressure.jpg" alt="Lucid Mattress" className="text-center w-[80%] my-5 ml-[10%]"/>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[10px] lg:text-[12px] 
+                                text-center text-wrap w-[100%] py-5`}>
+                                    Résultats de la carte de pression du Nectar.
                                 </p>
                             </div>
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Dormeurs chauds / Technologie de refroidissement</p>
+                                <p className="font-bold">Niveau de fermeté</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
                                 text-left text-wrap w-[100%]`}>
-                                    Si vous recherchez un matelas qui dort au frais, nous vous recommandons d’opter pour un matelas en latex, hybride ou à ressorts. Ces lits ont tendance à favoriser la circulation de l’air, ce qui est important pour maintenir une température basse la nuit.
+                                    Pensez toujours à la fermeté idéale de votre matelas. De nombreux dormeurs préfèrent les matelas "universellement confortables" de fermeté moyenne. En règle générale, les dormeurs sur le côté devraient opter pour des matelas souples à moyennement souples, les dormeurs sur le dos et les dormeurs combinés pour des matelas moyennement fermes, et les dormeurs sur le ventre pour des matelas fermes à extra-fermes. Ces fermetés devraient vous aider à obtenir un alignement neutre de la colonne vertébrale et à répondre aux besoins uniques de soulagement de la pression de votre position de sommeil.
                                 </p>
-                            </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Type de corps et poids corporel</p>
-                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] bg-[#eef5f9] py-8 rounded-lg px-4 mb-3`}>
-                                    Nous reconnaissons que les gens sont de toutes formes et de toutes tailles, et que les personnes de toutes tailles méritent un matelas adapté à leur morphologie. Nous utilisons les catégories de poids léger, moyen et lourd pour catégoriser plus facilement les dormeurs en fonction des performances des matelas pour leur type de corps, car la plupart des matelas sont conçus pour le groupe que nous appelons "moyen" (130 à 250 livres).
-                                </p>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
+                                <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left bg-[#eef5f9] rounded-lg px-4 py-8 my-4`}>
+                                    <p className="pb-2 font-bold">
+                                        Comment nous évaluons la fermeté
                                     </p>
                                     <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les dormeurs de moins de 130 livres trouveront souvent des matelas plus fermes que les dormeurs de poids moyen. Nous recommandons à ces dormeurs de jeter un œil aux meilleurs matelas moelleux pour être sûrs qu’ils obtiennent le soulagement de la pression dont ils ont besoin.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les dormeurs de plus de 250 livres ont besoin d’un lit offrant un soutien supplémentaire pour éviter l’affaissement prématuré du matelas. La durabilité globale et le support des bords sont généralement des préoccupations importantes.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les enfants ont un corps qui grandit et évolue rapidement et qui a des besoins spécifiques en matière de sommeil.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les seniors (plus de 65 ans) préfèrent généralement les matelas à sensation plus traditionnels qui offrent mobilité et soutien, mais qui restent doux pour les articulations sensibles.
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        Les adolescents continuent de grandir et ont également des besoins spécifiques en matière de sommeil.
+                                    text-left text-wrap w-[100%] pt-5`}>
+                                        At Somnopolis, we rate firmness on a scale from 1 to 10, with 1 being so soft it’s like sleeping on a giant cotton ball and 10 being so firm it’s like sleeping on concrete. We use 6.5 as the standard for medium-firm and most beds we test fall into the 5 to 8 firmness range.
                                     </p>
                                 </div>
                             </div>
@@ -1812,259 +1571,202 @@ export default function Home() {
                         <div className="w-[90%]">
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left pt-[5%]`}>
                                 <p className="border-b-2 border-[#324983] pb-2 font-bold">
-                                    Comment nous avons choisi le meilleur matelas de 2024
+                                    Comment trouver un matelas abordable
                                 </p>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
                                 text-left text-wrap w-[100%] pt-5`}>
-                                    Lorsque nous testons un nouveau matelas, nous nous allongeons (sans surprise) dessus pour vous donner notre avis personnel sur sa sensation, mais nous ne vous demandons pas de nous croire sur parole. Une fois que nous avons essayé le matelas nous-mêmes, nous le testons avec une carte de pression, un sismomètre et d’autres méthodes pour vous donner des mesures objectives du transfert de mouvement, du soulagement de la pression, du rebond et des capacités de soutien des bords d’un lit. Nous évaluons également nos matelas de test couche par couche pour examiner leurs matériaux et leur technologie de refroidissement. Cela nous aide à garantir que chaque marque tient ses promesses marketing.
+                                    Avec un tel choix d'options bon marché, comment décider quel matelas acheter ? Trouvons le lit de vos rêves.
                                 </p>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">L'allègement de la pression</p>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Faites vos recherches</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] pt-5`}>
-                                    L'un de nos tests les plus importants concerne la décompression. Le soulagement de la pression est une mesure de la répartition uniforme de votre poids sur un matelas. Un matelas avec un excellent soulagement de la pression amortit les points de pression au niveau des épaules, des hanches et du bas du dos pour vous empêcher de vous réveiller raide et endolori le matin.
-                                </p>
-                                <img src="/img/lucid_mattress.jpg" alt="Lucid Mattress" className="text-center w-[60%] my-5 ml-[20%]"/>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] pt-5`}>
-                                    Pour tester la décompression, nous utilisons un test de carte de pression. Un évaluateur s'allonge sur un tapis à pression (comme celui que vous voyez ci-dessus) dans plusieurs positions de sommeil différentes. Le tapis enregistre la pression exercée et crée une « carte de pression » qui montre les zones de basse pression en bleu, de moyenne basse pression en vert, de moyenne pression en jaune, de moyenne haute pression en orange et de haute pression en rouge. Ces résultats nous permettent de savoir dans quelle mesure un matelas soulagera la pression dans chacune des principales positions de sommeil. Jetez un œil à un exemple de résultat de carte de pression ci-dessous.
-                                </p>
-                                <img src="/img/sleep_presure.jpg" alt="Lucid Mattress" className="text-center w-[80%] my-5 ml-[10%]"/>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[10px] lg:text-[12px] 
-                                text-center text-wrap w-[100%] pt-5`}>
-                                    Un aperçu d'une carte de pression illustrant une bonne décompression.
+                                text-left text-wrap`}>
+                                    Lorsque vient le moment de comparer les prix, sachez ce qui entre dans la fabrication d'un matelas moins cher. Des couches de confort plus fines, une plus grande quantité de mousse poly et de la mousse à mémoire de forme sans propriétés rafraîchissantes contribuent à réduire les coûts. La construction tout en mousse ou les ressorts en acier de plus grand calibre sont d'autres mesures permettant de réduire les coûts. Les matelas sans certification en matière de sécurité ou d'environnement sont également moins chers, mais n'offrent pas nécessairement les mêmes normes de qualité.
                                 </p>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Rebond</p>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Comprendre vos besoins</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] pt-5`}>
-                                    Notre test de rebond nous permet de connaître la réactivité d'un matelas. Ceci est important pour les dormeurs mixtes qui ont besoin d’un lit réactif, facile à déplacer et à changer de position.
-                                    <br></br><br></br>
-                                    Notre test de rebond est assez simple, il suffit de déposer une bille d'acier de 10 livres sur le matelas et de mesurer la hauteur à laquelle elle rebondit. Plus la balle rebondit haut, plus le matelas est réactif. Les matelas en latex ont tendance à très bien réussir ce test. Jetez un œil à nous effectuant le test de rebond ci-dessous.
-                                </p>
-                                <img src="/img/bounce.jpg" alt="Lucid Mattress" className="text-center w-[60%] my-5 ml-[20%]"/>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[10px] lg:text-[12px] 
-                                text-center text-wrap w-[100%] pt-5`}>
-                                    Test du rebond.
+                                text-left text-wrap`}>
+                                    Votre nouvel achat vous servira-t-il de support à vous seul ou à votre partenaire ? Êtes-vous tous deux de poids moyen ou aurez-vous besoin d'un soutien supplémentaire ? La position de sommeil est également importante. Une fermeté accrue est importante si vous avez tendance à dormir sur le ventre. Dressez une liste de vos préférences, telles que le soutien des bords, la limitation du transfert de mouvement et le toucher moelleux. N'oubliez pas qu'il existe un matelas économique pour presque tout le monde.
                                 </p>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Transfert de mouvement</p>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Boutique en ligne</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] pt-5`}>
-                                    Un autre test important est notre test de transfert de mouvement. Le transfert de mouvement est une mesure de la quantité de mouvement qui se déplace d’un côté à l’autre du matelas. Si vous dormez avec un partenaire ou un animal de compagnie, cela permet de déterminer si vous vous sentirez ou non dérangé par le fait qu'ils se retournent et se retournent la nuit. Nous utilisons un sismomètre et une bille d'acier (comme vous le voyez ci-dessous) pour mesurer le transfert de mouvement.
+                                text-left text-wrap w-[100%]`}>
+                                    Lorsque le prix est un facteur décisif, recherchez les meilleurs matelas en ligne. Sans les dépenses liées aux salles d'exposition, aux vendeurs et aux autres frais généraux, les sociétés de matelas en ligne sont plus compétitives en termes de coûts. Les sites Web consacrés aux matelas proposent des descriptions détaillées, des avis et des photos de leurs produits. Ils proposent même des chats en direct avec des spécialistes du service clientèle.
                                 </p>
-                                <img src="/img/transfer.jpg" alt="Lucid Mattress" className="text-center w-[60%] my-5 ml-[20%]"/>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[10px] lg:text-[12px] 
-                                text-center text-wrap w-[100%] pt-5`}>
-                                    Exécution d'un test de transfert de mouvement.
-                                </p>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] pt-5`}>
-                                    Au cours de ce test, nous laissons tomber la bille d'acier sur le matelas à des hauteurs de quatre pouces, huit pouces et 12 pouces pour imiter divers mouvements, allant du lancer et du retournement au saut sur le lit. Le sismomètre enregistre tout ce mouvement et crée un graphique comme celui ci-dessous. Un graphique avec de petites lignes nous indique qu’un matelas isole bien les mouvements. Les grandes lignes nous indiquent que vous vous sentirez probablement dérangé par un partenaire agité sur un certain matelas.
-                                </p>
-                                <img src="/img/transfer_compare.jpg" alt="Lucid Mattress" className="text-center w-[80%] my-5 ml-[10%]"/>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[10px] lg:text-[12px] 
-                                text-center text-wrap w-[100%] pt-5`}>
-                                    Un exemple de résultats de tests de transfert de mouvement élevé.
-                                </p>
-                                <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-8 rounded-lg`}>
-                                    <p className="font-bold">Pourquoi l'isolation des mouvements est importante</p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%]`}>
-                                        Si vous dormez seul, vous ne vous souciez peut-être pas des capacités d’isolation des mouvements de votre matelas. Cependant, les personnes qui dorment avec un partenaire, un enfant ou un animal de compagnie peuvent apprécier un matelas qui minimise le transfert de mouvement. Les matelas dotés d’une bonne isolation des mouvements peuvent vous aider à éviter d’être dérangé par leurs mouvements tout au long de la nuit.
+                                <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left bg-[#eef5f9] rounded-lg px-4 py-8 mb-4`}>
+                                    <p className="pb-2 font-bold">
+                                        Les meilleurs moments pour acheter un matelas en ligne
+                                    </p>
+                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                    text-left text-wrap w-[100%] pt-5`}>
+                                        Certaines des meilleures offres de matelas sont proposées à l'occasion des fêtes, en particulier le Presidents' Day, le Memorial Day, le Labor Day, le Black Friday/Cyber Monday et Noël.
                                     </p>
                                 </div>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Prise en charge périphérique</p>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Optez pour un lit en boîte</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] pt-5`}>
-                                    Notre test de support de bord nous permet de savoir si vous pouvez dormir (ou vous asseoir) complètement sur le bord d'un matelas sans avoir l'impression qu'il pourrait s'effondrer. Les matelas à ressorts ont souvent des bords très solides. Le soutien des bords est important car des bords solides peuvent donner l’impression que votre matelas est un peu plus grand puisque vous pouvez vous étendre sur toute sa surface. Un soutien solide des bords empêche également l’affaissement prématuré au milieu de votre matelas, car vous êtes en mesure de répartir uniformément votre poids.
+                                text-left text-wrap w-[100%]`}>
+                                    La majorité des meilleures marques de literie en boîte sont disponibles exclusivement en ligne, et les rares qui proposent leurs produits le font dans les magasins de briques et de mortier d'autres entreprises. Les faibles frais généraux, la conception simplifiée des matelas et l'expédition directe au consommateur permettent aux entreprises de literie en boîte de se démarquer en termes de prix.
                                 </p>
-                                <img src="/img/edge_test.jpg" alt="Lucid Mattress" className="text-center w-[60%] my-5 ml-[20%]"/>
+                                <img src="/img/cheap/unboxing.jpg" alt="Lucid Mattress" className="text-center w-[80%] my-5 ml-[10%]"/>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[10px] lg:text-[12px] 
-                                text-center text-wrap w-[100%] pt-5`}>
-                                    Notre test de support de bord est très simple : nous nous asseyons et nous allongeons tout au long du bord du lit.
+                                text-center text-wrap w-[100%] py-5`}>
+                                    Déballage d'un matelas "bed-in-a-box" dans le studio Somnopolis.
                                 </p>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Matériaux</p>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Sachez ce que vous achetez</p>
                                 <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] pt-5`}>
-                                    Après tous ces tests, nous ouvrons la housse de chaque matelas pour évaluer les matériaux à l’intérieur. Nous passons en revue chaque couche de mousse pour vous expliquer le fonctionnement du lit. Nous recherchons également des éléments tels que des housses hypoallergéniques, des matériaux respectueux de l'environnement, des mousses certifiées CertiPUR-US® et une technologie de refroidissement.
-                                </p>
-                            </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[14px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="font-bold">Valeur et politiques de l'entreprise</p>
-                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                text-left text-wrap w-[100%] pt-5`}>
-                                    Une fois que nous avons testé la sensation, les matériaux et les performances d’un matelas, notre équipe évalue le prix de chaque lit, la garantie du matelas, les politiques d’expédition, la période d’essai de sommeil et les équipes du service client dans le contexte de l’industrie du matelas en général. C’est ainsi que nous décidons si vous obtenez une bonne affaire sur votre nouveau lit. Tous nos évaluateurs ont une grande connaissance des matelas à partager et s’efforcent de proposer des critiques informatives et honnêtes de tous les lits qu’ils testent. À partir de là, nous établissons une note globale pour chaque matelas.
+                                text-left text-wrap w-[100%]`}>
+                                    Soyez attentif aux coûts cachés tels que la taxe de vente, les frais de recyclage ou de livraison, les frais de retour et les frais de garantie éventuels. Sachez quels coûts l'entreprise couvrira si votre matelas présente des défauts, s'affaisse prématurément ou doit être réparé. Les garanties de certains matelas bon marché peuvent être plus courtes ou plus limitées ; lisez donc les petits caractères.
                                 </p>
                             </div>
                         </div>
 
                         <div className="w-[90%]">
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left pt-[5%]`}>
                                 <p className="border-b-2 border-[#324983] pb-2 font-bold">
-                                    Acheter un matelas en ligne ou en magasin ?
+                                    Que peut-on attendre d'un matelas bon marché ?
                                 </p>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
                                 text-left text-wrap w-[100%] pt-5`}>
-                                    Vous avez peut-être remarqué que tous les matelas que nous avons recommandés ci-dessus sont disponibles en ligne. C’est parce que l’équipe Somnopolis préfère acheter des matelas dans l’espace numérique. Mais que vous deviez acheter un matelas en ligne ou en magasin dépend vraiment de vos préférences. Pour en savoir plus sur ce qui fonctionne pour vous, consultez notre <a className="text-blue-900 underline">guide d’achat de matelas en magasin ou en ligne</a>.
-                                    <br></br><br></br>
-                                    Nous préférons acheter en ligne car les détaillants de matelas en ligne réduisent les frais généraux tels que les vendeurs et les salles d'exposition, ce qui signifie que vous pouvez normalement économiser plus d'argent en choisissant un matelas en ligne. Nous trouvons également plus pratique d’acheter en ligne et de faire expédier un lit à ma porte. Quelle que soit votre décision, nous vous recommandons de consulter notre page de <a className="text-blue-900 underline">coupons de matelas et de codes promotionnels</a> avant l’achat pour vous assurer d’obtenir une bonne affaire.
+                                    À quoi pouvez-vous vous attendre lorsque votre matelas arrivera enfin ? Jetez un coup d'œil ci-dessous pour le découvrir.
                                 </p>
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-8 rounded-lg`}>
-                                <p className="font-bold">Achat de matelas en magasin ou en ligne</p>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] my-3 mb-5`}>
-                                    Chez Sleepopolis, nous préférons acheter nos matelas en ligne. Voici quelques raisons pour lesquelles :
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Qualité du matelas</p>
+                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap`}>
+                                    La réduction des coûts se fait au détriment de la qualité. Moins vous payez, moins votre matelas sera durable. Un matelas économique de bonne qualité devrait durer au moins cinq ans. Les matelas économiques de meilleure qualité peuvent durer jusqu'à dix ans, et les lits de moindre qualité peuvent commencer à s'abîmer au bout de deux ou trois ans seulement. Les matériaux tels que le latex et les ressorts en acier indiquent un matelas économique plus durable.
                                 </p>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5 font-bold`}>
-                                        • &nbsp;
+                                <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left bg-[#eef5f9] rounded-lg px-4 py-8 mb-4`}>
+                                    <p className="pb-2 font-bold">
+                                        Niveau d'assistance budgétaire et niveau d'assistance onéreux
                                     </p>
                                     <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        <span className="font-bold">Commodité :</span>&nbsp;les matelas en ligne sont expédiés directement à votre porte en un seul clic
-                                    </p>
-                                </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5 font-bold`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        <span className="font-bold">Économie d’argent :</span>&nbsp;les détaillants en ligne n’ont pas besoin de vendeurs ni de salles d’exposition, leurs matelas sont donc généralement moins chers. Ils ont également tendance à proposer davantage d’offres et de coupons.
+                                    text-left text-wrap w-[100%] pt-5`}>
+                                        Les matelas bon marché peuvent également offrir un soutien moindre que les matelas plus coûteux. Les personnes de forte corpulence doivent en tenir compte. Si vous avez besoin d'un soutien durable, optez pour un matelas économique plus coûteux.
                                     </p>
                                 </div>
-                                <div className="flex flex-row w-full items-start justify-left">
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left px-5 font-bold`}>
-                                        • &nbsp;
-                                    </p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
-                                    text-left text-wrap`}>
-                                        <span className="font-bold">Périodes d’essai :</span>&nbsp;comme vous ne pouvez pas essayer le matelas en magasin, les détaillants en ligne proposent généralement des périodes d’essai généreuses. Cela signifie que vous pouvez réellement dormir sur le matelas au lieu de simplement vous allonger dessus pendant quelques instants. Si vous décidez que vous ne l’aimez pas, vous pouvez généralement le retourner ou l’échanger.
-                                    </p>
-                                </div>
+                            </div>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Valeur</p>
+                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap`}>
+                                    Pour vous assurer que vous obtenez un produit qui en vaut le coût, gardez à l'esprit les considérations d'achat ci-dessus. Un matelas bon marché devrait durer de cinq à sept ans. Si vous recherchez quelque chose de plus durable, mais que vous ne pouvez pas vous l'offrir pour le moment, achetez un surmatelas pour prolonger la durée de vie de votre matelas actuel de quelques mois.
+                                </p>
+                            </div>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Choisir la bonne entreprise de matelas</p>
+                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap w-[100%]`}>
+                                    Avant d'acheter un matelas d'une marque inconnue, faites vos recherches et lisez les commentaires. Nous avons soigneusement vérifié toutes les marques dans ce tour d'horizon, et une bonne façon de vérifier une marque que vous ne connaissez pas est de vérifier la garantie et la période d'essai. Des périodes d'essai et des garanties plus longues sont le signe d'un produit fiable. Vous pouvez également contacter le service clientèle de la marque. Une équipe réactive et transparente est le signe que vous avez affaire à un fabricant de matelas réputé. Pour une aide supplémentaire dans cette catégorie, nous proposons une pléthore d'avis sur les matelas, couvrant des marques aussi bien célèbres qu'obscures.
+                                </p>
                             </div>
                         </div>
 
                         <div className="w-[90%]">
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left pt-[5%]`}>
+                                <p className="border-b-2 border-[#324983] pb-2 font-bold">
+                                    Autres coûts liés aux matelas
+                                </p>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap w-[100%] pt-5`}>
+                                    N'oubliez pas de tenir compte des frais de livraison et des coûts de la nouvelle literie lorsque vous établissez votre budget final. Vous trouverez ci-dessous quelques-uns des coûts supplémentaires les plus courants liés à l'achat d'un nouveau matelas.
+                                </p>
+                            </div>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Livraison en gants blancs</p>
+                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap`}>
+                                    Si vous achetez un lit en boîte mais que vous ne souhaitez pas l'installer vous-même, vous pouvez souvent payer un supplément pour une livraison en gants blancs. Dans ce cas, l'équipe de livraison installera votre nouveau matelas. Certaines marques en ligne proposent la livraison en gants blancs gratuitement (surtout si elles ne vendent pas de matelas en boîte). N'oubliez pas de tenir compte de ce coût potentiel lorsque vous choisissez un nouveau lit.
+                                </p>
+                                <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[24px] text-wrap text-left bg-[#eef5f9] rounded-lg px-4 py-8 mb-4`}>
+                                    <p className="pb-2 font-bold">
+                                        Qu'est-ce que la livraison en gants blancs ?
+                                    </p>
+                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                    text-left text-wrap w-[100%] pt-5`}>
+                                        Avec la livraison en gants blancs, les déménageurs installeront votre nouveau matelas dans la pièce de votre choix. Ils enlèveront également votre ancien matelas si nécessaire.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Élimination des matelas</p>
+                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap`}>
+                                    Lorsque vous calculez le coût de votre nouveau lit, pensez à la façon dont vous allez vous débarrasser de votre ancien matelas. Si vous souhaitez vous charger vous-même de l'élimination de votre matelas, prévoyez un ramassage en vrac gratuit dans votre ville et achetez un sac d'élimination des matelas peu coûteux. Si vous souhaitez que quelqu'un d'autre prenne votre lit, vous pouvez acheter un service d'enlèvement de matelas auprès de nombreuses marques de lits en boîte. Certaines marques de matelas traditionnels non emballés proposent l'enlèvement gratuit du matelas lors de la livraison.
+                                </p>
+                            </div>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Cadres et bases</p>
+                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap w-[100%]`}>
+                                    Avant d'acheter un matelas d'une marque inconnue, faites vos recherches et lisez les commentaires. Nous avons soigneusement vérifié toutes les marques dans ce tour d'horizon, et une bonne façon de vérifier une marque que vous ne connaissez pas est de vérifier la garantie et la période d'essai. Des périodes d'essai et des garanties plus longues sont le signe d'un produit fiable. Vous pouvez également contacter le service clientèle de la marque. Une équipe réactive et transparente est le signe que vous avez affaire à un fabricant de matelas réputé. Pour une aide supplémentaire dans cette catégorie, nous proposons une pléthore d'avis sur les matelas, couvrant des marques aussi bien célèbres qu'obscures.
+                                </p>
+                            </div>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                                <p className="font-bold">Assemblée</p>
+                                <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
+                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
+                                text-left text-wrap w-[100%]`}>
+                                    Si vous achetez un nouveau cadre de lit et que vous souhaitez que quelqu'un l'assemble pour vous, ajoutez également ce coût à votre budget matelas. Vous devrez prévoir quelques centaines de dollars pour l'assemblage.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="w-[90%]">
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[20px] lg:text-[26px] md:text-[22px] text-wrap text-left py-[5%]`}>
                                 <p className="border-b-2 border-[#324983] pb-2 font-bold">
                                     FAQ
                                 </p>
-                                <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] pt-5`}>
-                                    <p className="font-bold">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;   Combien dois-je dépenser pour un matelas ?</p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                                        Bien que cela dépende de votre budget individuel, un matelas de valeur est généralement considéré comme un matelas inférieur à 1 000 $ pour un lit queen-size. Fixez-le donc comme limite de dépenses si vous cherchez à économiser de l’argent. Nous pensons que le Bear est un excellent matelas bon marché, et vous pouvez souvent obtenir le luxe DreamCloud pour moins de 1 000 $ après réductions.
-                                    </p>
-                                </div>
-                                <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] pt-10`}>
-                                    <p className="font-bold">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;   Quel est le meilleur moment pour acheter un matelas ?</p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                                        De nombreuses marques de literie lancent d’énormes ventes pendant les jours fériés fédéraux, alors gardez un œil sur les offres autour du President’s Day, du Memorial Day et même de la fête du Travail. Vous trouverez aussi naturellement une tonne d’offres autour du Black Friday. Consultez notre page de coupons et de codes promotionnels pour matelas toute l’année pour rester au courant des dernières réductions.
-                                    </p>
-                                </div>
-                                <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] pt-10`}>
-                                    <p className="font-bold">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;   À quelle fréquence dois-je remplacer mon matelas ?</p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                                        En général, vous devez remplacer votre ancien matelas tous les 7 à 10 ans. Cependant, un matelas peut s’affaisser prématurément si vous ne le placez pas sur une base adéquate ou si vous ne le traitez pas brutalement. Vous pouvez également prolonger la durée de vie d’un vieux matelas de quelques mois en ajoutant un surmatelas.
-                                        <br></br><br></br>
-                                        Chaque fois que vous achetez un nouveau lit, il est important de jeter un œil à sa garantie, qui peut également vous donner une bonne idée de sa durée.
-                                    </p>
-                                </div>
-                                <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] pt-10`}>
-                                    <p className="font-bold">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;   Quel est le meilleur matelas pour les maux de dos ?</p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                                        La plupart des personnes souffrant de maux de dos trouvent qu’un matelas ferme ou moyennement ferme leur convient le mieux. Ce type de lit vous aidera à garder votre colonne vertébrale droite pendant la nuit, ce qui peut contribuer à soulager beaucoup de douleurs.
-                                    </p>
-                                </div>
-                                <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] pt-10`}>
-                                    <p className="font-bold">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;   Quel est le meilleur matelas pour dormir sur le ventre ?</p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                                        De toutes les positions de sommeil, celles qui dorment sur le ventre nécessitent le plus de soutien. Dans cet esprit, il est préférable pour eux d’opter pour un lit renforcé par des ressorts ensachés. S’ils examinent les matelas de cette liste, les WinkBeds Plus et le Saatva pourraient être de bonnes options.
-                                    </p>
-                                </div>
-                                <div className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] pt-10`}>
-                                    <p className="font-bold">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;   Quel est le meilleur matelas pour dormir sur le côté ?</p>
-                                    <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                                        Les dormeurs latéraux se situent à l’autre extrémité du spectre des dormeurs sur le ventre. Bien qu’ils aient encore besoin d’un certain soutien, ils ont tendance à préférer les lits plus moelleux (ou moyennement fermes) qui ont beaucoup de rembourrage pour leurs épaules et leurs hanches. La plupart des matelas de cette liste devraient convenir parfaitement aux dormeurs latéraux, notamment le Sensoreve Elekctra.
-                                    </p>
-                                </div>
+                                {
+                                    faq.map((item, index) => 
+                                        <div className={`${styles.rubikFont} text-[#1A1D20] text-[2vw] lg:text-[22px] text-left text-wrap w-[100%] pt-5`}>
+                                            <div className="font-bold hover:cursor-pointer text-[20px]" onClick={()=>{
+                                                console.log(index, 'pressed!!!');
+                                                setFAQ((bestItem) => {
+                                                    const updatedItems = bestItem.map((item, idx) => {
+                                                      if (idx === index) {
+                                                        return {
+                                                          ...item,
+                                                          state: !item.state
+                                                        };
+                                                      }
+                                                      return item;
+                                                    });
+                                                    console.log(updatedItems[index].title);
+                                                    console.log(updatedItems[index].state);
+                                                    return updatedItems;
+                                                });
+                                            }}>
+                                                &nbsp;&nbsp;&nbsp;{item.state === false ? '+' : '-'}&nbsp;&nbsp;&nbsp; {item.title}
+                                            </div>
+                                            {item.state && item.content}
+                                        </div>
+                                    )
+                                }
                             </div>
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-4 rounded-lg`}>
-                                <p className="font-bold text-center">Comment nous choisissons ces matelas</p>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] my-3 mb-5`}>
-                                    Notre équipe de coachs certifiés en sciences du sommeil a examiné plus de 300 produits dans notre laboratoire de matelas, soumettant chacun d'eux à des tests tels que la cartographie de la pression et la mesure du transfert de mouvement avec un sismomètre. À partir de là, nous attribuons à chaque lit une note globale basée sur les matériaux, le confort, le soutien, le refroidissement et le support des bords. Nous prenons également en compte les performances de la marque avec des catégories telles que la valeur et la garantie.
-                                    <br></br><br></br>
-                                    Puisque nous voulions que notre liste des meilleurs matelas de 2024 représente véritablement le meilleur des meilleurs, nous avons pris en compte la note globale de chaque lit. Tous les matelas de cette liste ont une note globale de 4 sur 5 ou plus. <a className="text-blue-900 underline">Cliquez ici pour en savoir plus sur notre méthodologie.</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="w-[90%]">
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                <p className="border-b-2 border-[#324983] pb-2 font-bold">
-                                    Les matelas les mieux notés de 2024
-                                </p>
-                                <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] my-3 mb-5`}>
-                                    Voilà pour notre répartition des meilleurs matelas de l’année. Si vous souhaitez une comparaison côte à côte de ces lits, jetez un œil au tableau ci-dessous.
-                                </p>
-                            </div>
-                            
-                            {/* <div className="mt-2">
-                                <table className="w-full divide-y divide-gray-200 border border-grey-200  bg-grey-100 text-[12px] md:text-[14px]">
-                                <tbody className="divide-y divide-gray-200" >
-                                    <tr>
-                                    <td className={`${styles.robotoFont} px-6 py-2 whitespace-no-wrap w-[27%] border border-gray-200`}>Taille</td>
-                                    <td className={`${styles.rubikFont} px-6 py-2 whitespace-no-wrap w-[73%]`}>{item.size}</td>
-                                    </tr>
-                                    <tr className="bg-[#F1F1F1]">
-                                    <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Matériel</td>
-                                    <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.material}</td>
-                                    </tr>
-                                    <tr>
-                                    <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Fermeté</td>
-                                    <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.firmness}</td>
-                                    </tr>
-                                    <tr className="bg-[#F1F1F1]">
-                                    <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Expédition</td>
-                                    <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.shipping}</td>
-                                    </tr>
-                                    <tr>
-                                    <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Période d'essai</td>
-                                    <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.trialperiod}</td>
-                                    </tr>
-                                    <tr className="bg-[#F1F1F1]">
-                                    <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Garantie</td>
-                                    <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.warranty}</td>
-                                    </tr>
-                                    <tr>
-                                    <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Meilleur pour</td>
-                                    <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.bestfor}</td>
-                                    </tr>
-                                    <tr className="bg-[#F1F1F1]">
-                                    <td className={`${styles.robotofont} px-6 py-2 whitespace-no-wrap border border-gray-200`}>Financement</td>
-                                    <td className={`${styles.rubikfont} px-6 py-2 whitespace-no-wrap`}>{item.financing}</td>
-                                    </tr>
-                                </tbody>
-                                </table>
-                            </div> */}
                         </div>
                     </div>
+
                     <div id="sidePos" className="md:-webkit-sticky md:sticky w-[80%] lg:w-[32%] right-[2vw] lg:h-[90vh] top-[10vh] flex items-start flex-col lg:border-l pl-[2%] border-none lg:border-[#1A1D20] pb-[20px]  overflow-y-auto mt-[50px]">
                         <a href="https://senoreve.com" className="w-full flex justify-center items-center">
                             <img

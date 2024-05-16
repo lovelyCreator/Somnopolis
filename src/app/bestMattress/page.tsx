@@ -60,6 +60,56 @@ export default function Home() {
             </p>
         }
     ]);
+    const [faq, setFAQ] = useState<LookBestItem[]>([
+        {
+            state: true,
+            title: "Combien dois-je dépenser pour un matelas ?",
+            content: <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                Bien que cela dépende de votre budget personnel, on considère généralement qu'un matelas de qualité est un matelas de moins de 1 000 $ pour une taille Queen. C'est donc votre limite de dépenses si vous cherchez à économiser de l'argent. Nous pensons que le Bear est un excellent matelas bon marché, et vous pouvez souvent obtenir le luxueux DreamCloud pour moins de 1 000 $ après réductions.
+            </p>
+        },
+        {
+            state: false,
+            title: "Quel est le meilleur moment pour acheter un matelas ?",
+            content: 
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                Many bedding brands launch huge sales around federal holidays, so keep an eye out for deals around President’s Day, Memorial Day, and even Labor Day. You’ll also naturally find a ton of deals around Black Friday. Check out our mattress coupons and promo codes page year-round to stay up to date on the latest discounts.
+            </p>
+        },
+        {
+            state: false,
+            title: "À quelle fréquence dois-je remplacer mon matelas ?",
+            content: 
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                En général, vous devriez remplacer votre vieux matelas tous les 7 à 10 ans. Toutefois, un matelas peut s'affaisser prématurément si vous ne le placez pas sur une base adéquate ou si vous ne le traitez pas correctement. Vous pouvez également prolonger la durée de vie d'un vieux matelas de quelques mois en y ajoutant un surmatelas.
+                <br></br><br></br>
+                Lors de l'achat d'un nouveau lit, il est important de prendre connaissance de sa garantie, qui peut également vous donner une bonne idée de sa durée de vie.
+            </p>
+        },
+        {
+            state: false,
+            title: "Quel est le meilleur matelas pour le mal de dos ?",
+            content: 
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                La plupart des personnes souffrant de maux de dos trouvent qu'un matelas ferme ou moyennement ferme leur convient le mieux. Ce type de lit vous aidera à maintenir votre colonne vertébrale droite pendant la nuit, ce qui peut soulager de nombreuses douleurs.
+            </p>
+        },
+        {
+            state: false,
+            title: "Quel est le meilleur matelas pour les dormeurs sur le ventre ?",
+            content: <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                De toutes les positions de sommeil, les personnes qui dorment sur le ventre sont celles qui ont le plus besoin de soutien. C'est pourquoi il est préférable d'opter pour un lit renforcé par des ressorts ensachés. Parmi les matelas de cette liste, le WinkBeds Plus et le Saatva pourraient être de bonnes options.
+            </p>
+        },
+        {
+            state: false,
+            title: "Quel est le meilleur matelas pour les personnes qui dorment sur le côté ?",
+            content: 
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
+                Les dormeurs sur le côté sont à l'opposé des dormeurs sur le ventre. Bien qu'ils aient toujours besoin d'un certain soutien, ils ont tendance à préférer les matelas plus souples (ou moyennement fermes) qui offrent beaucoup de rembourrage pour leurs épaules et leurs hanches. La plupart des matelas de cette liste devraient convenir aux dormeurs latéraux, notamment le Sensoreve Elekctra.
+            </p>
+        },
+    ]);
     const [bestMattress, setBestMattress] = useState<object[]>([
         {
             company: 'Sensoreve Elekctra',
@@ -2193,7 +2243,38 @@ export default function Home() {
                         </div>
 
                         <div className="w-[90%]">
-                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
+                            <div className={`${styles.manropeFont} text-[#1A1D20] text-[20px] lg:text-[26px] md:text-[22px] text-wrap text-left py-[5%]`}>
+                                <p className="border-b-2 border-[#324983] pb-2 font-bold">
+                                    FAQ
+                                </p>
+                                {
+                                    faq.map((item, index) => 
+                                        <div className={`${styles.rubikFont} text-[#1A1D20] text-[2vw] lg:text-[22px] text-left text-wrap w-[100%] pt-5`}>
+                                            <div className="font-bold hover:cursor-pointer text-[20px]" onClick={()=>{
+                                                console.log(index, 'pressed!!!');
+                                                setFAQ((bestItem) => {
+                                                    const updatedItems = bestItem.map((item, idx) => {
+                                                      if (idx === index) {
+                                                        return {
+                                                          ...item,
+                                                          state: !item.state
+                                                        };
+                                                      }
+                                                      return item;
+                                                    });
+                                                    console.log(updatedItems[index].title);
+                                                    console.log(updatedItems[index].state);
+                                                    return updatedItems;
+                                                });
+                                            }}>
+                                                &nbsp;&nbsp;&nbsp;{item.state === false ? '+' : '-'}&nbsp;&nbsp;&nbsp; {item.title}
+                                            </div>
+                                            {item.state && item.content}
+                                        </div>
+                                    )
+                                }
+                            </div>
+                            {/* <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
                                 <p className="border-b-2 border-[#324983] pb-2 font-bold">
                                     FAQ
                                 </p>
@@ -2235,7 +2316,7 @@ export default function Home() {
                                         Les dormeurs latéraux se situent à l’autre extrémité du spectre des dormeurs sur le ventre. Bien qu’ils aient encore besoin d’un certain soutien, ils ont tendance à préférer les lits plus moelleux (ou moyennement fermes) qui ont beaucoup de rembourrage pour leurs épaules et leurs hanches. La plupart des matelas de cette liste devraient convenir parfaitement aux dormeurs latéraux, notamment le Sensoreve Elekctra.
                                     </p>
                                 </div>
-                            </div>
+                            </div> */}
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-4 rounded-lg`}>
                                 <p className="font-bold text-center">Comment nous choisissons ces matelas</p>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] my-3 mb-5`}>
