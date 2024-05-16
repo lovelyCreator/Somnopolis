@@ -257,17 +257,17 @@ export default function Home() {
                 {
                     img:"/img/best/joint.svg",
                     title: "Douleur articulaire",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs articulaires."
+                    content: "Ce lit est idéal pour les personnes souffrant de douleurs articulaires."
                 },
                 {
                     img:"/img/best/hip.svg",
                     title: "Douleur à la hanche",
-                    content: "Ce lit est parfait pour toute personne souffrant de douleurs à la hanche."
+                    content: "Ce lit est idéal pour les personnes souffrant de douleurs aux hanches."
                 },
                 {
                     img:"/img/best/backsleeping.svg",
                     title: "Dos Dormir",
-                    content: "Idéal pour les dormeurs sur le dos légers et de poids moyen."
+                    content: "Idéal pour les dormeurs légers et de poids moyen."
                 },
                 {
                     img:"/img/best/sidesleeping.svg",
@@ -342,7 +342,7 @@ export default function Home() {
                 {
                     img:"/img/best/hotsleeping.svg",
                     title: "Dormeurs chauds",
-                    content: "Si vous surchauffez souvent pendant votre sommeil, ce matelas devrait vous aider à rester au frais."
+                    content: "Si vous avez souvent trop chaud pendant votre sommeil, ce matelas devrait vous aider à rester au frais."
                 },
                 {
                     img:"/img/best/couple.svg",
@@ -352,7 +352,7 @@ export default function Home() {
                 {
                     img:"/img/best/backsleeping.svg",
                     title: "Dormir à l'arrière",
-                    content: "Idéal pour les dormeurs sur le dos de poids moyen."
+                    content: "Idéal pour les dormeurs légers et de poids moyen."
                 },
                 {
                     img:"/img/best/sidesleeping.svg",
@@ -432,7 +432,7 @@ export default function Home() {
                 {
                     img:"/img/best/backsleeping.svg",
                     title: "Dos Dormir",
-                    content: "Idéal pour les dormeurs sur le dos légers et de poids moyen."
+                    content: "Idéal pour les dormeurs légers et de poids moyen."
                 },
                 {
                     img:"/img/best/sidesleeping.svg",
