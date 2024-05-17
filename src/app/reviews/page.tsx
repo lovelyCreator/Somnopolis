@@ -385,7 +385,7 @@ export default function Home() {
                                 Meilleures offres &nbsp;
                             </p>
                         
-                            <div className="mt-2 w-[90%]">
+                            <div className="mt-2 w-[90%] overflow-x-auto">
                                 <table className="min-w-full divide-y divide-gray-200 border border-grey-200  bg-grey-100 mb-[20px]">
                                 <thead>
                                     <tr className={`${styles.manropeFont}bg-white leading-3`}>
@@ -516,7 +516,7 @@ export default function Home() {
                                             {item.name} &nbsp;
                                         </p>
                                         {item.intro}
-                                        <div className={`${index % 2 == 0 ? 'flex-row' : 'flex-row-reverse'} flex w-full gap-[5%] justify-center items-center my-5 bg-[#eef5f9] py-6`}>
+                                        <div className={`flex-col md:${index % 2 == 0 ? 'flex-row' : 'flex-row-reverse'} flex w-full gap-[5%] justify-center items-center my-5 bg-[#eef5f9] py-6 px-6 md:px-0`}>
                                             <img src={item.img} alt="Lucid Mattress" className="text-center w-[50%]"/>
                                             <div className= "w-45% flex flex-col">
                                                 <p className={`${styles.manropeFont} text-xl font-bold pb-2 mb-5 text-left w-[90%]`}>
