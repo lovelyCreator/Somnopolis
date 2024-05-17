@@ -48,7 +48,7 @@ export default function Home() {
             title: "Types de matelas les plus courants",
             content: 
             <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                Bien qu'il existe des centaines et des centaines de matelas différents sur le marché, notre équipe de Sleepopolis aime les regrouper en quatre types.
+                Bien qu'il existe des centaines et des centaines de matelas différents sur le marché, notre équipe de Somnopolis aime les regrouper en quatre types.
                 <br></br><br></br>
                 Les <span className="font-bold">matelas à ressorts</span> mettent l’accent sur le service et utilisent des ressorts pour obtenir une sensation de soutien et de rebond. Les couches de confort sont plus fines sur les modèles à ressorts, ce sont donc généralement des lits plus fermes, idéaux pour dormir sur le ventre ou pour dormir ensemble.
                 <br></br><br></br>
@@ -300,7 +300,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Moyen-doux : 6/10",
             mark: "/img/product/Sensoreve.png",
-            rate: 4,
+            rate: 4.4,
             cooling: '✓',
             sleep_position: "Dos et côté",
             title: "Sensoreve Elekctra",
@@ -2207,7 +2207,7 @@ export default function Home() {
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-8 rounded-lg`}>
                                 <p className="font-bold">Achat de matelas en magasin ou en ligne</p>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] my-3 mb-5`}>
-                                    Chez Sleepopolis, nous préférons acheter nos matelas en ligne. Voici quelques raisons pour lesquelles :
+                                    Chez Somnopolis, nous préférons acheter nos matelas en ligne. Voici quelques raisons pour lesquelles :
                                 </p>
                                 <div className="flex flex-row w-full items-start justify-left">
                                     <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
@@ -2417,7 +2417,7 @@ export default function Home() {
                                 <p className={`${styles.manropeFont} w-full text-center text-[16pt] lg:text-[18pt] font-bold mt-[10px]`}>
                                     Notre meilleur choix de matelas
                                 </p>
-                                <p className={`${styles.rubikFont} w-full text-left text-[16px]`}>
+                                <p className={`${styles.rubikFont} w-[90%] ml-[5%] text-left text-[16px]`}>
                                     Le matelas&nbsp;
                                     <a href="https://sensoreve.com" className="text-blue-500">
                                         Sensoreve Elekctra

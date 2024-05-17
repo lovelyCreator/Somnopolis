@@ -27,7 +27,7 @@ export default function Home() {
             title: "Quelle est la meilleure période de l'année pour acheter un matelas ?",
             content: 
             <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                Les week-ends suivants sont généralement ceux où les ventes sont les plus importantes : Presidents Day, Memorial Day, Independence Day, Labor Day et Black Friday. Cela dit, de nombreuses entreprises proposent des offres en permanence, alors consultez la page des coupons sur Sleepopolis pour trouver des réductions exclusives.
+                Les week-ends suivants sont généralement ceux où les ventes sont les plus importantes : Presidents Day, Memorial Day, Independence Day, Labor Day et Black Friday. Cela dit, de nombreuses entreprises proposent des offres en permanence, alors consultez la page des coupons sur Somnopolis pour trouver des réductions exclusives.
             </p>
         },
         {
@@ -417,7 +417,7 @@ export default function Home() {
             material: "Mousse",
             firmness: "Ferme : 7.5/10",
             mark: "/img/cheap/bear_original.jpg",
-            rate: 4,
+            rate: 4.0,
             cooling: '✓',
             sleep_position: "Dos et côtés",
             title: "Bear",
@@ -497,7 +497,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Moyen-doux : 6/10",
             mark: "/img/product/Sensoreve.png",
-            rate: 4,
+            rate: 4.4,
             cooling: '✓',
             sleep_position: "Dos et côté",
             title: "Sensoreve Elekctra",
@@ -658,7 +658,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Ferme : 7.5/10",
             mark: "/img/cheap/titan.jpg",
-            rate: 4,
+            rate: 4.3,
             cooling: '- -',
             sleep_position: "Dos et ventre",
             title: "Titan Plus",
@@ -738,7 +738,7 @@ export default function Home() {
             material: "Mousse",
             firmness: "Doux : 5.5/10",
             mark: "/img/cheap/lessa.jpg",
-            rate: 4,
+            rate: 4.1,
             cooling: '- -',
             sleep_position: "Combinaison",
             title: "Leesa Original",
@@ -818,7 +818,7 @@ export default function Home() {
             material: "Hybride",
             firmness: "Moyennement ferme : 6.5/10",
             mark: "/img/cheap/silk.jpg",
-            rate: 4,
+            rate: 4.0,
             cooling: '✓',
             sleep_position: "- -",
             title: "Silk & Snow Hybrid",
@@ -1807,7 +1807,7 @@ export default function Home() {
                                 <p className={`${styles.manropeFont} w-full text-center text-[16pt] lg:text-[18pt] font-bold mt-[10px]`}>
                                     Notre meilleur choix de matelas
                                 </p>
-                                <p className={`${styles.rubikFont} w-full text-left text-[16px]`}>
+                                <p className={`${styles.rubikFont} w-[90%] ml-[5%] text-left text-[16px]`}>
                                     Le matelas&nbsp;
                                     <a href="https://sensoreve.com" className="text-blue-500">
                                         Sensoreve Elekctra
