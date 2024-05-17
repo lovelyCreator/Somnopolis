@@ -147,7 +147,7 @@ export default function Home() {
             img: "/img/review/sideSleeper.jpg",
             title: "Dormeurs latéraux",
             content: 
-            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[45%]`}>
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] md:w-[45%] mt-3 md:mt-[0px]`}>
                 Si vous dormez strictement sur le côté, vous aurez probablement besoin d'un lit plus souple, qui soulage la pression au niveau des épaules et des hanches. Je vous conseille de rechercher des matelas comprenant une mousse à mémoire de forme épaisse et amortissante, un matériau connu pour ses propriétés de modelage du corps.
                 <br/><br/>
                 Les matelas plus fermes ne vous conviendront probablement pas, car l'absence d'enfoncement peut entraîner la formation de points de pression lorsque votre corps s'enfonce dans la structure.
@@ -157,7 +157,7 @@ export default function Home() {
             img: "/img/review/backSleeper.jpg",
             title: "Dormeurs sur le dos",
             content: 
-            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[45%]`}>
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] md:w-[45%] mt-3 md:mt-[0px]`}>
                 Les dormeurs sur le dos préféreront un matelas moyennement ferme à ferme, avec un peu de relief pour maintenir la colonne vertébrale dans un alignement neutre et un peu de souplesse pour soulager la région lombaire. Les lits hybrides dotés d'une couche supérieure en mousse douce (mousse à mémoire de forme ou latex) font souvent des merveilles pour les personnes qui dorment sur le dos. 
                 <br/><br/> 
                 En général, l'alignement de la colonne vertébrale est essentiel dans toutes les positions, et pas seulement pour les personnes qui dorment principalement sur le dos.
@@ -167,7 +167,7 @@ export default function Home() {
             img: "/img/review/stomachSleeper.jpg",
             title: "Dormeurs sur l'estomac",
             content: 
-            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[45%]`}>
+            <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] md:w-[45%] mt-3 md:mt-[0px]`}>
                 Pour ceux qui s'en tiennent à la position couchée, la fermeté est le mot d'ordre. Les lits plus fermes aident à positionner les hanches au-dessus de la structure de manière à ce qu'elles soient alignées avec les épaules. Il en résulte un alignement sain de la colonne vertébrale et une réduction des risques de douleurs dorsales. 
                 <br/><br/> 
                 Tout lit comportant une fine section de mousse sur un noyau de soutien composé de ressorts ensachés ou de mousse de polyéthylène haute densité conviendra probablement aux personnes qui dorment sur le ventre.
@@ -444,8 +444,8 @@ export default function Home() {
                                         <p className={`${styles.manropeFont} text-2xl font-bold pb-2 mb-10 text-left w-[90%]`}>
                                             {item.title} &nbsp;
                                         </p>
-                                        <div className={`${index % 2 == 0 ? 'flex-row' : 'flex-row-reverse'} flex w-full gap-[5%] justify-center items-center`}>
-                                            <img src={item.img} alt="Lucid Mattress" className="text-center w-[50%]"/>
+                                        <div className={`flex-col ${index % 2 == 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex w-full gap-[5%] justify-center items-center`}>
+                                            <img src={item.img} alt="Lucid Mattress" className="text-center w-[90%] md:w-[50%]"/>
                                             {item.content}
                                         </div>
                                     </div>
@@ -516,7 +516,7 @@ export default function Home() {
                                             {item.name} &nbsp;
                                         </p>
                                         {item.intro}
-                                        <div className={`flex-col md:${index % 2 == 0 ? 'flex-row' : 'flex-row-reverse'} flex w-full gap-[5%] justify-center items-center my-5 bg-[#eef5f9] py-6 px-6 md:px-0`}>
+                                        <div className={`flex-col ${index % 2 == 0 ? 'md:flex-row' : 'md:flex-row-reverse'} flex w-full gap-[5%] justify-center items-center my-5 bg-[#eef5f9] py-6 px-6 md:px-0`}>
                                             <img src={item.img} alt="Lucid Mattress" className="text-center w-[50%]"/>
                                             <div className= "w-45% flex flex-col">
                                                 <p className={`${styles.manropeFont} text-xl font-bold pb-2 mb-5 text-left w-[90%]`}>
