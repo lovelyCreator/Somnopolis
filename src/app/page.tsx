@@ -61,7 +61,8 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Sensoreve.png",
       mark: "/img/product/Sensoreve_mark.png",
-      rate: 4.4
+      rate: 4.4,
+      url:"https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm"
     },
     {
       description: "Meilleur hybride",
@@ -75,7 +76,8 @@ export default function Home() {
       financing: "Un TAEG aussi bas que 0 % avec Affirm",
       img: "/img/product/Helix.png",
       mark: "/img/product/Helix_mark.png",
-      rate: 4.3
+      rate: 4.3,
+      url:"https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm"
     },
     {
       description: "Meilleure valeur",
@@ -510,16 +512,16 @@ export default function Home() {
                       <></>
                     } */}
                   </div>
-                  <button className={`${styles.manropeFont} bg-[#FFBF00] hover:bg-[#e2b222] text-blue font-bold px-4 rounded-[10px] w-full py-4`} onClick={() => {
+                  <a href="/reviews" className={`${styles.manropeFont} bg-[#FFBF00] hover:bg-[#e2b222] text-blue font-bold px-4 rounded-[10px] w-full py-4 text-center`} onClick={() => {
                     setStarState('flex');
                     // setHandleState(index);
                   }
                   }>
                     Vérifier les avis
-                  </button>
-                  <button className={`${styles.manropeFont} bg-[#FFFFFF] hover:bg-[#F1F1F1] text-blue font-bold px-4 rounded-[10px] w-full py-4 mt-[20px] md:mt-[50px] border border-[#F7e4D6]`}>
+                  </a>
+                  <a href={item.url} className={`${styles.manropeFont} bg-[#FFFFFF] hover:bg-[#F1F1F1] text-blue font-bold px-4 rounded-[10px] w-full py-4 mt-[20px] md:mt-[50px] border border-[#F7e4D6] text-center`}>
                     Visit Site
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>)
