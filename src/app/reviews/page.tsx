@@ -269,7 +269,7 @@ export default function Home() {
     return (
         <div>
             <div className="flex min-h-screen flex-col items-center justify-start w-full">
-                <div className="w-full h-[700px] 2xl:h-[40vw] xl:h-[650px] lg:h-[600px] md:h-[500px] sm:h-[650px] bg-[#F1F1F1] flex justify-center items-start mb-20">
+                <div className="w-full h-[450px] 2h-[40vw] xl:h-[650px] lg:h-[550px] md:h-[500px] sm:h-[650px] bg-[#F1F1F1] flex justify-center items-start mb-20">
                     <div className="flex flex-col items-start justify-between font-marcellus pl-[5%] w-full">
                         {/* <Link href='/' className={`${styles.manropeFont} text-[#87806A] sm:text-[16px] text-[14px] 2xl:text-[20px] xl:text-[18px] md:text-[16px] font-bold text-left w-[100%] pt-[5%] text-wrap`}>
                             Accueil et meilleur matelas

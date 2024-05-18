@@ -1112,7 +1112,7 @@ export default function Home() {
                         {
                             compareData.map((item:any, index:any) =>
                                 <div className="w-[90%] mt-[50px]">
-                                    <p className={`${styles.manropeFont} text-3xl font-bold pb-2 mb-10 text-left border-b-2 border-[#324983] w-[90%]`}>
+                                    <p className={`${styles.manropeFont} text-2xl md:text-3xl font-bold pb-2 mb-10 text-left border-b-2 border-[#324983] w-[90%]`}>
                                         {item.title} - {item.sort}
                                     </p>
                                     <div className="border-2 border-[#E9E9EA] pt-[50px] border-b-1 px-[3%]">
