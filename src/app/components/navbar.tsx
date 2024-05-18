@@ -33,7 +33,7 @@ function MobileNav({open, setOpen}: {open: boolean, setOpen: React.Dispatch<Reac
                     Meilleur Matelas Pas Cher
                 </a>
                 <a className="text-xl font-normal my-4" href="/reviews" onClick={() => setTimeout(() => {setOpen(!open)}, 100)}>
-                    Revoir
+                    Commentaires
                 </a>
             </div>  
         </div>
@@ -70,7 +70,7 @@ export default function Navbar() {
                         <span className="hover:text-[#1A1D20]">Meilleur Matelas Pas Cher</span>
                     </NavLink>
                     <NavLink to ="/reviews">
-                        <span className="hover:text-[#1A1D20]">Revoir</span>
+                        <span className="hover:text-[#1A1D20]">Commentaires</span>
                     </NavLink>
                 </div>
             </div>

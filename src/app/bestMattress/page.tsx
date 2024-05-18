@@ -306,7 +306,7 @@ export default function Home() {
             title: "Sensoreve Elekctra",
             sort: "Meilleur Matelas Global",
             content: "L’Sensoreve Elekctra a un niveau de soutien et un rebond moyens qui séduiront un large éventail de préférences de sommeil. Le Midnight fait également un travail exceptionnel en isolant les mouvements, ce qui en fait un excellent choix pour les couples qui se déplacent la nuit.",
-            review: "",
+            review: "/reviews",
             site: "https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm",
             productState: false,
             recommendationState: false,
@@ -386,7 +386,7 @@ export default function Home() {
             title: "Helix Midnight",
             sort: "Meilleur matelas hybride",
             content: "L’Helix Midnight a un niveau de soutien et un rebond moyens qui séduiront un large éventail de préférences de sommeil. Le Midnight fait également un travail exceptionnel en isolant les mouvements, ce qui en fait un excellent choix pour les couples qui se déplacent la nuit.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -467,7 +467,7 @@ export default function Home() {
             title: "Nectar",
             sort: "Meilleur matelas pour dormeurs latéraux",
             content: "Le matelas Nectar original est un lit qui soulage la pression tout en offrant un bon soutien. Il est composé d’une épaisse couche de mousse à mémoire de forme gel, qui permet au dormeur de vraiment s’enfoncer dans sa surface.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             overviewState: false,
@@ -552,7 +552,7 @@ export default function Home() {
             title: "DreamCloud",
             sort: "Meilleur matelas pour les dormeurs mixtes.",
             content: "Le matelas DreamCloud est un matelas hybride de luxe composé de couches de mousse à mémoire de forme et de ressorts ensachés. Il offre une excellente combinaison de soutien et de soulagement de la pression que les dormeurs sur le dos apprécieront vraiment.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             overviewState: false,
@@ -636,7 +636,7 @@ export default function Home() {
             title: "WinkBed",
             sort: "Meilleur matelas pour le mal de dos",
             content: "Le WinkBed est un matelas hybride qui se décline en trois niveaux de fermeté, de sorte que la plupart des dormeurs devraient trouver un modèle adapté à leurs besoins. Il pourrait également convenir aux couples, grâce à un soutien renforcé des bords.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -726,7 +726,7 @@ export default function Home() {
             title: "Saatva Classic",
             sort: "Meilleur matelas de luxe abordable",
             content: `La construction à ressorts sur ressorts du Saatva offre une sensation de ressort classique. Il s'agit d'une bonne option pour les dormeurs combinés, qui veulent se sentir libres de changer de position et éviter de se sentir "coincés" dans le matelas. Il est disponible en trois niveaux de fermeté, de sorte que vous devriez pouvoir en trouver un qui corresponde à vos besoins.`,
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -811,7 +811,7 @@ export default function Home() {
             title: "Brooklyn Bedding Aurora Luxe",
             sort: "Meilleur matelas rafraîchissant",
             content: `Le matelas Aurora Luxe de Brooklyn Bedding est un matelas hybride de type "bed-in-a-box". Il est disponible en trois niveaux de fermeté et avec un Cloud Pillow Top en option, ce qui permet aux dormeurs de choisir le modèle le mieux adapté à leurs besoins. Il est également doté d'une technologie de refroidissement dans presque toutes les couches, ce qui signifie qu'il permet de dormir au frais !`,
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -891,7 +891,7 @@ export default function Home() {
             title: "Bear Elite Hybrid",
             sort: "Meilleur matelas pour l'allègement de la pression",
             content: "Le Bear Elite Hybrid est le modèle « ultra-luxueux » de Bear avec une sensation de matelas traditionnelle, ainsi qu'une technologie avancée de refroidissement et de soutien. Il est disponible en trois niveaux de fermeté différents : Doux, Moyen et Ferme.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -971,7 +971,7 @@ export default function Home() {
             title: "DreamCloud Premier",
             sort: "Meilleur matelas pour les dormeurs sur le dos",
             content: `Le DreamCloud Premier est un matelas hybride de type "bed-in-a-box", très luxueux au toucher, qui offre un soutien ferme et un soulagement souple de la pression. C'est un excellent choix pour les dormeurs sur le dos et les dormeurs mixtes, qui devraient apprécier sa réactivité.`,
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -1046,7 +1046,7 @@ export default function Home() {
             title: "Nolah Evolution",
             sort: "Meilleur matelas hybride",
             content: "Le Nolah Evolution offre un bon soulagement de la pression et un bon modelage du corps. C'est un excellent choix pour les dormeurs sur le côté, et les dormeurs sur le dos qui aiment un matelas plus doux l'apprécieront également. Le dessus d'oreiller moelleux est également un atout pour les douleurs d'épaules ou de hanches.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -1394,9 +1394,9 @@ export default function Home() {
                                                 <p className={`${styles.manropeFont} font-medium text-[#151160] text-[12px] md:text-[16px] pl-[10px]`}>
                                                     {item.content}
                                                 </p>
-                                                <p className={`${styles.manropeFont} font-medium text-[#a19dfb] text-[12px] md:text-[16px] pl-[10px] underline pt-2`}>
+                                                <a href={item.review} className={`${styles.manropeFont} font-medium text-[#a19dfb] text-[12px] md:text-[16px] pl-[10px] underline pt-2`}>
                                                     Vérifier les avis
-                                                </p>
+                                                </a>
                                             </div>
                                             <div className = "flex flex-col justify-center items-center w-2/9 mr-[10px]">
                                                 <div className={starState}>
@@ -1409,9 +1409,9 @@ export default function Home() {
                                                         <span ><img src={`${mattressData[0].rate>4.7 ? "/img/star_half.svg" : "/img/star_empty.svg"}`} alt="My SVG Image"  className="w-[30px] h-full"/></span>						
                                                     </div>
                                                 </div>
-                                                <button className={`${styles.manropeFont} bg-[#FFFFFF] hover:bg-[#F1F1F1] text-blue font-bold px-4 rounded-[10px] w-full py-4 mt-[20px] md:mt-5 border border-[#F7e4D6]`}>
+                                                <a href={item.site} className={`${styles.manropeFont} bg-[#FFFFFF] hover:bg-[#F1F1F1] text-blue font-bold px-4 rounded-[10px] w-full py-4 mt-[20px] md:mt-5 border border-[#F7e4D6] text-center`}>
                                                     Visit Site
-                                                </button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -1668,7 +1668,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap pt-5`}>
-                                            Pour en savoir plus, consultez notre avis complet sur le <a className="text-blue-500 underline">{item.reviewName}</a> ou cliquez ici pour obtenir notre meilleure offre. Vous trouverez d'autres options dans notre tour d'horizon des meilleurs matelas pour les dormeurs mixtes.
+                                            Pour en savoir plus, consultez notre avis complet sur le {item.reviewName} ou cliquez ici pour obtenir notre meilleure offre. Vous trouverez d'autres options dans notre tour d'horizon des meilleurs matelas pour les dormeurs mixtes.
                                         </p>
                                     </div>
                                 </div>
@@ -1870,7 +1870,7 @@ export default function Home() {
                                 </p>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
                                 text-left text-wrap w-[100%] pt-5`}>
-                                    Si vous n’avez pas trouvé le matelas que vous souhaitiez ci-dessus, vous pourriez bénéficier de l’un de nos guides de matelas plus spécifiques. Vous trouverez ci-dessous quelques-unes de nos recommandations basées sur le type de corps, l’âge, la position de sommeil, la gestion de la douleur, etc. Vous pouvez également consulter notre guide sur la façon de <a className="text-blue-900 underline">choisir un matelas</a> qui répond à vos besoins, et si vous vous sentez toujours dépassé, pensez à répondre à notre <a className="text-blue-900 underline">quiz sur le matelas</a> pour une recommandation personnalisée.
+                                    Si vous n’avez pas trouvé le matelas que vous souhaitiez ci-dessus, vous pourriez bénéficier de l’un de nos guides de matelas plus spécifiques. Vous trouverez ci-dessous quelques-unes de nos recommandations basées sur le type de corps, l’âge, la position de sommeil, la gestion de la douleur, etc. Vous pouvez également consulter notre guide sur la façon de choisir un matelas qui répond à vos besoins, et si vous vous sentez toujours dépassé, pensez à répondre à notre quiz sur le matelas pour une recommandation personnalisée.
                                 </p>
                             </div>
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
@@ -2199,9 +2199,9 @@ export default function Home() {
                                 </p>
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
                                 text-left text-wrap w-[100%] pt-5`}>
-                                    Vous avez peut-être remarqué que tous les matelas que nous avons recommandés ci-dessus sont disponibles en ligne. C’est parce que l’équipe Somnopolis préfère acheter des matelas dans l’espace numérique. Mais que vous deviez acheter un matelas en ligne ou en magasin dépend vraiment de vos préférences. Pour en savoir plus sur ce qui fonctionne pour vous, consultez notre <a className="text-blue-900 underline">guide d’achat de matelas en magasin ou en ligne</a>.
+                                    Vous avez peut-être remarqué que tous les matelas que nous avons recommandés ci-dessus sont disponibles en ligne. C’est parce que l’équipe Somnopolis préfère acheter des matelas dans l’espace numérique. Mais que vous deviez acheter un matelas en ligne ou en magasin dépend vraiment de vos préférences. Pour en savoir plus sur ce qui fonctionne pour vous, consultez notreguide d’achat de matelas en magasin ou en ligne.
                                     <br></br><br></br>
-                                    Nous préférons acheter en ligne car les détaillants de matelas en ligne réduisent les frais généraux tels que les vendeurs et les salles d'exposition, ce qui signifie que vous pouvez normalement économiser plus d'argent en choisissant un matelas en ligne. Nous trouvons également plus pratique d’acheter en ligne et de faire expédier un lit à ma porte. Quelle que soit votre décision, nous vous recommandons de consulter notre page de <a className="text-blue-900 underline">coupons de matelas et de codes promotionnels</a> avant l’achat pour vous assurer d’obtenir une bonne affaire.
+                                    Nous préférons acheter en ligne car les détaillants de matelas en ligne réduisent les frais généraux tels que les vendeurs et les salles d'exposition, ce qui signifie que vous pouvez normalement économiser plus d'argent en choisissant un matelas en ligne. Nous trouvons également plus pratique d’acheter en ligne et de faire expédier un lit à ma porte. Quelle que soit votre décision, nous vous recommandons de consulter notre page de coupons de matelas et de codes promotionnels avant l’achat pour vous assurer d’obtenir une bonne affaire.
                                 </p>
                             </div>
                             <div className={`${styles.manropeFont} text-[#1A1D20] text-[22px] lg:text-[20px] text-wrap mt-[5%] text-left px-4 bg-[#eef5f9] py-8 rounded-lg`}>
@@ -2322,7 +2322,7 @@ export default function Home() {
                                 <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[100%] my-3 mb-5`}>
                                     Notre équipe de coachs certifiés en sciences du sommeil a examiné plus de 300 produits dans notre laboratoire de matelas, soumettant chacun d'eux à des tests tels que la cartographie de la pression et la mesure du transfert de mouvement avec un sismomètre. À partir de là, nous attribuons à chaque lit une note globale basée sur les matériaux, le confort, le soutien, le refroidissement et le support des bords. Nous prenons également en compte les performances de la marque avec des catégories telles que la valeur et la garantie.
                                     <br></br><br></br>
-                                    Puisque nous voulions que notre liste des meilleurs matelas de 2024 représente véritablement le meilleur des meilleurs, nous avons pris en compte la note globale de chaque lit. Tous les matelas de cette liste ont une note globale de 4 sur 5 ou plus. <a className="text-blue-900 underline">Cliquez ici pour en savoir plus sur notre méthodologie.</a>
+                                    Puisque nous voulions que notre liste des meilleurs matelas de 2024 représente véritablement le meilleur des meilleurs, nous avons pris en compte la note globale de chaque lit. Tous les matelas de cette liste ont une note globale de 4 sur 5 ou plus. Cliquez ici pour en savoir plus sur notre méthodologie.
                                 </p>
                             </div>
                         </div>
@@ -2419,13 +2419,13 @@ export default function Home() {
                                 </p>
                                 <p className={`${styles.rubikFont} w-[90%] ml-[5%] text-left text-[16px]`}>
                                     Le matelas&nbsp;
-                                    <a href="https://sensoreve.com" className="text-blue-500">
+                                    <a href="https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm" className="text-blue-500">
                                         Sensoreve Elekctra
                                     </a> 
                                     &nbsp;occupe la première place en raison de sa sensation moyennement ferme qui peut plaire à une variété de dormeurs différents, quelle que soit la position de sommeil ou le type de corps. De plus, la couche de support composée de ressorts emballés individuellement fournit un soulèvement qui peut soulager la pression sur vos épaules et le bas du dos.
                                 </p>
                             </div>
-                            <a href="https://sensoreve.com">
+                            <a href="https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm">
                                 <button className={`${styles.manropeFont} bg-[#FFBF00] hover:bg-[#F7E4D6] text-blue font-bold px-4 rounded-[10px] w-[80%] mx-[10%] py-4 mt-[20px] border border-[#F7e4D6]`}>Visit Site
                                 </button>
                             </a>

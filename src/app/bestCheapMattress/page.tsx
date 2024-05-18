@@ -253,7 +253,7 @@ export default function Home() {
             title: "Nectar",
             sort: "Meilleur matelas bon marché",
             content: "Le matelas Nectar original est un lit qui soulage la pression tout en offrant un bon soutien. Il est composé d’une épaisse couche de mousse à mémoire de forme gel, qui permet au dormeur de vraiment s’enfoncer dans sa surface.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             overviewState: false,
@@ -338,7 +338,7 @@ export default function Home() {
             title: "DreamCloud Memory Foam",
             sort: "Meilleur matelas en mousse à mémoire de forme pour les petits budgets",
             content: "Le matelas à mémoire de forme de DreamCloud est un lit en boîte de luxe qui offre un excellent soutien tout en étant entièrement en mousse.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             overviewState: false,
@@ -423,7 +423,7 @@ export default function Home() {
             title: "Bear",
             sort: "Le meilleur matelas abordable pour les athlètes",
             content: "Nous apprécions la fermeté et la réactivité du matelas Bear. Sa combinaison de soutien et de soulagement de la pression en fait une excellente option pour toute personne souffrant de douleurs dorsales. La housse Celliant permet également de garder le matelas au frais.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -503,8 +503,8 @@ export default function Home() {
             title: "Sensoreve Elekctra",
             sort: "Meilleur matelas hybride abordable",
             content: "L’Sensoreve Elekctra a un niveau de soutien et un rebond moyens qui séduiront un large éventail de préférences de sommeil. Le Midnight fait également un travail exceptionnel en isolant les mouvements, ce qui en fait un excellent choix pour les couples qui se déplacent la nuit.",
-            review: "",
-            site: "https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm",
+            review: "/reviews",
+            site: "https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm",
             productState: false,
             recommendationState: false,
             overviewState: false,
@@ -583,7 +583,7 @@ export default function Home() {
             title: "Siena",
             sort: "Meilleur matelas abordable de moins de 500",
             content: "Ce matelas tout en mousse offre une sensation de fermeté et de soutien avec une couche de mousse à mémoire de forme pour soulager la pression.",
-            review: "",
+            review: "/reviews",
             site: "https://www.sienasleep.com/mattress?CIDIMP=WFNz5gSf7xyPRhqx-Yx332coUkHQKUwXWQt71Y0&irgwc=1&utm_campaign=IMPACT&utm_content=Online%20Tracking%20Link_ONLINE_TRACKING_LINK&utm_source=SO_Main&utm_medium=AFF&utm_sharedid=&utm_account=15153&rh_s=SO_Main&rh_m=AFF&rh_c=IMPACT&rh_n=Online%20Tracking%20Link_ONLINE_TRACKING_LINK&rh_sid=",
             productState: false,
             recommendationState: false,
@@ -664,7 +664,7 @@ export default function Home() {
             title: "Titan Plus",
             sort: "Meilleur matelas économique pour les personnes corpulentes",
             content: "Le Titan Firm Hybrid de Brooklyn Bedding est un matelas durable doté de ressorts de soutien robustes de 6 pouces, ce qui en fait une excellente option pour les dormeurs plus lourds. Ce matelas est également doté d'une couche de confort en mousse Titanflex, qui offre une bonne portance et un bon rebond pour les personnes plus lourdes.",
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -744,7 +744,7 @@ export default function Home() {
             title: "Leesa Original",
             sort: "Meilleur matelas abordable pour les dormeurs sur le dos",
             content: `Vous aimez la sensation d'un matelas tout en mousse, mais vous n'arrivez pas à en trouver un qui soit suffisamment rebondissant ? Le matelas Leesa original est peut-être ce qu'il vous faut. Ce matelas de type "bed-in-a-box" offre un soulagement en douceur de la pression ainsi qu'un soutien réactif.`,
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -824,7 +824,7 @@ export default function Home() {
             title: "Silk & Snow Hybrid",
             sort: "Meilleur matelas rafraîchissant à petit prix",
             content: `Le Silk & Snow Hybrid est un matelas moyennement ferme qui offre un soutien important. Il est idéal pour les dormeurs sur le dos, certains dormeurs sur le côté et ceux qui passent d'une position à l'autre.`,
-            review: "",
+            review: "/reviews",
             site: "",
             productState: false,
             recommendationState: false,
@@ -1406,7 +1406,7 @@ export default function Home() {
                                             </p>
                                         </div>
                                         <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap pt-5`}>
-                                            Pour en savoir plus, consultez notre avis complet sur le <a className="text-blue-500 underline">{item.reviewName}</a> ou cliquez ici pour obtenir notre meilleure offre. Vous trouverez d'autres options dans notre tour d'horizon des meilleurs matelas pour les dormeurs mixtes.
+                                            Pour en savoir plus, consultez notre avis complet sur le{item.reviewName} ou cliquez ici pour obtenir notre meilleure offre. Vous trouverez d'autres options dans notre tour d'horizon des meilleurs matelas pour les dormeurs mixtes.
                                         </p>
                                     </div>
                                 </div>
@@ -1809,13 +1809,13 @@ export default function Home() {
                                 </p>
                                 <p className={`${styles.rubikFont} w-[90%] ml-[5%] text-left text-[16px]`}>
                                     Le matelas&nbsp;
-                                    <a href="https://sensoreve.com" className="text-blue-500">
+                                    <a href="https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm" className="text-blue-500">
                                         Sensoreve Elekctra
                                     </a> 
                                     &nbsp;occupe la première place en raison de sa sensation moyennement ferme qui peut plaire à une variété de dormeurs différents, quelle que soit la position de sommeil ou le type de corps. De plus, la couche de support composée de ressorts emballés individuellement fournit un soulèvement qui peut soulager la pression sur vos épaules et le bas du dos.
                                 </p>
                             </div>
-                            <a href="https://sensoreve.com">
+                            <a href="https://sensoreve.com/fr/32-matelas/30-408-sensoreve-matelas-elekctra-hybrid-association-de-technologie-ressorts-ensaches-5cm-memoire-de-forme-30cm-epaisseur-tot.html#/69-taille-120_190cm">
                                 <button className={`${styles.manropeFont} bg-[#FFBF00] hover:bg-[#F7E4D6] text-blue font-bold px-4 rounded-[10px] w-[80%] mx-[10%] py-4 mt-[20px] border border-[#F7e4D6]`}>Visit Site
                                 </button>
                             </a>

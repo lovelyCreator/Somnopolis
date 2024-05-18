@@ -38,9 +38,9 @@ export default function BottomBar() {
                     <p className={`${styles.robotoFont} md:text-[16pt] text-[#69747F] w-full text-center pb-3`}>Recevez les dernières offres, réductions, avis et cadeaux !</p>
                     <div className={`${styles.robotoFont} w-full flex justify-center items-center`}>
                         <input type="text" className="text-[12px] md:text-[16px] border border-gray-300 rounded-tl-md rounded-bl-md px-3 py-3 md:py-2 focus:outline-none focus:border-blue-500" placeholder='Email Address'></input>
-                        <button className="bg-[#1A1d20] hover:bg-[#323333] text-white text-[12px] md:text-[16px] font-bold py-3 md:py-2 border-[1px] border-[#121683] w-[130px] rounded-tr-md rounded-br-md">
+                        <a href="https://sensoreve.com" className="bg-[#1A1d20] hover:bg-[#323333] text-white text-[12px] md:text-[16px] font-bold py-3 md:py-2 border-[1px] border-[#121683] w-[130px] rounded-tr-md rounded-br-md text-center">
                         Visit Site
-                        </button>
+                        </a>
                         {/* <input
                             type="submit"
                             value="Visite"
