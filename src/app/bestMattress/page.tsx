@@ -73,7 +73,7 @@ export default function Home() {
             title: "Quel est le meilleur moment pour acheter un matelas ?",
             content: 
             <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] text-left text-wrap w-[90%] pt-2 ml-[5%]`}>
-                Many bedding brands launch huge sales around federal holidays, so keep an eye out for deals around President’s Day, Memorial Day, and even Labor Day. You’ll also naturally find a ton of deals around Black Friday. Check out our mattress coupons and promo codes page year-round to stay up to date on the latest discounts.
+                De nombreuses marques de literie lancent d’énormes ventes pendant les jours fériés fédéraux, alors gardez un œil sur les offres autour du President’s Day, du Memorial Day et même de la fête du Travail. Vous trouverez aussi naturellement une tonne d’offres autour du Black Friday. Consultez notre page de coupons et de codes promotionnels pour matelas toute l’année pour rester au courant des dernières réductions.
             </p>
         },
         {

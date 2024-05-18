@@ -90,7 +90,7 @@ export default function Home() {
         },
         {
             company: 'Leesa Original',
-            description: 'Best Affordable Mattress for Back Sleepers',
+            description: 'Meilleur matelas abordable pour les dormeurs sur le dos',
         },
         {
             company: 'Silk & Snow Hybrid',
