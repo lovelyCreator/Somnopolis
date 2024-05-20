@@ -1607,7 +1607,7 @@ export default function Home() {
                                         </p>
                                     </div>
                                     <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                        <p className="font-bold">Points forts du matelas Sensoreve Elekctra</p>
+                                        <p className="font-bold">Points forts du {item.model}</p>
                                         <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                         {
                                             item.pros.map((ite:any, idex:any) =>
@@ -1655,7 +1655,7 @@ export default function Home() {
                                         </div> */}
                                     </div>
                                     <div className={`${styles.manropeFont} text-[#1A1D20] text-[18px] lg:text-[20px] text-wrap text-left pt-[5%]`}>
-                                        <p className="font-bold">Ce qu’il faut garder à l’esprit à propos du matelas Sensoreve Elekctra</p>
+                                        <p className="font-bold">Ce qu’il faut garder à l’esprit à propos du {item.model}</p>
                                         <hr className="w-[15%] bg-[#5ca9e8] my-2 "></hr>
                                         <div className="flex flex-row w-full items-start justify-left">
                                             <p className={`${styles.rubikFont} text-[#1A1D20] text-[14px] lg:text-[16px] 
